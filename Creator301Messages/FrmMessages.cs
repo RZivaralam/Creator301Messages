@@ -41,7 +41,11 @@ namespace Creator301Messages
         {
             InitializeComponent();
         }
-
+        private SamuElement SAMU;
+        private List<SamuElement> SAMUList;
+        private FabElement FAB;
+        private List<FabElement> FABList;
+        #region Preapre Tabs
         private void InitualizeTab()
         {
             layoutFKT.Visibility = LayoutVisibility.Never;
@@ -50,6 +54,7 @@ namespace Creator301Messages
             layoutDPV.Visibility = LayoutVisibility.Never;
             layoutAUF.Visibility = LayoutVisibility.Never;
             layoutDAU.Visibility = LayoutVisibility.Never;
+            layoutEAD.Visibility = LayoutVisibility.Never;
             layoutETL_NDG.Visibility = LayoutVisibility.Never;
             layoutEBG.Visibility = LayoutVisibility.Never;
             layoutFAB.Visibility = LayoutVisibility.Never;
@@ -71,6 +76,9 @@ namespace Creator301Messages
             layoutRED.Visibility = LayoutVisibility.Never;
             layoutRED_SAMU.Visibility = LayoutVisibility.Never;
             layoutUWD.Visibility = LayoutVisibility.Never;
+            layoutPVV.Visibility = LayoutVisibility.Never;
+            layoutPVT.Visibility = LayoutVisibility.Never;
+            layoutZPR.Visibility = LayoutVisibility.Never;
             checkButtonAUF.Appearance.ForeColor = Color.Black;
             checkButtonENTL.Appearance.ForeColor = Color.Black;
             checkButtonRECH.Appearance.ForeColor = Color.Black;
@@ -152,6 +160,8 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutPVV.Visibility = LayoutVisibility.Always;
+                layoutPVT.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonVERL.Checked)
             {
@@ -171,6 +181,7 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutTXT.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonAMBO.Checked)
             {
@@ -207,6 +218,7 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutTXT.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonKAIN.Checked)
             {
@@ -233,6 +245,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutZPR.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonSAMU.Checked)
             {
@@ -240,8 +253,8 @@ namespace Creator301Messages
                 Ifchecked = true;
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
-                layoutRED_SAMU.Visibility = LayoutVisibility.Never;
-                layoutUWD.Visibility = LayoutVisibility.Never;
+                layoutRED_SAMU.Visibility = LayoutVisibility.Always;
+                layoutUWD.Visibility = LayoutVisibility.Always;
 
             }
             if (checkButtonFEHL.Checked)
@@ -252,14 +265,6 @@ namespace Creator301Messages
                 layoutFHL.Visibility = LayoutVisibility.Always;
             }
             return Ifchecked;
-        }
-        private string TrimEndMessage(string Messages)
-        {
-            while (Messages.Substring(Messages.Length - 2) == "+'")
-            {
-                Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 1);
-            }
-            return Messages;
         }
         private void FillTmpVKZ(List<int> VKZ)
         {
@@ -274,19 +279,33 @@ namespace Creator301Messages
         private void ChangeCheckOutTab()
         {
             InitualizeTab();
-            checkButtonAUF.Checked = (PreapreTab()) ? checkButtonAUF.Checked : true;
+            PreapreTab();
+           // checkButtonAUF.Checked = (PreapreTab()) ? checkButtonAUF.Checked : true;
         }
         private void FrmMessages_Load(object sender, EventArgs e)
         {
             dateEditErstelldatum.EditValue = DateTime.Now;
             checkButtonAUF.Checked = true;
             comboBoxEditBegint.SelectedIndex = 0;
+            comboBoxEditTMP_Currency.SelectedIndex = 0;
             textEditFileName.Text = "Nachricht" + DateTime.Now.ToString("yyyy-MM-dd");
+            SAMUList = new List<SamuElement>();
+            FABList = new List<FabElement>();
             ChangeCheckOutTab();
         }
         private void CheckOutTab(object sender, EventArgs e)
         {
             ChangeCheckOutTab();
+        }
+        #endregion
+        #region Create Message Content
+        private string TrimEndMessage(string Messages)
+        {
+            while (Messages.Substring(Messages.Length - 2) == "+'")
+            {
+                Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 1);
+            }
+            return Messages;
         }
         private string CreateUNB_UNAelement()
         {
@@ -301,7 +320,25 @@ namespace Creator301Messages
             Messages = String.Format("{0}+{1}+{2}'", "UNH", string.Format("{0:00000}", CountMessage), MessageType);
             return Messages;
         }
+        private string CreateUNTelement(int CountMessage, int CountSegment)
+        {
+            string Messages;
+            Messages = String.Format("{0}+{1}+{2}'", "UNT", CountSegment, string.Format("{0:00000}", CountMessage));
+            return Messages;
+        }
+        private string CreateUNZelement(int CountMessage)
+        {
+            string Messages;
+            Messages = String.Format("{0}+{1}+{2}'", "UNZ", string.Format("{0:00000}", CountMessage), textEditReferenz_Nr.EditValue);
+            return Messages;
+        }
         private string CreateFKTelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditZiel_IKFKT.EditValue, textEditTmp_IK.EditValue));
+            return Messages;
+        }
+        private string CreateFKTWBelement()
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditTmp_IK.EditValue, textEditZiel_IKFKT.EditValue));
@@ -344,30 +381,132 @@ namespace Creator301Messages
                 textEditTmp_EinwZArzt.EditValue, textEditTmp_AufnGewicht.EditValue));
             return Messages;
         }
-        private string CreateEADelement()
+        private string CreateEADelement(ref int count)
         {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}'", "EAD", textEditAufnahmediagnose.EditValue));
+            string Messages="";
+            foreach (CheckedListBoxItem item in CheckedCombiEditAufnahmediagnose.Properties.Items)
+            {
+                if(item.CheckState == CheckState.Checked)
+                {
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EAD", item));
+                    count = count + 1;
+                }
+            }
             return Messages;
         }
-        private string CreateUNTelement( int CountMessage,int CountSegment)
+        private string CreatePVVelement()
         {
             string Messages;
-            Messages = String.Format("{0}+{1}+{2}'", "UNT", CountSegment, string.Format("{0:00000}", CountMessage));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PVT",textEditInfo.EditValue , textEditRechnungsNR.EditValue, dateEditRechnungDatum.DateTime.ToString("yyyyMMdd")));
             return Messages;
         }
-        private string CreateUNZelement(int CountMessage)
+        private string CreateREDelement()
         {
             string Messages;
-            Messages = String.Format("{0}+{1}+{2}'", "UNZ", string.Format("{0:00000}", CountMessage), textEditReferenz_Nr.EditValue);
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "RED", textEditTmp_RgNr.EditValue, dateEditTmp_RgDatum.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetrag.EditValue,"",
+                textEditTmp_RgArt.EditValue,"","", textEditTmp_IKZahlweg.EditValue));
             return Messages;
         }
+        private string CreateCUXelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX", comboBoxEditTMP_Currency.EditValue.ToString().Substring(0,3)));
+            return Messages;
+        }
+        private string CreatePVTelement(ref int count)
+        {
+            string Messages="";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditPrfTextList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    Messages = TrimEndMessage(String.Format("{0}+{1}'", "PVT", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateRED_SAMUelement(ref int count)
+        {
+            string Messages = "";
+            
+            foreach (CheckedListBoxItem item in checkedComboBoxEditSamuElementList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    SAMU =(SamuElement) item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "RED",SAMU.Rech_Nr ,"","","",SAMU.Rech_Art,"",SAMU.Aufn_Nr));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateTXTelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_TextANFMList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "TXT",item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateFABelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    FAB = (FabElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "FAB", FAB.fab_FAbt,FAB.fab_DGLok, FAB.fab_SekDLok));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateUWDelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "UWD","","","", textEditTmp_SammelbelegNr.EditValue));
+            return Messages;
+        }
+        private string CreateZPRelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZPR",textEditZPR_Betrag.EditValue, textEditZPR_PV.EditValue));
+            return Messages;
+        }
+        private string CreateDAUelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "DAU",  dateEditTmp_AufnTagDAU.DateTime.ToString("yyyyMMdd"),
+                dateEditTmp_EntlTag.DateTime.ToString("yyyyMMdd"), textEditTmp_NF_Diag_1.EditValue, textEditTmp_NF_Diag_2.EditValue, 
+                textEditTmp_NF_ab.EditValue, textEditTmp_BeatmStd.EditValue));
+            return Messages;
+        }
+        private string CreateKOSelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "KOS","", textEditKOS_KUEM.EditValue,"", textEditKOS_Bis.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region Create the whole Messages
         private string CreateInhaltMessage()
         {
 
             int i = 0;
+            int Count = 0;
             string Messages;
             Messages = CreateUNB_UNAelement();
+            #region AufN Nachricht
             if (checkButtonAUF.Checked)
             {
                 i = i + 1;
@@ -383,21 +522,59 @@ namespace Creator301Messages
                 //AUF
                 Messages += CreateAUFelement();
                 //EAD
-                Messages += CreateEADelement();
+                Messages += CreateEADelement(ref Count);
                 //UNT
-                Messages += CreateUNTelement(i, 8);
-                
+                Messages += CreateUNTelement(i, 8+ Count);
 
             }
+            #endregion
+    
             if (checkButtonENTL.Checked)
             {
-
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("ENTL", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //DPV
+                Messages += CreateDPVelement();
+                //DAU
+                Messages += CreateDAUelement();
+                //ETL
+                //EBG
+                //FAB
+                Messages += CreateFABelement(ref Count);
+                //UNT
+                Messages += CreateUNTelement(i, 7 + Count);
 
             }
             if (checkButtonRECH.Checked)
             {
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("ENTL", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //REC
+                //ZLG
+                //RECFAB
+                //ENT
+                //BNK
+                //UNT
+                Messages += CreateUNTelement(i, 7 + Count);
 
             }
+            #region MBEG Nachricht
             if (checkButtonMBEG.Checked)
             {
                 i = i + 1;
@@ -408,58 +585,224 @@ namespace Creator301Messages
                 Messages += CreateINVelement();
                 //NAD
                 Messages += CreateNADelement();
-                
-
+                //UNT
+                Messages += CreateUNTelement(i, 5);
             }
+            #endregion
+            #region INKA Nachricht
             if (checkButtonINKA.Checked)
             {
-
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("INKA", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //PVV
+                Messages += CreatePVVelement();
+                //PVT
+                Messages += CreatePVTelement(ref Count);
+                //UNT
+                Messages += CreateUNTelement(i, 6+Count);
             }
+            #endregion
+            #region VERL Nachricht
             if (checkButtonVERL.Checked)
             {
-
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("VERL", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //DPV
+                Messages += CreateDPVelement();
+                //DAU
+                Messages += CreateDAUelement();
+                //FAB
+                Messages += CreateFABelement(ref Count);
+                //UNT
+                Messages += CreateUNTelement(i, 7 + Count);
             }
+            #endregion
+            #region ANFM Nachricht
             if (checkButtonANFM.Checked)
             {
-
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("ANFM", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //TXT
+                Messages += CreateTXTelement(ref Count);
+                //UNT
+                Messages += CreateUNTelement(i, 5+Count);
             }
+            #endregion
             if (checkButtonAMBO.Checked)
             {
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("ENTL", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //DPV
+                Messages += CreateDPVelement();
+                //RECAO
+                //ZLGAO
+                //RZA
+                //BDG
+                //PRZ
+                //ENA
+                //EZV
+                //LEI
+                //UNT
+                Messages += CreateUNTelement(i, 7 + Count);
 
             }
+            #region ZGUT Nachricht
             if (checkButtonZGUT.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("ZGUT", i);
+                //FKT
+                Messages += CreateFKTelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //RED
+                Messages += CreateREDelement();
+                //UNT
+                Messages += CreateUNTelement(i, 7);
             }
+            #endregion
+            #region KOUB Nachricht
             if (checkButtonKOUB.Checked)
             {
-
+                i = i + 1;
+                Count = 0;
+                Messages += CreateUNHelement("KOUB", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //KOS
+                Messages += CreateKOSelement();
+                //TXT
+                Messages += CreateTXTelement(ref Count);
+                //UNT
+                Messages += CreateUNTelement(i, 6+Count);
             }
+            #endregion
+            #region KIAN Nachricht
             if (checkButtonKAIN.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("KAIN", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //UNT
+                Messages += CreateUNTelement(i, 5);
             }
+            #endregion
+            #region ZAOO Nachricht
             if (checkButtonZAOO.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("ZAOO", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //UNT
+                Messages += CreateUNTelement(i, 6);
             }
+            #endregion
+            #region ZAHL Nachricht
             if (checkButtonZAHL.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("ZAHL", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //INV
+                Messages += CreateINVelement();
+                //NAD
+                Messages += CreateNADelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //ZPR
+                Messages += CreateZPRelement();
+                //UNT
+                Messages += CreateUNTelement(i, 7);
             }
+            #endregion
+            #region SAMU Nachricht
             if (checkButtonSAMU.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("SAMU", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+                //CUX
+                Messages += CreateCUXelement();
+                //RED_SAMU
+                Count = 0;
+                Messages += CreateRED_SAMUelement(ref Count);
+                //UWD
+                Messages += CreateUWDelement();
+                //UNT
+                Messages += CreateUNTelement(i, 5+Count);
 
             }
+            #endregion
+            #region FEHL Nachricht
             if (checkButtonFEHL.Checked)
             {
-
+                i = i + 1;
+                Messages += CreateUNHelement("FEHL", i);
+                //FKT Way Back
+                Messages += CreateFKTWBelement();
+///muss ändern
+                //UNT
+                Messages += CreateUNTelement(i, 5);
             }
+            #endregion
             Messages += CreateUNZelement(i);
             return Messages;
 
         }
+        #endregion
+        #region Save Message in File
         private void simpleButtonCreateMessage_Click(object sender, EventArgs e)
         {
             CreateFileMessages(CreateInhaltMessage(), textEditFileName.Text + ".txt");
@@ -491,9 +834,52 @@ namespace Creator301Messages
             }
 
         }
-
-        private void dateEditErstelldatum_Popup(object sender, EventArgs e)
+        #endregion
+        #region List Function
+        private void simpleButtonADD_Click(object sender, EventArgs e)
         {
+            SAMU = new SamuElement();
+            SAMU.Aufn_Nr = textEditAufn_Nr.EditValue.ToString();
+            SAMU.Rech_Nr= textEditRech_Nr.EditValue.ToString();
+            SAMU.Rech_Art = textEditRech_Art.EditValue.ToString();
+            checkedComboBoxEditSamuElementList.Properties.Items.Add(SAMU);
+            SAMUList.Add(SAMU);
+            checkedComboBoxEditSamuElementList.Properties.Items[checkedComboBoxEditSamuElementList.Properties.Items.Count - 1].Description = "Rech_Nr : " + SAMU.Rech_Nr + " Aufn_Nr : " + SAMU.Aufn_Nr;
+            checkedComboBoxEditSamuElementList.Properties.Items[0].CheckState = CheckState.Checked;
         }
+
+        private void simpleButtonADDdiagnose_Click(object sender, EventArgs e)
+        {
+            CheckedCombiEditAufnahmediagnose.Properties.Items.Add(textEditlayoutControlItemAufnahmediagnose.EditValue);
+            CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].Description = ""+textEditlayoutControlItemAufnahmediagnose.EditValue;
+            CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+        }
+
+        private void simpleButtonADDTextANFM_Click(object sender, EventArgs e)
+        {
+            checkedComboBoxEditTmp_TextANFMList.Properties.Items.Add(memoEditTmp_TextANFM.EditValue);
+            checkedComboBoxEditTmp_TextANFMList.Properties.Items[checkedComboBoxEditTmp_TextANFMList.Properties.Items.Count - 1].Description =""+  memoEditTmp_TextANFM.EditValue;
+            checkedComboBoxEditTmp_TextANFMList.Properties.Items[checkedComboBoxEditTmp_TextANFMList.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+        }
+
+        private void simpleButtonADDPrfText_Click(object sender, EventArgs e)
+        {
+            checkedComboBoxEditPrfTextList.Properties.Items.Add(memoEditPrfText.EditValue);
+            checkedComboBoxEditPrfTextList.Properties.Items[checkedComboBoxEditPrfTextList.Properties.Items.Count - 1].Description = "" + memoEditPrfText.EditValue;
+            checkedComboBoxEditPrfTextList.Properties.Items[checkedComboBoxEditPrfTextList.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+        }
+
+        private void simpleButtonADDFAB_Click(object sender, EventArgs e)
+        {
+            FAB = new FabElement();
+            FAB.fab_FAbt = textEditfab_FAbt.EditValue.ToString();
+            FAB.fab_DGLok = textEditfab_DG.EditValue.ToString();
+            FAB.fab_SekDLok = textEditfab_SekD.EditValue.ToString();
+            checkedComboBoxEditFABList.Properties.Items.Add(FAB);
+            FABList.Add(FAB);
+            checkedComboBoxEditFABList.Properties.Items[checkedComboBoxEditFABList.Properties.Items.Count - 1].Description = "Abteilung : " + FAB.fab_FAbt ;
+            checkedComboBoxEditFABList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
+        #endregion
     }
 }
