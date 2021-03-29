@@ -45,6 +45,10 @@ namespace Creator301Messages
         private List<SamuElement> SAMUList;
         private FabElement FAB;
         private List<FabElement> FABList;
+        private NdgElement NDG;
+        private List<NdgElement> NDGList;
+        private EntElement ENT;
+        private List<EntElement> ENTList;
         #region Preapre Tabs
         private void InitualizeTab()
         {
@@ -79,6 +83,9 @@ namespace Creator301Messages
             layoutPVV.Visibility = LayoutVisibility.Never;
             layoutPVT.Visibility = LayoutVisibility.Never;
             layoutZPR.Visibility = LayoutVisibility.Never;
+            layoutSTA.Visibility = LayoutVisibility.Never;
+            layoutKOS.Visibility = LayoutVisibility.Never;
+            layoutTXT.Visibility = LayoutVisibility.Never;
             checkButtonAUF.Appearance.ForeColor = Color.Black;
             checkButtonENTL.Appearance.ForeColor = Color.Black;
             checkButtonRECH.Appearance.ForeColor = Color.Black;
@@ -116,6 +123,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
+               // layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutAUF.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonENTL.Checked)
@@ -126,6 +134,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutDAU.Visibility = LayoutVisibility.Always;
                 layoutETL_NDG.Visibility = LayoutVisibility.Always;
                 layoutEBG.Visibility = LayoutVisibility.Always;
@@ -171,6 +180,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutDAU.Visibility = LayoutVisibility.Always;
                 layoutFAB.Visibility = LayoutVisibility.Always;
             }
@@ -192,6 +202,7 @@ namespace Creator301Messages
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutRECAO.Visibility = LayoutVisibility.Always;
                 layoutZLGAO.Visibility = LayoutVisibility.Always;
                 layoutRZA.Visibility = LayoutVisibility.Always;
@@ -209,6 +220,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutRED.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonKOUB.Checked)
@@ -236,6 +248,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonZAHL.Checked)
             {
@@ -245,6 +258,7 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutZPR.Visibility = LayoutVisibility.Always;
             }
             if (checkButtonSAMU.Checked)
@@ -253,6 +267,7 @@ namespace Creator301Messages
                 Ifchecked = true;
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutRED_SAMU.Visibility = LayoutVisibility.Always;
                 layoutUWD.Visibility = LayoutVisibility.Always;
 
@@ -291,6 +306,8 @@ namespace Creator301Messages
             textEditFileName.Text = "Nachricht" + DateTime.Now.ToString("yyyy-MM-dd");
             SAMUList = new List<SamuElement>();
             FABList = new List<FabElement>();
+            NDGList = new List<NdgElement>();
+            ENTList = new List<EntElement>();
             ChangeCheckOutTab();
         }
         private void CheckOutTab(object sender, EventArgs e)
@@ -360,7 +377,7 @@ namespace Creator301Messages
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}+{12}'", "NAD", textEditTmp_Nachname.EditValue, textEditTmp_Vorname.EditValue,
                     ComboEditAkt_G.EditValue, dateEditTmp_GDat.DateTime.ToString("yyyyMMdd"), textEditTmpStrasse.EditValue,
                     textEditTmpPLZ.EditValue, textEditTmpOrt.EditValue, textEditTmp_VSt.EditValue,
-                    "", textEditAkt_Namenszusatz.EditValue, textEditAkt_Vorsatzwort.EditValue, textEditAkt_Anschriftenzusatz.EditValue));
+                    textEditInterLand.EditValue, textEditAkt_Namenszusatz.EditValue, textEditAkt_Vorsatzwort.EditValue, textEditAkt_Anschriftenzusatz.EditValue));
             return Messages;
         }
         private string CreateDPVelement()
@@ -381,19 +398,6 @@ namespace Creator301Messages
                 textEditTmp_EinwZArzt.EditValue, textEditTmp_AufnGewicht.EditValue));
             return Messages;
         }
-        private string CreateEADelement(ref int count)
-        {
-            string Messages="";
-            foreach (CheckedListBoxItem item in CheckedCombiEditAufnahmediagnose.Properties.Items)
-            {
-                if(item.CheckState == CheckState.Checked)
-                {
-                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EAD", item));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
         private string CreatePVVelement()
         {
             string Messages;
@@ -403,8 +407,10 @@ namespace Creator301Messages
         private string CreateREDelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "RED", textEditTmp_RgNr.EditValue, dateEditTmp_RgDatum.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetrag.EditValue,"",
-                textEditTmp_RgArt.EditValue,"","", textEditTmp_IKZahlweg.EditValue));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "RED", textEditTmp_RgNr.EditValue, dateEditTmp_RgDatum.DateTime.ToString("yyyyMMdd"),
+                textEditTmp_RgBetrag.EditValue, textEditTmp_IKRefNr.EditValue,
+                textEditTmp_RgArt.EditValue, textEditTmp_RgBetragZA.EditValue,
+                textEditTmp_KHKV.EditValue, textEditTmp_IKZahlweg.EditValue));
             return Messages;
         }
         private string CreateCUXelement()
@@ -413,68 +419,11 @@ namespace Creator301Messages
             Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX", comboBoxEditTMP_Currency.EditValue.ToString().Substring(0,3)));
             return Messages;
         }
-        private string CreatePVTelement(ref int count)
-        {
-            string Messages="";
-            foreach (CheckedListBoxItem item in checkedComboBoxEditPrfTextList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    Messages = TrimEndMessage(String.Format("{0}+{1}'", "PVT", item));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreateRED_SAMUelement(ref int count)
-        {
-            string Messages = "";
-            
-            foreach (CheckedListBoxItem item in checkedComboBoxEditSamuElementList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    SAMU =(SamuElement) item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "RED",SAMU.Rech_Nr ,"","","",SAMU.Rech_Art,"",SAMU.Aufn_Nr));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreateTXTelement(ref int count)
-        {
-            string Messages = "";
-
-            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_TextANFMList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    
-                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "TXT",item));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreateFABelement(ref int count)
-        {
-            string Messages = "";
-
-            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    FAB = (FabElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "FAB", FAB.fab_FAbt,FAB.fab_DGLok, FAB.fab_SekDLok));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
         private string CreateUWDelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "UWD","","","", textEditTmp_SammelbelegNr.EditValue));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "UWD", textEditTmp_SammelbelegBeitrag.EditValue,
+                textEditTmp_SammelRgBeitrag.EditValue, textEditTmp_IKBeitrag.EditValue, textEditTmp_SammelbelegNr.EditValue));
             return Messages;
         }
         private string CreateZPRelement()
@@ -491,10 +440,182 @@ namespace Creator301Messages
                 textEditTmp_NF_ab.EditValue, textEditTmp_BeatmStd.EditValue));
             return Messages;
         }
+        private string CreateRECelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "REC", textEditTmp_RgNrREC.EditValue, dateEditTmp_RgDatumREC.DateTime.ToString("yyyyMMdd"),
+                textEditTmp_RgArtREC.EditValue, dateEditTmp_AufnTagREC.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetragREC.EditValue,
+                textEditTmp_DebNrREC.EditValue, textEditTmp_RefNrREC.EditValue, textEditTmp_IKZahlwegREC.EditValue, textEditHonorSu.EditValue, textEditPau.EditValue));
+            return Messages;
+        }
         private string CreateKOSelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "KOS","", textEditKOS_KUEM.EditValue,"", textEditKOS_Bis.EditValue));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}'", "KOS", dateEditKOSDatum.DateTime.ToString("yyyyMMdd"), textEditKOS_KUEM.EditValue, dateEditKOS_AB.DateTime.ToString("yyyyMMdd"), dateEditKOS_Bis.DateTime.ToString("yyyyMMdd"), textEditKOSZTag.EditValue));
+            return Messages;
+        }
+        private string CreateZLGelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZLG", textEditTmp_Zuzahlbetrag.EditValue, textEditTmp_Zuzahlkennzeichen.EditValue));
+            return Messages;
+        }
+        private string CreateBNKelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "BNK",  textEditAkt_IBAN.EditValue, textEdit2.EditValue));
+            return Messages;
+        }
+        private string CreateEADelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in CheckedCombiEditAufnahmediagnose.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EAD", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreatePVTelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditPrfTextList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    Messages = TrimEndMessage(String.Format("{0}+{1}'", "PVT", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateRED_SAMUelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditSamuElementList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    SAMU = (SamuElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "RED", SAMU.Rech_Nr, "", "", "", SAMU.Rech_Art, "", SAMU.Aufn_Nr));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateENTelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_ENTList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    ENT = (EntElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ENT", ENT.Ent_Art, ENT.Ent_Betrag, ENT.Ent_von, ENT.Ent_bis,
+                        ENT.Ent_Anz, ENT.Ent_TgOhne ,ENT.Ent_TagWundh));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateTXTelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_TextANFMList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "TXT", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateEBGelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_EBGList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EBG", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateRECFABelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditREFABList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "FAB", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateFABelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    FAB = (FabElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB", FAB.fab_FAbt, FAB.fab_DGLok, FAB.fab_SekDLok,FAB.fab_ZDG,
+                        FAB.fab_ZSekD,FAB.fab_OPT,FAB.fab_OP));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateETLNDGelement(ref int count)
+        {
+            string Messages = "";
+            Messages=  TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ETL", dateEditetl_Datum.DateTime.ToString("yyyyMMdd"),
+                dateEditetl_Datum.DateTime.ToString("HHmm"), textEditetl_Grund.EditValue, textEditetl_FAbt.EditValue, 
+                textEditetl_HDlok, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
+            count = count + 1;
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    NDG = (NdgElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        //dorost shavad
+        private string CreateSTAelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    NDG = (NdgElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
+                    count = count + 1;
+                }
+            }
             return Messages;
         }
         #endregion
@@ -528,7 +649,7 @@ namespace Creator301Messages
 
             }
             #endregion
-    
+            #region ENTL Nachricht
             if (checkButtonENTL.Checked)
             {
                 i = i + 1;
@@ -545,13 +666,17 @@ namespace Creator301Messages
                 //DAU
                 Messages += CreateDAUelement();
                 //ETL
+                Messages += CreateETLNDGelement(ref Count);
                 //EBG
+                Messages += CreateEBGelement(ref Count);
                 //FAB
                 Messages += CreateFABelement(ref Count);
                 //UNT
                 Messages += CreateUNTelement(i, 7 + Count);
 
             }
+            #endregion
+            #region RECH Nachricht
             if (checkButtonRECH.Checked)
             {
                 i = i + 1;
@@ -566,14 +691,20 @@ namespace Creator301Messages
                 //CUX
                 Messages += CreateCUXelement();
                 //REC
+                Messages += CreateRECelement();
                 //ZLG
+                Messages += CreateZLGelement();
                 //RECFAB
+                Messages += CreateRECFABelement(ref Count);
                 //ENT
+                Messages += CreateENTelement(ref Count);
                 //BNK
+                Messages += CreateBNKelement();
                 //UNT
-                Messages += CreateUNTelement(i, 7 + Count);
+                Messages += CreateUNTelement(i, 9 + Count);
 
             }
+            #endregion
             #region MBEG Nachricht
             if (checkButtonMBEG.Checked)
             {
@@ -875,11 +1006,55 @@ namespace Creator301Messages
             FAB.fab_FAbt = textEditfab_FAbt.EditValue.ToString();
             FAB.fab_DGLok = textEditfab_DG.EditValue.ToString();
             FAB.fab_SekDLok = textEditfab_SekD.EditValue.ToString();
+            FAB.fab_ZDG = textEditfab_ZDG.EditValue.ToString();
+            FAB.fab_ZSekD = textEditfab_ZSekD.EditValue.ToString();
+            FAB.fab_OPT = dateEditfab_OPT.DateTime.ToString("yyyyMMdd");
+            FAB.fab_OP = textEditfab_OP.EditValue.ToString();
             checkedComboBoxEditFABList.Properties.Items.Add(FAB);
             FABList.Add(FAB);
             checkedComboBoxEditFABList.Properties.Items[checkedComboBoxEditFABList.Properties.Items.Count - 1].Description = "Abteilung : " + FAB.fab_FAbt ;
             checkedComboBoxEditFABList.Properties.Items[0].CheckState = CheckState.Checked;
         }
+        private void simpleButtonADDNDG_Click(object sender, EventArgs e)
+        {
+            NDG = new NdgElement();
+            NDG.ndg_NDLok = textEditndg_NDLok.EditValue.ToString();
+            NDG.ndg_SekDLok = textEditdg_SekDLok.EditValue.ToString();
+            checkedComboBoxEditNDGList.Properties.Items.Add(NDG);
+            NDGList.Add(NDG);
+            checkedComboBoxEditNDGList.Properties.Items[checkedComboBoxEditNDGList.Properties.Items.Count - 1].Description = "NDG ND LOK  : " + NDG.ndg_NDLok;
+            checkedComboBoxEditNDGList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
+
+        private void simpleButtonTmp_ENTList_Click(object sender, EventArgs e)
+        {
+            ENT = new EntElement();
+            ENT.Ent_Art = textEditEnt_Art.EditValue.ToString();
+            ENT.Ent_Betrag = textEditEnt_Betrag.EditValue.ToString();
+            ENT.Ent_von = dateEditEnt_von.DateTime.ToString("yyyyMMdd");
+            ENT.Ent_bis = dateEditEnt_bis.DateTime.ToString("yyyyMMdd");
+            ENT.Ent_Anz = textEditEnt_Anz.EditValue.ToString();
+            ENT.Ent_TgOhne = textEditEnt_TgOhne.EditValue.ToString();
+            ENT.Ent_TagWundh = textEditEnt_TagWundh.EditValue.ToString();
+            checkedComboBoxEditTmp_ENTList.Properties.Items.Add(ENT);
+            ENTList.Add(ENT);
+            checkedComboBoxEditTmp_ENTList.Properties.Items[checkedComboBoxEditTmp_ENTList.Properties.Items.Count - 1].Description = "ENT Art  : " + ENT.Ent_Art;
+            checkedComboBoxEditTmp_ENTList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
+        private void simpleButtonADDTmp_EBGList_Click(object sender, EventArgs e)
+        {
+            checkedComboBoxEditTmp_EBGList.Properties.Items.Add(dateEditTmp_EBG.DateTime.ToString("yyyyMMdd"));
+            checkedComboBoxEditTmp_EBGList.Properties.Items[checkedComboBoxEditTmp_EBGList.Properties.Items.Count - 1].Description = "" + dateEditTmp_EBG.DateTime.ToString("yyyyMMdd");
+            checkedComboBoxEditTmp_EBGList.Properties.Items[checkedComboBoxEditTmp_EBGList.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+        }
+
+        private void simpleButtonADDREFABList_Click(object sender, EventArgs e)
+        {
+            checkedComboBoxEditREFABList.Properties.Items.Add(textEditREFAB.EditValue);
+            checkedComboBoxEditREFABList.Properties.Items[checkedComboBoxEditREFABList.Properties.Items.Count - 1].Description = "" + textEditREFAB.EditValue;
+            checkedComboBoxEditREFABList.Properties.Items[checkedComboBoxEditREFABList.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+        }
         #endregion
+
     }
 }
