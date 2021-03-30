@@ -49,6 +49,15 @@ namespace Creator301Messages
         private List<NdgElement> NDGList;
         private EntElement ENT;
         private List<EntElement> ENTList;
+        private EadElement EAD;
+        private List<EadElement> EADList;
+        private PrzElement PRZ;
+        private List<PrzElement> PRZList;
+        private EzvElement EZV;
+        private List<EzvElement> EZVList;
+        private LeiElement LEI;
+        private List<LeiElement> LEIList;
+
         #region Preapre Tabs
         private void InitualizeTab()
         {
@@ -69,8 +78,6 @@ namespace Creator301Messages
             layoutENT.Visibility = LayoutVisibility.Never;
             layoutBNK.Visibility = LayoutVisibility.Never;
             layoutFHL.Visibility = LayoutVisibility.Never;
-            layoutRECAO.Visibility = LayoutVisibility.Never;
-            layoutZLGAO.Visibility = LayoutVisibility.Never;
             layoutRZA.Visibility = LayoutVisibility.Never;
             layoutBDG.Visibility = LayoutVisibility.Never;
             layoutPRZ.Visibility = LayoutVisibility.Never;
@@ -203,8 +210,8 @@ namespace Creator301Messages
                 layoutCUX.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
                 layoutSTA.Visibility = LayoutVisibility.Always;
-                layoutRECAO.Visibility = LayoutVisibility.Always;
-                layoutZLGAO.Visibility = LayoutVisibility.Always;
+                layoutREC.Visibility = LayoutVisibility.Always;
+                layoutZLG.Visibility = LayoutVisibility.Always;
                 layoutRZA.Visibility = LayoutVisibility.Always;
                 layoutBDG.Visibility = LayoutVisibility.Always;
                 layoutPRZ.Visibility = LayoutVisibility.Always;
@@ -308,6 +315,10 @@ namespace Creator301Messages
             FABList = new List<FabElement>();
             NDGList = new List<NdgElement>();
             ENTList = new List<EntElement>();
+            EADList = new List<EadElement>();
+            PRZList = new List<PrzElement>();
+            EZVList = new List<EzvElement>();
+            LEIList = new List<LeiElement>();
             ChangeCheckOutTab();
         }
         private void CheckOutTab(object sender, EventArgs e)
@@ -349,12 +360,14 @@ namespace Creator301Messages
             Messages = String.Format("{0}+{1}+{2}'", "UNZ", string.Format("{0:00000}", CountMessage), textEditReferenz_Nr.EditValue);
             return Messages;
         }
+        #region FKT Segment
         private string CreateFKTelement()
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditZiel_IKFKT.EditValue, textEditTmp_IK.EditValue));
             return Messages;
         }
+        #endregion
         private string CreateFKTWBelement()
         {
             string Messages;
@@ -454,6 +467,15 @@ namespace Creator301Messages
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}'", "KOS", dateEditKOSDatum.DateTime.ToString("yyyyMMdd"), textEditKOS_KUEM.EditValue, dateEditKOS_AB.DateTime.ToString("yyyyMMdd"), dateEditKOS_Bis.DateTime.ToString("yyyyMMdd"), textEditKOSZTag.EditValue));
             return Messages;
         }
+        private string CreateRZAelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}+{12}'", "RZA", textEditFAB_für_Diag.EditValue, 
+                textEditTmp_Arztnr.EditValue,textEditTmp_EinwArztBSNrA.EditValue, textEditTmp_Zahnarztnr.EditValue, textEditTmp_EinwDiag1.EditValue,
+                textEditTmp_EinwDiag2.EditValue, textEditTmp_NrBelegarzt.EditValue, textEditTmp_NrKooparzt.EditValue, textEditTmp_BSNr.EditValue,
+                dateEditAkt_ASV_Ueberweisungsdatum.DateTime.ToString("yyyyMMdd"), textEditAkt_KV_Bezirk.EditValue, dateEditAkt_EBM_Verion.DateTime.ToString("yyyyMMdd")));
+            return Messages;
+        }
         private string CreateZLGelement()
         {
             string Messages;
@@ -473,7 +495,9 @@ namespace Creator301Messages
             {
                 if (item.CheckState == CheckState.Checked)
                 {
-                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EAD", item));
+                    EAD = (EadElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "EAD", EAD.Aufnahmediagnose, EAD.SEAufnahmediagnose,
+                        EAD.EinDiagnose, EAD.SEEinDiagnose));
                     count = count + 1;
                 }
             }
@@ -518,6 +542,22 @@ namespace Creator301Messages
                     ENT = (EntElement)item.Value;
                     Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ENT", ENT.Ent_Art, ENT.Ent_Betrag, ENT.Ent_von, ENT.Ent_bis,
                         ENT.Ent_Anz, ENT.Ent_TgOhne ,ENT.Ent_TagWundh));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateEZVelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_EZV.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    EZV = (EzvElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "EZV", EZV.ent_Betrag, EZV.ent_Erläuterung, EZV.ent_Text, EZV.ent_Anzahl,
+                        EZV.ent_Tag, EZV.ent_Anteil));
                     count = count + 1;
                 }
             }
@@ -598,6 +638,36 @@ namespace Creator301Messages
                 {
                     NDG = (NdgElement)item.Value;
                     Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreatePRZelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditPRZList.Properties.Items)
+            {
+                
+                if (item.CheckState == CheckState.Checked)
+                {
+                    PRZ = (PrzElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PRZ", PRZ.prz_Kode, PRZ.prz_Tag,PRZ.prz_LSpende));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        private string CreateLEIelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_LEIList.Properties.Items)
+            {
+
+                if (item.CheckState == CheckState.Checked)
+                {
+                    LEI = (LeiElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "LEI", LEI.lei_Art, LEI.lei_Schluessel, LEI.lei_Tag));
                     count = count + 1;
                 }
             }
@@ -784,7 +854,7 @@ namespace Creator301Messages
             {
                 i = i + 1;
                 Count = 0;
-                Messages += CreateUNHelement("ENTL", i);
+                Messages += CreateUNHelement("AMBO", i);
                 //FKT
                 Messages += CreateFKTelement();
                 //INV
@@ -796,13 +866,21 @@ namespace Creator301Messages
                 //DPV
                 Messages += CreateDPVelement();
                 //RECAO
+                Messages += CreateRECelement();
                 //ZLGAO
+                Messages += CreateZLGelement();
                 //RZA
+                Messages += CreateRZAelement();
                 //BDG
+
                 //PRZ
+                Messages += CreatePRZelement(ref Count);
                 //ENA
+
                 //EZV
+                Messages += CreateEZVelement(ref Count);
                 //LEI
+                Messages += CreateLEIelement(ref Count);
                 //UNT
                 Messages += CreateUNTelement(i, 7 + Count);
 
@@ -978,12 +1056,32 @@ namespace Creator301Messages
             checkedComboBoxEditSamuElementList.Properties.Items[checkedComboBoxEditSamuElementList.Properties.Items.Count - 1].Description = "Rech_Nr : " + SAMU.Rech_Nr + " Aufn_Nr : " + SAMU.Aufn_Nr;
             checkedComboBoxEditSamuElementList.Properties.Items[0].CheckState = CheckState.Checked;
         }
+        private void simpleButtonADDTmp_EZV_Click(object sender, EventArgs e)
+        {
+            EZV = new EzvElement();
+            EZV.ent_Betrag = textEditENZent_Betrag.EditValue.ToString();
+            EZV.ent_Erläuterung = textEditENZent_Erläuterung.EditValue.ToString();
+            EZV.ent_Text = textEditENZent_Text.EditValue.ToString();
+            EZV.ent_Anzahl = textEditENZent_Anzahl.EditValue.ToString();
+            EZV.ent_Tag = dateEditENZent_Tag.DateTime.ToString("yyyyMMdd");
+            EZV.ent_Anteil = textEditENZent_Anteil.EditValue.ToString();
 
+            checkedComboBoxEditTmp_EZV.Properties.Items.Add(EZV);
+            EZVList.Add(EZV);
+            checkedComboBoxEditTmp_EZV.Properties.Items[checkedComboBoxEditTmp_EZV.Properties.Items.Count - 1].Description = "Erläuterung : " + EZV.ent_Erläuterung;
+            checkedComboBoxEditTmp_EZV.Properties.Items[0].CheckState = CheckState.Checked;
+        }
         private void simpleButtonADDdiagnose_Click(object sender, EventArgs e)
         {
-            CheckedCombiEditAufnahmediagnose.Properties.Items.Add(textEditlayoutControlItemAufnahmediagnose.EditValue);
-            CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].Description = ""+textEditlayoutControlItemAufnahmediagnose.EditValue;
-            CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].CheckState = CheckState.Checked;
+            EAD = new EadElement();
+            EAD.Aufnahmediagnose = textEditAufnahmediagnose.EditValue.ToString();
+            EAD.SEAufnahmediagnose = textEditSEAufnahmediagnose.EditValue.ToString();
+            EAD.EinDiagnose = textEditEinDiagnose.EditValue.ToString();
+            EAD.SEEinDiagnose = textEditSEEinDiagnose.EditValue.ToString();
+            CheckedCombiEditAufnahmediagnose.Properties.Items.Add(EAD);
+            EADList.Add(EAD);
+            CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].Description = "Aufnahmediagnose : " + EAD.Aufnahmediagnose;
+            CheckedCombiEditAufnahmediagnose.Properties.Items[0].CheckState = CheckState.Checked;
         }
 
         private void simpleButtonADDTextANFM_Click(object sender, EventArgs e)
@@ -1015,15 +1113,20 @@ namespace Creator301Messages
             checkedComboBoxEditFABList.Properties.Items[checkedComboBoxEditFABList.Properties.Items.Count - 1].Description = "Abteilung : " + FAB.fab_FAbt ;
             checkedComboBoxEditFABList.Properties.Items[0].CheckState = CheckState.Checked;
         }
+        private void simpleButtonADDTmp_LEIList_Click(object sender, EventArgs e)
+        {
+
+        }
         private void simpleButtonADDNDG_Click(object sender, EventArgs e)
         {
-            NDG = new NdgElement();
-            NDG.ndg_NDLok = textEditndg_NDLok.EditValue.ToString();
-            NDG.ndg_SekDLok = textEditdg_SekDLok.EditValue.ToString();
-            checkedComboBoxEditNDGList.Properties.Items.Add(NDG);
-            NDGList.Add(NDG);
-            checkedComboBoxEditNDGList.Properties.Items[checkedComboBoxEditNDGList.Properties.Items.Count - 1].Description = "NDG ND LOK  : " + NDG.ndg_NDLok;
-            checkedComboBoxEditNDGList.Properties.Items[0].CheckState = CheckState.Checked;
+            LEI = new LeiElement();
+            LEI.lei_Art = textEditlei_Art.EditValue.ToString();
+            LEI.lei_Schluessel = textEditlei_Schluessel.EditValue.ToString();
+            LEI.lei_Tag = dateEditlei_Tag.DateTime.ToString("yyyyMMdd");
+            checkedComboBoxEditTmp_LEIList.Properties.Items.Add(LEI);
+            LEIList.Add(LEI);
+            checkedComboBoxEditTmp_LEIList.Properties.Items[checkedComboBoxEditTmp_LEIList.Properties.Items.Count - 1].Description = "Leistungsart  : " + LEI.lei_Art;
+            checkedComboBoxEditTmp_LEIList.Properties.Items[0].CheckState = CheckState.Checked;
         }
 
         private void simpleButtonTmp_ENTList_Click(object sender, EventArgs e)
@@ -1041,6 +1144,17 @@ namespace Creator301Messages
             checkedComboBoxEditTmp_ENTList.Properties.Items[checkedComboBoxEditTmp_ENTList.Properties.Items.Count - 1].Description = "ENT Art  : " + ENT.Ent_Art;
             checkedComboBoxEditTmp_ENTList.Properties.Items[0].CheckState = CheckState.Checked;
         }
+        private void simpleButtonPRZList_Click(object sender, EventArgs e)
+        {
+            PRZ = new PrzElement();
+            PRZ.prz_Kode = textEditTMPprz_Kode.EditValue.ToString();
+            PRZ.prz_Tag = dateEditTMPprz_Tag.DateTime.ToString("yyyyMMdd");
+            PRZ.prz_LSpende = textEditTMPprz_LSpende.EditValue.ToString();
+            checkedComboBoxEditPRZList.Properties.Items.Add(PRZ);
+            PRZList.Add(PRZ);
+            checkedComboBoxEditPRZList.Properties.Items[checkedComboBoxEditPRZList.Properties.Items.Count - 1].Description = "Prozedurenschlüssel und Lokalisation  : " + PRZ.prz_Kode;
+            checkedComboBoxEditPRZList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
         private void simpleButtonADDTmp_EBGList_Click(object sender, EventArgs e)
         {
             checkedComboBoxEditTmp_EBGList.Properties.Items.Add(dateEditTmp_EBG.DateTime.ToString("yyyyMMdd"));
@@ -1054,7 +1168,11 @@ namespace Creator301Messages
             checkedComboBoxEditREFABList.Properties.Items[checkedComboBoxEditREFABList.Properties.Items.Count - 1].Description = "" + textEditREFAB.EditValue;
             checkedComboBoxEditREFABList.Properties.Items[checkedComboBoxEditREFABList.Properties.Items.Count - 1].CheckState = CheckState.Checked;
         }
+
+
+
         #endregion
+
 
     }
 }
