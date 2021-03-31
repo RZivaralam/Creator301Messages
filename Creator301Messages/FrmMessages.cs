@@ -310,6 +310,7 @@ namespace Creator301Messages
             checkButtonAUF.Checked = true;
             comboBoxEditBegint.SelectedIndex = 0;
             comboBoxEditTMP_Currency.SelectedIndex = 0;
+            comboBoxEditSpecialPerson.SelectedIndex = 0;
             textEditFileName.Text = "Nachricht" + DateTime.Now.ToString("yyyy-MM-dd");
             SAMUList = new List<SamuElement>();
             FABList = new List<FabElement>();
@@ -368,22 +369,27 @@ namespace Creator301Messages
             return Messages;
         }
         #endregion
+        #region FKT backway Segment
         private string CreateFKTWBelement()
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditTmp_IK.EditValue, textEditZiel_IKFKT.EditValue));
             return Messages;
         }
+        #endregion
+        #region INV Segment
         private string CreateINVelement()
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "INV",
-                    textEditTmp_KvNr.EditValue, textEditTmp_V_Status.EditValue, "", "", "", textEditTmp_AufnNr.EditValue, textEditTmp_KKNr.EditValue,
-                    textEditTmp_Zuzahltage.EditValue, "", textEditTmp_VertragsKnz.EditValue));
+                    textEditTmp_KvNr.EditValue, textEditTmp_V_Status.EditValue, comboBoxEditSpecialPerson.EditValue.ToString().Substring(0,2), textEditDMP.EditValue, textEditTmp_AufnNr.EditValue, textEditTmp_KKNr.EditValue,
+                    textEditFallnr.EditValue, textEditAktSignKK.EditValue, dateEditTmp_Zuzahltage.EditValue, textEditAktSignKK.EditValue));
             
 
             return Messages;
         }
+        #endregion
+        #region NAD Segment
         private string CreateNADelement()
         {
             string Messages;
@@ -393,15 +399,16 @@ namespace Creator301Messages
                     textEditInterLand.EditValue, textEditAkt_Namenszusatz.EditValue, textEditAkt_Vorsatzwort.EditValue, textEditAkt_Anschriftenzusatz.EditValue));
             return Messages;
         }
+        #endregion
+        #region DPV Segment
         private string CreateDPVelement()
         {
             string Messages;
-            string birthdayWithFormat = dateEditTmp_GDat.EditValue.ToString();
-            birthdayWithFormat = dateEditTmp_GDat.EditValue.ToString().Substring(6, 4) + dateEditTmp_GDat.EditValue.ToString().Substring(3, 2) +
-            dateEditTmp_GDat.EditValue.ToString().Substring(0, 2);
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "DPV", ComboEditICD_Prefix.EditValue, ComboEditOPS_Prefix.EditValue));
             return Messages;
         }
+        #endregion
+        #region AUF Segment
         private string CreateAUFelement()
         {
             string Messages;
@@ -411,83 +418,8 @@ namespace Creator301Messages
                 textEditTmp_EinwZArzt.EditValue, textEditTmp_AufnGewicht.EditValue));
             return Messages;
         }
-        private string CreatePVVelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PVT",textEditInfo.EditValue , textEditRechnungsNR.EditValue, dateEditRechnungDatum.DateTime.ToString("yyyyMMdd")));
-            return Messages;
-        }
-        private string CreateREDelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "RED", textEditTmp_RgNr.EditValue, dateEditTmp_RgDatum.DateTime.ToString("yyyyMMdd"),
-                textEditTmp_RgBetrag.EditValue, textEditTmp_IKRefNr.EditValue,
-                textEditTmp_RgArt.EditValue, textEditTmp_RgBetragZA.EditValue,
-                textEditTmp_KHKV.EditValue, textEditTmp_IKZahlweg.EditValue));
-            return Messages;
-        }
-        private string CreateCUXelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX", comboBoxEditTMP_Currency.EditValue.ToString().Substring(0,3)));
-            return Messages;
-        }
-        private string CreateUWDelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "UWD", textEditTmp_SammelbelegBeitrag.EditValue,
-                textEditTmp_SammelRgBeitrag.EditValue, textEditTmp_IKBeitrag.EditValue, textEditTmp_SammelbelegNr.EditValue));
-            return Messages;
-        }
-        private string CreateZPRelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZPR",textEditZPR_Betrag.EditValue, textEditZPR_PV.EditValue));
-            return Messages;
-        }
-        private string CreateDAUelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "DAU",  dateEditTmp_AufnTagDAU.DateTime.ToString("yyyyMMdd"),
-                dateEditTmp_EntlTag.DateTime.ToString("yyyyMMdd"), textEditTmp_NF_Diag_1.EditValue, textEditTmp_NF_Diag_2.EditValue, 
-                textEditTmp_NF_ab.EditValue, textEditTmp_BeatmStd.EditValue));
-            return Messages;
-        }
-        private string CreateRECelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "REC", textEditTmp_RgNrREC.EditValue, dateEditTmp_RgDatumREC.DateTime.ToString("yyyyMMdd"),
-                textEditTmp_RgArtREC.EditValue, dateEditTmp_AufnTagREC.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetragREC.EditValue,
-                textEditTmp_DebNrREC.EditValue, textEditTmp_RefNrREC.EditValue, textEditTmp_IKZahlwegREC.EditValue, textEditHonorSu.EditValue, textEditPau.EditValue));
-            return Messages;
-        }
-        private string CreateKOSelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}'", "KOS", dateEditKOSDatum.DateTime.ToString("yyyyMMdd"), textEditKOS_KUEM.EditValue, dateEditKOS_AB.DateTime.ToString("yyyyMMdd"), dateEditKOS_Bis.DateTime.ToString("yyyyMMdd"), textEditKOSZTag.EditValue));
-            return Messages;
-        }
-        private string CreateRZAelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}+{12}'", "RZA", textEditFAB_für_Diag.EditValue, 
-                textEditTmp_Arztnr.EditValue,textEditTmp_EinwArztBSNrA.EditValue, textEditTmp_Zahnarztnr.EditValue, textEditTmp_EinwDiag1.EditValue,
-                textEditTmp_EinwDiag2.EditValue, textEditTmp_NrBelegarzt.EditValue, textEditTmp_NrKooparzt.EditValue, textEditTmp_BSNr.EditValue,
-                dateEditAkt_ASV_Ueberweisungsdatum.DateTime.ToString("yyyyMMdd"), textEditAkt_KV_Bezirk.EditValue, dateEditAkt_EBM_Verion.DateTime.ToString("yyyyMMdd")));
-            return Messages;
-        }
-        private string CreateZLGelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZLG", textEditTmp_Zuzahlbetrag.EditValue, textEditTmp_Zuzahlkennzeichen.EditValue));
-            return Messages;
-        }
-        private string CreateBNKelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "BNK",  textEditAkt_IBAN.EditValue, textEdit2.EditValue));
-            return Messages;
-        }
+        #endregion
+        #region EAD Segment
         private string CreateEADelement(ref int count)
         {
             string Messages = "";
@@ -503,6 +435,16 @@ namespace Creator301Messages
             }
             return Messages;
         }
+        #endregion
+        #region PVV Segment
+        private string CreatePVVelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PVV",textEditInfo.EditValue , textEditRechnungsNR.EditValue, dateEditRechnungDatum.DateTime.ToString("yyyyMMdd")));
+            return Messages;
+        }
+        #endregion
+        #region PVT Segment dorost shavad
         private string CreatePVTelement(ref int count)
         {
             string Messages = "";
@@ -516,21 +458,100 @@ namespace Creator301Messages
             }
             return Messages;
         }
-        private string CreateRED_SAMUelement(ref int count)
+        #endregion
+        #region CUX Segment
+        private string CreateCUXelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX", comboBoxEditTMP_Currency.EditValue.ToString().Substring(0, 3)));
+            return Messages;
+        }
+        #endregion
+        #region DAU Segment
+        private string CreateDAUelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "DAU", dateEditTmp_AufnTagDAU.DateTime.ToString("yyyyMMdd"),
+                dateEditTmp_EntlTag.DateTime.ToString("yyyyMMdd"), textEditTmp_NF_Diag_1.EditValue, textEditTmp_NF_Diag_2.EditValue,
+                textEditTmp_NF_ab.EditValue, textEditTmp_BeatmStd.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region ETL / NDG Segment
+        private string CreateETLNDGelement(ref int count)
         {
             string Messages = "";
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ETL", dateEditetl_Datum.DateTime.ToString("yyyyMMdd"),
+                dateEditetl_Datum.DateTime.ToString("HHmm"), textEditetl_Grund.EditValue, textEditetl_FAbt.EditValue,
+                textEditetl_HDlok, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
+            count = count + 1;
 
-            foreach (CheckedListBoxItem item in checkedComboBoxEditSamuElementList.Properties.Items)
+            foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)
             {
                 if (item.CheckState == CheckState.Checked)
                 {
-                    SAMU = (SamuElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "RED", SAMU.Rech_Nr, "", "", "", SAMU.Rech_Art, "", SAMU.Aufn_Nr));
+                    NDG = (NdgElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
                     count = count + 1;
                 }
             }
             return Messages;
         }
+        #endregion
+        #region EBG Segment
+        private string CreateEBGelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_EBGList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+
+                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EBG", item));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
+        #region FAB Segment
+        private string CreateFABelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    FAB = (FabElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB", FAB.fab_FAbt, FAB.fab_DGLok, FAB.fab_SekDLok, FAB.fab_ZDG,
+                        FAB.fab_ZSekD, FAB.fab_OPT, FAB.fab_OP));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
+        #region REC Segment
+        private string CreateRECelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "REC", textEditTmp_RgNrREC.EditValue, dateEditTmp_RgDatumREC.DateTime.ToString("yyyyMMdd"),
+                textEditTmp_RgArtREC.EditValue, dateEditTmp_AufnTagREC.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetragREC.EditValue,
+                textEditTmp_DebNrREC.EditValue, textEditTmp_RefNrREC.EditValue, textEditTmp_IKZahlwegREC.EditValue, textEditHonorSu.EditValue, textEditPau.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region ZLG Segment
+        private string CreateZLGelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZLG", textEditTmp_Zuzahlbetrag.EditValue, textEditTmp_Zuzahlkennzeichen.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region ENT Segment
         private string CreateENTelement(ref int count)
         {
             string Messages = "";
@@ -541,12 +562,54 @@ namespace Creator301Messages
                 {
                     ENT = (EntElement)item.Value;
                     Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ENT", ENT.Ent_Art, ENT.Ent_Betrag, ENT.Ent_von, ENT.Ent_bis,
-                        ENT.Ent_Anz, ENT.Ent_TgOhne ,ENT.Ent_TagWundh));
+                        ENT.Ent_Anz, ENT.Ent_TgOhne, ENT.Ent_TagWundh));
                     count = count + 1;
                 }
             }
             return Messages;
         }
+        #endregion
+        #region BNK Segment
+        private string CreateBNKelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "BNK", textEditAkt_IBAN.EditValue, textEditAkt_BIC.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region RZA Segment
+        private string CreateRZAelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}+{12}'", "RZA", textEditFAB_für_Diag.EditValue,
+                textEditTmp_Arztnr.EditValue, textEditTmp_EinwArztBSNrA.EditValue, textEditTmp_Zahnarztnr.EditValue, textEditTmp_EinwDiag1.EditValue,
+                textEditTmp_EinwDiag2.EditValue, textEditTmp_NrBelegarzt.EditValue, textEditTmp_NrKooparzt.EditValue, textEditTmp_BSNr.EditValue,
+                dateEditAkt_ASV_Ueberweisungsdatum.DateTime.ToString("yyyyMMdd"), textEditAkt_KV_Bezirk.EditValue, dateEditAkt_EBM_Verion.DateTime.ToString("yyyyMMdd")));
+            return Messages;
+        }
+        #endregion
+        #region BDG Segment dorost shavad
+        #endregion
+        #region PRZ Segment
+        private string CreatePRZelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditPRZList.Properties.Items)
+            {
+
+                if (item.CheckState == CheckState.Checked)
+                {
+                    PRZ = (PrzElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PRZ", PRZ.prz_Kode, PRZ.prz_Tag, PRZ.prz_LSpende));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
+        #region ENA Segment dorost shavad
+        #endregion
+        #region EZV Segment
         private string CreateEZVelement(ref int count)
         {
             string Messages = "";
@@ -563,6 +626,53 @@ namespace Creator301Messages
             }
             return Messages;
         }
+        #endregion
+        #region LEI Segment
+        private string CreateLEIelement(ref int count)
+        {
+            string Messages = "";
+            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_LEIList.Properties.Items)
+            {
+
+                if (item.CheckState == CheckState.Checked)
+                {
+                    LEI = (LeiElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "LEI", LEI.lei_Art, LEI.lei_Schluessel, LEI.lei_Tag));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
+        #region RED Segment dorost shavad
+        private string CreateREDelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "RED", textEditTmp_RgNr.EditValue, dateEditTmp_RgDatum.DateTime.ToString("yyyyMMdd"),
+                textEditTmp_RgBetrag.EditValue, textEditTmp_IKRefNr.EditValue,
+                textEditTmp_RgArt.EditValue, textEditTmp_RgBetragZA.EditValue,
+                textEditTmp_KHKV.EditValue, textEditTmp_IKZahlweg.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region UWD Segment
+        private string CreateUWDelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "UWD", textEditTmp_SammelbelegBeitrag.EditValue,
+                textEditTmp_SammelRgBeitrag.EditValue, textEditTmp_IKBeitrag.EditValue, textEditTmp_SammelbelegNr.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region ZPR Segment
+        private string CreateZPRelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "ZPR",textEditZPR_Betrag.EditValue, textEditZPR_PV.EditValue, textEditHonorBE.EditValue, textEditPauschal.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region TXT Segment dorost shavad
         private string CreateTXTelement(ref int count)
         {
             string Messages = "";
@@ -578,16 +688,35 @@ namespace Creator301Messages
             }
             return Messages;
         }
-        private string CreateEBGelement(ref int count)
+        #endregion
+        #region KOS Segment
+        private string CreateKOSelement()
+        {
+            string Messages;
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "KOS", dateEditKOSDatum.DateTime.ToString("yyyyMMdd"),
+                textEditKOS_KUEM.EditValue, dateEditKOS_AB.DateTime.ToString("yyyyMMdd"), dateEditKOS_Bis.DateTime.ToString("yyyyMMdd"), textEditKOSZTag.EditValue, textEditHighT.EditValue));
+            return Messages;
+        }
+        #endregion
+        #region STA Segment
+        private string CreateSTAelement()
+        {
+            string Messages = "";
+            Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "STA", textEditStandNr.EditValue, dateEditStandardDatum..DateTime.ToString("yyyyMMdd"), dateEditStandardDatum.DateTime.ToString("HHmm")));
+            return Messages;
+        }
+        #endregion
+
+        private string CreateRED_SAMUelement(ref int count)
         {
             string Messages = "";
 
-            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_EBGList.Properties.Items)
+            foreach (CheckedListBoxItem item in checkedComboBoxEditSamuElementList.Properties.Items)
             {
                 if (item.CheckState == CheckState.Checked)
                 {
-
-                    Messages += TrimEndMessage(String.Format("{0}+{1}'", "EBG", item));
+                    SAMU = (SamuElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "RED", SAMU.Rech_Nr, "", "", "", SAMU.Rech_Art, "", SAMU.Aufn_Nr));
                     count = count + 1;
                 }
             }
@@ -608,86 +737,8 @@ namespace Creator301Messages
             }
             return Messages;
         }
-        private string CreateFABelement(ref int count)
-        {
-            string Messages = "";
-
-            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    FAB = (FabElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB", FAB.fab_FAbt, FAB.fab_DGLok, FAB.fab_SekDLok,FAB.fab_ZDG,
-                        FAB.fab_ZSekD,FAB.fab_OPT,FAB.fab_OP));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreateETLNDGelement(ref int count)
-        {
-            string Messages = "";
-            Messages=  TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ETL", dateEditetl_Datum.DateTime.ToString("yyyyMMdd"),
-                dateEditetl_Datum.DateTime.ToString("HHmm"), textEditetl_Grund.EditValue, textEditetl_FAbt.EditValue, 
-                textEditetl_HDlok, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
-            count = count + 1;
-
-            foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    NDG = (NdgElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreatePRZelement(ref int count)
-        {
-            string Messages = "";
-            foreach (CheckedListBoxItem item in checkedComboBoxEditPRZList.Properties.Items)
-            {
-                
-                if (item.CheckState == CheckState.Checked)
-                {
-                    PRZ = (PrzElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PRZ", PRZ.prz_Kode, PRZ.prz_Tag,PRZ.prz_LSpende));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
-        private string CreateLEIelement(ref int count)
-        {
-            string Messages = "";
-            foreach (CheckedListBoxItem item in checkedComboBoxEditTmp_LEIList.Properties.Items)
-            {
-
-                if (item.CheckState == CheckState.Checked)
-                {
-                    LEI = (LeiElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "LEI", LEI.lei_Art, LEI.lei_Schluessel, LEI.lei_Tag));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
         //dorost shavad
-        private string CreateSTAelement(ref int count)
-        {
-            string Messages = "";
-            foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)
-            {
-                if (item.CheckState == CheckState.Checked)
-                {
-                    NDG = (NdgElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
-                    count = count + 1;
-                }
-            }
-            return Messages;
-        }
+
         #endregion
         #region Create the whole Messages
         private string CreateInhaltMessage()
@@ -1115,10 +1166,6 @@ namespace Creator301Messages
         }
         private void simpleButtonADDTmp_LEIList_Click(object sender, EventArgs e)
         {
-
-        }
-        private void simpleButtonADDNDG_Click(object sender, EventArgs e)
-        {
             LEI = new LeiElement();
             LEI.lei_Art = textEditlei_Art.EditValue.ToString();
             LEI.lei_Schluessel = textEditlei_Schluessel.EditValue.ToString();
@@ -1127,6 +1174,16 @@ namespace Creator301Messages
             LEIList.Add(LEI);
             checkedComboBoxEditTmp_LEIList.Properties.Items[checkedComboBoxEditTmp_LEIList.Properties.Items.Count - 1].Description = "Leistungsart  : " + LEI.lei_Art;
             checkedComboBoxEditTmp_LEIList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
+        private void simpleButtonADDNDG_Click(object sender, EventArgs e)
+        {
+            NDG = new NdgElement();
+            NDG.ndg_NDLok = textEditndg_NDLok.EditValue.ToString();
+            NDG.ndg_SekDLok = textEditdg_SekDLok.EditValue.ToString();
+            checkedComboBoxEditNDGList.Properties.Items.Add(NDG);
+            NDGList.Add(NDG);
+            checkedComboBoxEditNDGList.Properties.Items[checkedComboBoxEditNDGList.Properties.Items.Count - 1].Description = "Nebendiagnose  : " + NDG.ndg_NDLok;
+            checkedComboBoxEditNDGList.Properties.Items[0].CheckState = CheckState.Checked;
         }
 
         private void simpleButtonTmp_ENTList_Click(object sender, EventArgs e)
@@ -1171,8 +1228,13 @@ namespace Creator301Messages
 
 
 
+
+
         #endregion
 
+        private void textEdit60_EditValueChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

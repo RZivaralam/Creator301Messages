@@ -460,6 +460,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BdgElement.cs" />
     <Compile Include="EadElement.cs" />
     <Compile Include="EntElement.cs" />
     <Compile Include="EzvElement.cs" />
@@ -475,6 +476,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PrzElement.cs" />
+    <Compile Include="PvtElement.cs" />
+    <Compile Include="RedSegment.cs" />
     <Compile Include="SamuElement.cs" />
     <EmbeddedResource Include="FrmMessages.resx">
       <DependentUpon>FrmMessages.cs</DependentUpon>
