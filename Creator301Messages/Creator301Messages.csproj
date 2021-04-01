@@ -479,6 +479,7 @@
     <Compile Include="PrzElement.cs" />
     <Compile Include="PvtElement.cs" />
     <Compile Include="RedElement.cs" />
+    <Compile Include="RelElement.cs" />
     <Compile Include="TxtElement.cs" />
     <EmbeddedResource Include="FrmMessages.resx">
       <DependentUpon>FrmMessages.cs</DependentUpon>

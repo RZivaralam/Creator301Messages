@@ -65,6 +65,8 @@ namespace Creator301Messages
         private List<EnaElement> ENAList;
         private TxtElement TXT;
         private List<TxtElement> TXTList;
+        private RelElement REL;
+        private List<RelElement> RELList;
         #region Preapre Tabs
         private void InitualizeTab()
         {
@@ -81,7 +83,6 @@ namespace Creator301Messages
             layoutCUX.Visibility = LayoutVisibility.Never;
             layoutREC.Visibility = LayoutVisibility.Never;
             layoutZLG.Visibility = LayoutVisibility.Never;
-            layoutRECFAB.Visibility = LayoutVisibility.Never;
             layoutENT.Visibility = LayoutVisibility.Never;
             layoutBNK.Visibility = LayoutVisibility.Never;
             layoutFHL.Visibility = LayoutVisibility.Never;
@@ -127,6 +128,7 @@ namespace Creator301Messages
         {
             bool Ifchecked = false;
             List<int> VKZ = new List<int>();
+            #region AUFN Nachricht
             if (checkButtonAUF.Checked)
             {
                 int[] RangesVKZ = { 10, 20, 30, 31, 32, 33, 34, 35 };
@@ -137,9 +139,11 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
-               // layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutAUF.Visibility = LayoutVisibility.Always;
+                layoutEAD.Visibility = LayoutVisibility.Always; //20x möglich
             }
+            #endregion
+            #region ENTL Nachricht
             if (checkButtonENTL.Checked)
             {
                 checkButtonENTL.Appearance.ForeColor = Color.Green;
@@ -147,13 +151,15 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
-                layoutDPV.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always; //99x möglich
+                layoutDPV.Visibility = LayoutVisibility.Always; 
                 layoutDAU.Visibility = LayoutVisibility.Always;
-                layoutETL_NDG.Visibility = LayoutVisibility.Always;
-                layoutEBG.Visibility = LayoutVisibility.Always;
-                layoutFAB.Visibility = LayoutVisibility.Always;
+                layoutETL_NDG.Visibility = LayoutVisibility.Always; //ETL–NDG 999x möglich NDG 40x möglich
+                layoutEBG.Visibility = LayoutVisibility.Always; //2x möglich
+                layoutFAB.Visibility = LayoutVisibility.Always; //999x möglich
             }
+            #endregion
+            #region RECH Nachricht
             if (checkButtonRECH.Checked)
             {
                 checkButtonRECH.Appearance.ForeColor = Color.Green;
@@ -161,13 +167,16 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutSTA.Visibility = LayoutVisibility.Always; //99x möglich
                 layoutCUX.Visibility = LayoutVisibility.Always;
                 layoutREC.Visibility = LayoutVisibility.Always;
                 layoutZLG.Visibility = LayoutVisibility.Always;
-                layoutRECFAB.Visibility = LayoutVisibility.Always;
-                layoutENT.Visibility = LayoutVisibility.Always;
+                layoutFAB.Visibility = LayoutVisibility.Always; //30x möglich
+                layoutENT.Visibility = LayoutVisibility.Always; //98x möglich
                 layoutBNK.Visibility = LayoutVisibility.Always;
             }
+            #endregion
+            #region MBEG Nachricht
             if (checkButtonMBEG.Checked)
             {
                 checkButtonMBEG.Appearance.ForeColor = Color.Green;
@@ -175,7 +184,10 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutTXT.Visibility = LayoutVisibility.Always; //10x möglich
             }
+            #endregion
+            #region AMBO Nachricht
             if (checkButtonINKA.Checked)
             {
                 checkButtonINKA.Appearance.ForeColor = Color.Green;
@@ -183,9 +195,11 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
-                layoutPVV.Visibility = LayoutVisibility.Always;
-                layoutPVT.Visibility = LayoutVisibility.Always;
+                layoutPVV.Visibility = LayoutVisibility.Always; //10x möglich
+                layoutPVT.Visibility = LayoutVisibility.Always; //25x möglich
             }
+            #endregion
+            #region VERL Nachricht
             if (checkButtonVERL.Checked)
             {
                 checkButtonVERL.Appearance.ForeColor = Color.Green;
@@ -194,10 +208,11 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutDAU.Visibility = LayoutVisibility.Always;
-                layoutFAB.Visibility = LayoutVisibility.Always;
+                layoutFAB.Visibility = LayoutVisibility.Always; //10x möglich
             }
+            #endregion
+            #region ANFM Nachricht
             if (checkButtonANFM.Checked)
             {
                 checkButtonANFM.Appearance.ForeColor = Color.Green;
@@ -205,8 +220,10 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
-                layoutTXT.Visibility = LayoutVisibility.Always;
+                layoutTXT.Visibility = LayoutVisibility.Always; //10x möglich
             }
+            #endregion
+            #region AMBO Nachricht
             if (checkButtonAMBO.Checked)
             {
                 checkButtonAMBO.Appearance.ForeColor = Color.Green;
@@ -216,16 +233,17 @@ namespace Creator301Messages
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
                 layoutDPV.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
                 layoutREC.Visibility = LayoutVisibility.Always;
                 layoutZLG.Visibility = LayoutVisibility.Always;
                 layoutRZA.Visibility = LayoutVisibility.Always;
-                layoutBDG.Visibility = LayoutVisibility.Always;
-                layoutPRZ.Visibility = LayoutVisibility.Always;
-                layoutENA.Visibility = LayoutVisibility.Always;
-                layoutEZV.Visibility = LayoutVisibility.Always;
-                layoutLEI.Visibility = LayoutVisibility.Always;
+                layoutBDG.Visibility = LayoutVisibility.Always;  //99x möglich
+                layoutPRZ.Visibility = LayoutVisibility.Always; //99x möglich
+                layoutENA.Visibility = LayoutVisibility.Always; //99x möglich
+                layoutEZV.Visibility = LayoutVisibility.Always; //99x möglich
+                layoutLEI.Visibility = LayoutVisibility.Always; //999x möglich
             }
+            #endregion
+            #region ZGUT Nachricht
             if (checkButtonZGUT.Checked)
             {
                 checkButtonZGUT.Appearance.ForeColor = Color.Green;
@@ -234,9 +252,10 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
-                layoutRED.Visibility = LayoutVisibility.Always;
+                layoutRED.Visibility = LayoutVisibility.Always; //1x möglich
             }
+            #endregion
+            #region KOUB Nachricht
             if (checkButtonKOUB.Checked)
             {
                 checkButtonKOUB.Appearance.ForeColor = Color.Green;
@@ -244,8 +263,12 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutCUX.Visibility = LayoutVisibility.Always;
+                layoutKOS.Visibility = LayoutVisibility.Always;
                 layoutTXT.Visibility = LayoutVisibility.Always;
             }
+            #endregion
+            #region KAIN Nachricht
             if (checkButtonKAIN.Checked)
             {
                 checkButtonKAIN.Appearance.ForeColor = Color.Green;
@@ -253,7 +276,11 @@ namespace Creator301Messages
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
+                layoutPVV.Visibility = LayoutVisibility.Always; //10x möglich
+                layoutPVT.Visibility = LayoutVisibility.Always; //25x möglich
             }
+            #endregion
+            #region ZAOO Nachricht
             if (checkButtonZAOO.Checked)
             {
                 checkButtonZAOO.Appearance.ForeColor = Color.Green;
@@ -262,8 +289,14 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
+                layoutREC.Visibility = LayoutVisibility.Always;
+                layoutZPR.Visibility = LayoutVisibility.Always;
+                layoutZLG.Visibility = LayoutVisibility.Always;
+                layoutENA.Visibility = LayoutVisibility.Always; //999x möglich
+                layoutEZV.Visibility = LayoutVisibility.Always; //30x möglich
             }
+            #endregion
+            #region ZAHL Nachricht
             if (checkButtonZAHL.Checked)
             {
                 checkButtonZAHL.Appearance.ForeColor = Color.Green;
@@ -272,20 +305,24 @@ namespace Creator301Messages
                 layoutINV_PNV.Visibility = LayoutVisibility.Always;
                 layoutNAD.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
+                layoutZLG.Visibility = LayoutVisibility.Always;
                 layoutZPR.Visibility = LayoutVisibility.Always;
+                layoutENT.Visibility = LayoutVisibility.Always; //99x möglich
             }
+            #endregion
+            #region SAMU Nachricht
             if (checkButtonSAMU.Checked)
             {
                 checkButtonSAMU.Appearance.ForeColor = Color.Green;
                 Ifchecked = true;
                 layoutFKT.Visibility = LayoutVisibility.Always;
                 layoutCUX.Visibility = LayoutVisibility.Always;
-                layoutSTA.Visibility = LayoutVisibility.Always;
-                layoutRED.Visibility = LayoutVisibility.Always;
+                layoutRED.Visibility = LayoutVisibility.Always; //99999x möglic
+                layoutREL.Visibility = LayoutVisibility.Always; //999x möglich
                 layoutUWD.Visibility = LayoutVisibility.Always;
 
             }
+            #endregion
             if (checkButtonFEHL.Checked)
             {
                 checkButtonFEHL.Appearance.ForeColor = Color.Green;
@@ -331,6 +368,7 @@ namespace Creator301Messages
             BDGList = new List<BdgElement>();
             ENAList = new List<EnaElement>();
             TXTList = new List<TxtElement>();
+            RELList = new List<RelElement>();
             ChangeCheckOutTab();
         }
         private void CheckOutTab(object sender, EventArgs e)
@@ -753,6 +791,24 @@ namespace Creator301Messages
             return Messages;
         }
         #endregion
+        #region REL Segment
+        private string CreateRELelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditRelList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    REL = (RelElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}'", "REL", REL.RecNr, REL.recBetrag, REL.RecartRel, REL.RecBetragZ, REL.BetragAuf, REL.IKVer));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
+
         #region KOS Segment
         private string CreateKOSelement()
         {
@@ -1140,7 +1196,6 @@ namespace Creator301Messages
             EZV.ent_Anzahl = textEditENZent_Anzahl.EditValue.ToString();
             EZV.ent_Tag = dateEditENZent_Tag.DateTime.ToString("yyyyMMdd");
             EZV.ent_Anteil = textEditENZent_Anteil.EditValue.ToString();
-
             checkedComboBoxEditTmp_EZV.Properties.Items.Add(EZV);
             EZVList.Add(EZV);
             checkedComboBoxEditTmp_EZV.Properties.Items[checkedComboBoxEditTmp_EZV.Properties.Items.Count - 1].Description = "Erläuterung : " + EZV.ent_Erläuterung;
@@ -1209,7 +1264,7 @@ namespace Creator301Messages
             ENT.Ent_TagWundh = textEditEnt_TagWundh.EditValue.ToString();
             checkedComboBoxEditTmp_ENTList.Properties.Items.Add(ENT);
             ENTList.Add(ENT);
-            checkedComboBoxEditTmp_ENTList.Properties.Items[checkedComboBoxEditTmp_ENTList.Properties.Items.Count - 1].Description = "ENT Art  : " + ENT.Ent_Art;
+            checkedComboBoxEditTmp_ENTList.Properties.Items[checkedComboBoxEditTmp_ENTList.Properties.Items.Count - 1].Description = "Entgeltart  : " + ENT.Ent_Art;
             checkedComboBoxEditTmp_ENTList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         private void simpleButtonPRZList_Click(object sender, EventArgs e)
@@ -1231,19 +1286,69 @@ namespace Creator301Messages
         }
         private void simpleButtonADDPrfText_Click(object sender, EventArgs e)
         {
-
+            PVT = new PvtElement();
+            PVT.prfvText = memoEditText.EditValue.ToString();
+            PVT.prfvH = textEditPrfvH.EditValue.ToString();
+            PVT.prfHSek = textEditHDSEk.EditValue.ToString();
+            PVT.PrfN = textEditPrfN.EditValue.ToString();
+            PVT.prfNSek = textEditNDSEk.EditValue.ToString();
+            PVT.prfPrZ = textEditPrfP.EditValue.ToString();
+            checkedComboBoxEditPrfTextList.Properties.Items.Add(PVT);
+            PVTList.Add(PVT);
+            checkedComboBoxEditPrfTextList.Properties.Items[checkedComboBoxEditPrfTextList.Properties.Items.Count - 1].Description = "PrüfvV-Hauptdiagnose  : " + PVT.prfvH;
+            checkedComboBoxEditPrfTextList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         private void simpleButtonREDListADD_Click(object sender, EventArgs e)
         {
-
+            RED = new RedElement();
+            RED.rechNR = textEditrechNR.EditValue.ToString();
+            RED.rechDate = dateEditrechDate.DateTime.ToString("yyyyMMdd"); 
+            RED.rechBetrag = textEditrechBetrag.EditValue.ToString();
+            RED.refNRKK = textEditrefNRKK.EditValue.ToString();
+            RED.recArt = textEditrecArt.EditValue.ToString();
+            RED.recBetragZahl = textEditrecBetragZahl.EditValue.ToString();
+            RED.KHkennzeichnen = textEditKHkennzeichnen.EditValue.ToString();
+            RED.IKZahlungWeg=textEditIKZahlungWeg.EditValue.ToString();
+            checkedComboBoxEditRecList.Properties.Items.Add(RED);
+            REDList.Add(RED);
+            checkedComboBoxEditRecList.Properties.Items[checkedComboBoxEditRecList.Properties.Items.Count - 1].Description = "Rechnungsnummer  : " + RED.rechNR;
+            checkedComboBoxEditRecList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         private void simpleButtonBDGADD_Click(object sender, EventArgs e)
         {
-
+            BDG = new BdgElement();
+            BDG.BDiagnose = textEditTmpBDiagnose.EditValue.ToString();
+            BDG.SEKD = textEditTmpSEK.EditValue.ToString();
+            BDG.DiagArt = textEditTmpArt.EditValue.ToString();
+            BDG.TeamFiktion = textEditTmpTeam.EditValue.ToString();
+            BDG.StandNR = textEditTmpStandNr.EditValue.ToString();
+            BDG.FabHSA = textEditTmpHSA.EditValue.ToString();
+            checkedComboBoxEditBDGList.Properties.Items.Add(BDG);
+            BDGList.Add(BDG);
+            checkedComboBoxEditBDGList.Properties.Items[checkedComboBoxEditBDGList.Properties.Items.Count - 1].Description = "Behandlungsdiagnose  : " + BDG.BDiagnose;
+            checkedComboBoxEditBDGList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         private void simpleButtonADDENA_Click(object sender, EventArgs e)
         {
-
+            ENA = new EnaElement();
+            ENA.entArt = textEditentArt.EditValue.ToString();
+            ENA.entEBM = textEditentEBM.EditValue.ToString();
+            ENA.RecGrund = textEditRecGrund.EditValue.ToString();
+            ENA.Honor = textEditHonor.EditValue.ToString();
+            ENA.TagB = dateEditTagB.EditValue.ToString();
+            ENA.PunkZ = textEditPunkZ.EditValue.ToString();
+            ENA.PunkW = textEditPunkW.EditValue.ToString();
+            ENA.entBetrag = textEditentBetrag.EditValue.ToString();
+            ENA.entZahl = textEditentZahl.EditValue.ToString();
+            ENA.Doppel = textEditDoppel.EditValue.ToString();
+            ENA.TeamFiktion = textEditTeamFiktion.EditValue.ToString();
+            ENA.TeamEben = textEditTeamEben.EditValue.ToString();
+            ENA.GeCodi = textEditGeCodi.EditValue.ToString();
+            ENA.GeAnzahl = textEditGeAnzahl.EditValue.ToString();
+            checkedComboBoxEditENAList.Properties.Items.Add(ENA);
+            ENAList.Add(ENA);
+            checkedComboBoxEditENAList.Properties.Items[checkedComboBoxEditENAList.Properties.Items.Count - 1].Description = "Entgeltart  : " + ENA.entArt;
+            checkedComboBoxEditENAList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         private void simpleButtonADDTextANFM_Click(object sender, EventArgs e)
         {
@@ -1255,6 +1360,20 @@ namespace Creator301Messages
             TXTList.Add(TXT);
             checkedComboBoxEditTmp_TextANFMList.Properties.Items[checkedComboBoxEditTmp_TextANFMList.Properties.Items.Count - 1].Description = "Anforderung Medizinische Begründung  : " + TXT.Anforderung;
             checkedComboBoxEditTmp_TextANFMList.Properties.Items[0].CheckState = CheckState.Checked;
+        }
+        private void simpleButtonAddRel_Click(object sender, EventArgs e)
+        {
+            REL = new RelElement();
+            REL.RecNr = textEditRecNr.EditValue.ToString();
+            REL.recBetrag = textEditrecBetrag.EditValue.ToString();
+            REL.RecartRel = textEditRecartRel.EditValue.ToString();
+            REL.RecBetragZ = textEditRecBetragZ.EditValue.ToString();
+            REL.BetragAuf = textEditBetragAuf.EditValue.ToString();
+            REL.IKVer = textEditIKVer.EditValue.ToString();
+            checkedComboBoxEditRelList.Properties.Items.Add(REL);
+            RELList.Add(REL);
+            checkedComboBoxEditRelList.Properties.Items[checkedComboBoxEditRelList.Properties.Items.Count - 1].Description = "Rechnungsnummer  : " + REL.RecNr;
+            checkedComboBoxEditRelList.Properties.Items[0].CheckState = CheckState.Checked;
         }
         #endregion
 
