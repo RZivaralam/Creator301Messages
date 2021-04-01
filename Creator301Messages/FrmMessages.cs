@@ -592,6 +592,24 @@ namespace Creator301Messages
             return Messages;
         }
         #endregion
+        #region STA Segment
+        private string CreateSTAelement(ref int count)
+        {
+            string Messages = "";
+
+            foreach (CheckedListBoxItem item in checkedComboBoxEditFABList.Properties.Items)
+            {
+                if (item.CheckState == CheckState.Checked)
+                {
+                    FAB = (FabElement)item.Value;
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB", FAB.fab_FAbt, FAB.fab_DGLok, FAB.fab_SekDLok, FAB.fab_ZDG,
+                        FAB.fab_ZSekD, FAB.fab_OPT, FAB.fab_OP));
+                    count = count + 1;
+                }
+            }
+            return Messages;
+        }
+        #endregion
         #region REC Segment
         private string CreateRECelement()
         {
@@ -808,7 +826,6 @@ namespace Creator301Messages
             return Messages;
         }
         #endregion
-
         #region KOS Segment
         private string CreateKOSelement()
         {
@@ -840,6 +857,7 @@ namespace Creator301Messages
             if (checkButtonAUF.Checked)
             {
                 i = i + 1;
+                Count = 0;
                 Messages += CreateUNHelement("AUFN", i);
                 //FKT
                 Messages += CreateFKTelement();
@@ -852,9 +870,9 @@ namespace Creator301Messages
                 //AUF
                 Messages += CreateAUFelement();
                 //EAD
-                Messages += CreateEADelement(ref Count);
+                Messages += CreateEADelement(ref Count);  //20
                 //UNT
-                Messages += CreateUNTelement(i, 8+ Count);
+                Messages += CreateUNTelement(i, 7+ Count);
 
             }
             #endregion
@@ -870,16 +888,18 @@ namespace Creator301Messages
                 Messages += CreateINVelement();
                 //NAD
                 Messages += CreateNADelement();
+                //STA
+                Messages += CreateSTAelement(ref Count); //99
                 //DPV
                 Messages += CreateDPVelement();
                 //DAU
                 Messages += CreateDAUelement();
                 //ETL
-                Messages += CreateETLNDGelement(ref Count);
+                Messages += CreateETLNDGelement(ref Count); //999 40
                 //EBG
-                Messages += CreateEBGelement(ref Count);
+                Messages += CreateEBGelement(ref Count); //2
                 //FAB
-                Messages += CreateFABelement(ref Count);
+                Messages += CreateFABelement(ref Count); //999
                 //UNT
                 Messages += CreateUNTelement(i, 7 + Count);
 
@@ -897,6 +917,8 @@ namespace Creator301Messages
                 Messages += CreateINVelement();
                 //NAD
                 Messages += CreateNADelement();
+                //STA
+                Messages += CreateSTAelement(ref Count); //99
                 //CUX
                 Messages += CreateCUXelement();
                 //REC
@@ -904,9 +926,9 @@ namespace Creator301Messages
                 //ZLG
                 Messages += CreateZLGelement();
                 //RECFAB
-                Messages += CreateFABelement(ref Count);
+                Messages += CreateFABelement(ref Count); //30
                 //ENT
-                Messages += CreateENTelement(ref Count);
+                Messages += CreateENTelement(ref Count); //98
                 //BNK
                 Messages += CreateBNKelement();
                 //UNT
@@ -918,6 +940,7 @@ namespace Creator301Messages
             if (checkButtonMBEG.Checked)
             {
                 i = i + 1;
+                Count = 0;
                 Messages += CreateUNHelement("MBEG", i);
                 //FKT
                 Messages += CreateFKTelement();
@@ -925,8 +948,10 @@ namespace Creator301Messages
                 Messages += CreateINVelement();
                 //NAD
                 Messages += CreateNADelement();
+                //TXT
+                Messages += CreateTXTelement(ref Count);
                 //UNT
-                Messages += CreateUNTelement(i, 5);
+                Messages += CreateUNTelement(i, 5+Count);
             }
             #endregion
             #region INKA Nachricht
@@ -942,9 +967,9 @@ namespace Creator301Messages
                 //NAD
                 Messages += CreateNADelement();
                 //PVV
-                Messages += CreatePVVelement();
+                Messages += CreatePVVelement(); //10
                 //PVT
-                Messages += CreatePVTelement(ref Count);
+                Messages += CreatePVTelement(ref Count); //25
                 //UNT
                 Messages += CreateUNTelement(i, 6+Count);
             }
@@ -966,7 +991,7 @@ namespace Creator301Messages
                 //DAU
                 Messages += CreateDAUelement();
                 //FAB
-                Messages += CreateFABelement(ref Count);
+                Messages += CreateFABelement(ref Count); //10
                 //UNT
                 Messages += CreateUNTelement(i, 7 + Count);
             }
@@ -984,7 +1009,7 @@ namespace Creator301Messages
                 //NAD
                 Messages += CreateNADelement();
                 //TXT
-                Messages += CreateTXTelement(ref Count);
+                Messages += CreateTXTelement(ref Count); //10
                 //UNT
                 Messages += CreateUNTelement(i, 5+Count);
             }
@@ -1012,17 +1037,17 @@ namespace Creator301Messages
                 //RZA
                 Messages += CreateRZAelement();
                 //BDG
-                Messages += CreateBDGelement(ref Count);
+                Messages += CreateBDGelement(ref Count); //99
                 //PRZ
-                Messages += CreatePRZelement(ref Count);
+                Messages += CreatePRZelement(ref Count); //99
                 //ENA
-                Messages += CreateENAelement(ref Count);
+                Messages += CreateENAelement(ref Count); //999
                 //EZV
-                Messages += CreateEZVelement(ref Count);
+                Messages += CreateEZVelement(ref Count); //99
                 //LEI
-                Messages += CreateLEIelement(ref Count);
+                Messages += CreateLEIelement(ref Count); //999
                 //UNT
-                Messages += CreateUNTelement(i, 7 + Count);
+                Messages += CreateUNTelement(i, 10 + Count);
 
             }
             #endregion
@@ -1041,9 +1066,9 @@ namespace Creator301Messages
                 //CUX
                 Messages += CreateCUXelement();
                 //RED
-                Messages += CreateREDelement(ref Count);
+                Messages += CreateREDelement(ref Count); //1
                 //UNT
-                Messages += CreateUNTelement(i, 7+Count);
+                Messages += CreateUNTelement(i, 6+Count);
             }
             #endregion
             #region KOUB Nachricht
@@ -1061,7 +1086,7 @@ namespace Creator301Messages
                 //KOS
                 Messages += CreateKOSelement();
                 //TXT
-                Messages += CreateTXTelement(ref Count);
+                Messages += CreateTXTelement(ref Count); //10
                 //UNT
                 Messages += CreateUNTelement(i, 6+Count);
             }
@@ -1070,6 +1095,7 @@ namespace Creator301Messages
             if (checkButtonKAIN.Checked)
             {
                 i = i + 1;
+                Count = 0;
                 Messages += CreateUNHelement("KAIN", i);
                 //FKT Way Back
                 Messages += CreateFKTWBelement();
@@ -1077,6 +1103,8 @@ namespace Creator301Messages
                 Messages += CreateINVelement();
                 //NAD
                 Messages += CreateNADelement();
+                //PVT
+                Messages += CreatePVTelement(ref Count);
                 //UNT
                 Messages += CreateUNTelement(i, 5);
             }
@@ -1085,6 +1113,7 @@ namespace Creator301Messages
             if (checkButtonZAOO.Checked)
             {
                 i = i + 1;
+                Count = 0;
                 Messages += CreateUNHelement("ZAOO", i);
                 //FKT Way Back
                 Messages += CreateFKTWBelement();
@@ -1094,13 +1123,24 @@ namespace Creator301Messages
                 Messages += CreateNADelement();
                 //CUX
                 Messages += CreateCUXelement();
+                //REC
+                Messages += CreateRECelement();
+                //ZPR
+                Messages += CreateZPRelement();
+                //ZLG
+                Messages += CreateZLGelement();
+                //ENA
+                Messages += CreateENAelement(ref Count); //999
+                //EZV
+                Messages += CreateEZVelement(ref Count); //30
                 //UNT
-                Messages += CreateUNTelement(i, 6);
+                Messages += CreateUNTelement(i,9+Count);
             }
             #endregion
             #region ZAHL Nachricht
             if (checkButtonZAHL.Checked)
             {
+                Count = 0;
                 i = i + 1;
                 Messages += CreateUNHelement("ZAHL", i);
                 //FKT Way Back
@@ -1111,24 +1151,32 @@ namespace Creator301Messages
                 Messages += CreateNADelement();
                 //CUX
                 Messages += CreateCUXelement();
+                //REC
+                Messages += CreateRECelement();
+                //ZLG
+                Messages += CreateZLGelement();
                 //ZPR
                 Messages += CreateZPRelement();
+                //ENT
+                Messages += CreateENTelement(ref Count); //99
                 //UNT
-                Messages += CreateUNTelement(i, 7);
+                Messages += CreateUNTelement(i, 9+Count);
             }
             #endregion
             #region SAMU Nachricht
             if (checkButtonSAMU.Checked)
             {
                 i = i + 1;
+                Count = 0;
                 Messages += CreateUNHelement("SAMU", i);
                 //FKT Way Back
                 Messages += CreateFKTWBelement();
                 //CUX
                 Messages += CreateCUXelement();
-                //RED_SAMU
-                Count = 0;
-                Messages += CreateREDelement(ref Count);
+                //RED
+                Messages += CreateREDelement(ref Count); ////99999x 
+                //REL
+                Messages += CreateRELelement(ref Count); ///999
                 //UWD
                 Messages += CreateUWDelement();
                 //UNT
