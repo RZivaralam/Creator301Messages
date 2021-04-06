@@ -117,4 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textEditEnt_Art.Properties.Items" xml:space="preserve">
+    <value>02 Ermäßigter Abteilungspflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychiatrie und Psychosomatik/Psychotherapie nach § 14 Abs. 2 Satz 3 oder Abs. 7 Satz 2 BPflV (in der bis 31.12.2013 geltenden Fassung) </value>
+  </data>
+  <data name="textEditENZent_Text.Properties.Items" xml:space="preserve">
+    <value>07 Diagnostische und interventionelle Katheter einschl. Führungsdraht, Gefäßschleuse, Einführungsbesteck und Verschlusssysteme im Zusammenhang mit angiologisch-diagnostischen und -therapeutischen,gefäßchirurgischen und phlebologischen Leistungen</value>
+  </data>
+  <data name="textEditENZent_Text.Properties.Items1" xml:space="preserve">
+    <value>13 Erstattung für Photonensensibilisatoren bei der Photodynamischen Therapie und Hormonpräparate  bei Maßnahmen zur künstlichen Befruchtung (80 v.H. des Apotheken-Einkaufspreises nach Lauertaxe zuzüglich Mehrwertsteuer)</value>
+  </data>
 </root>
