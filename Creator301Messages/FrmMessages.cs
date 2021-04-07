@@ -395,8 +395,6 @@ namespace Creator301Messages
         #region Create Message Content
         private string TrimEndMessage(string Messages)
         {
-            //Messages = Messages.Replace(" ",string.Empty);
-            string a = Messages.Substring(Messages.Length - 3);
             while (Messages.Substring(Messages.Length - 3) == "+ '")
             {
                 Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 2);
@@ -557,7 +555,7 @@ namespace Creator301Messages
         {
             string Messages = "";
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ETL", dateEditetl_Datum.DateTime.ToString("yyyyMMdd"),
-                dateEditetl_Datum.DateTime.ToString("HHmm"), textEditetl_Grund.EditValue, textEditetl_FAbt.EditValue,
+                dateEditetl_Datum.DateTime.ToString("HHmm"),Sub( textEditetl_Grund1.EditValue.ToString(),2)+ Sub(textEditetl_Grund2.EditValue.ToString(), 1), textEditetl_FAbt.EditValue,
                 textEditetl_HDlok, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
             count = count + 1;
             int i = 1;
@@ -568,7 +566,7 @@ namespace Creator301Messages
                 {
                     i = i + 1;
                     NDG = (NdgElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "NDG", NDG.ndg_NDLok, NDG.ndg_SekDLok));
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "NDG", NDG.ndg_NDcode, NDG.ndg_NDLok,NDG.ndg_SekDLok));
                     count = count + 1;
                 }
             }
@@ -1333,8 +1331,9 @@ namespace Creator301Messages
         private void simpleButtonADDNDG_Click(object sender, EventArgs e)
         {
             NDG = new NdgElement();
-            NDG.ndg_NDLok = textEditndg_NDLok.EditValue.ToString();
+            NDG.ndg_NDLok =Sub( textEditndg_NDCode.EditValue.ToString(),1);
             NDG.ndg_SekDLok = textEditdg_SekDLok.EditValue.ToString();
+            NDG.ndg_NDcode = textEditndg_NDCode.EditValue.ToString();
             checkedComboBoxEditNDGList.Properties.Items.Add(NDG);
             NDGList.Add(NDG);
             checkedComboBoxEditNDGList.Properties.Items[checkedComboBoxEditNDGList.Properties.Items.Count - 1].Description = "Nebendiagnose  : " + NDG.ndg_NDLok;

@@ -7,6 +7,7 @@ namespace Creator301Messages
 {
     public class NdgElement
     {
+        public string ndg_NDcode;
         public string ndg_NDLok;
         public string ndg_SekDLok;
     }
