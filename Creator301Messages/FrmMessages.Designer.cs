@@ -38,6 +38,7 @@
             this.textEditRecBetragZ = new DevExpress.XtraEditors.TextEdit();
             this.textEditrecBetrag = new DevExpress.XtraEditors.TextEdit();
             this.textEditRecNr = new DevExpress.XtraEditors.TextEdit();
+            this.textEditRecartRel = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup10 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup35 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem53 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -45,12 +46,14 @@
             this.layoutControlItem133 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem134 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem135 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem142 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup52 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem136 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem137 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl42 = new DevExpress.XtraLayout.LayoutControl();
             this.textEditRechnungsNR = new DevExpress.XtraEditors.TextEdit();
             this.dateEditRechnungDatum = new DevExpress.XtraEditors.DateEdit();
+            this.textEditInfo = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup44 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemRechnungsNR = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemInfo = new DevExpress.XtraLayout.LayoutControlItem();
@@ -75,6 +78,8 @@
             this.simpleButtonADDFAB = new DevExpress.XtraEditors.SimpleButton();
             this.textEditfab_SekD = new DevExpress.XtraEditors.TextEdit();
             this.checkedComboBoxEditFABList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
+            this.textEditfab_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditfab_DG = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup46 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemfab_OP = new DevExpress.XtraLayout.LayoutControlItem();
@@ -113,6 +118,7 @@
             this.dateEditKOSDatum = new DevExpress.XtraEditors.DateEdit();
             this.dateEditKOS_AB = new DevExpress.XtraEditors.DateEdit();
             this.dateEditKOS_Bis = new DevExpress.XtraEditors.DateEdit();
+            this.textEditKOS_KUEM = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup7 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemKOS_Bis = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemKOS_AB = new DevExpress.XtraLayout.LayoutControlItem();
@@ -138,6 +144,7 @@
             this.textEditPauschal = new DevExpress.XtraEditors.TextEdit();
             this.textEditHonorBE = new DevExpress.XtraEditors.TextEdit();
             this.textEditZPR_Betrag = new DevExpress.XtraEditors.TextEdit();
+            this.textEditZPR_PV = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup6 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemZPR_Betrag = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemZPR_PV = new DevExpress.XtraLayout.LayoutControlItem();
@@ -174,6 +181,8 @@
             this.textEditTmp_EinwArztBSNr = new DevExpress.XtraEditors.TextEdit();
             this.dateEditTmp_AufnTag = new DevExpress.XtraEditors.DateEdit();
             this.dateEditTmp_VorsDauer = new DevExpress.XtraEditors.DateEdit();
+            this.textEditTmp_AufnFAB = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxTmp_AufnGrund1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup26 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_AufnTag = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_AufnGrund = new DevExpress.XtraLayout.LayoutControlItem();
@@ -203,6 +212,7 @@
             this.textEditTmp_Nachname = new DevExpress.XtraEditors.TextEdit();
             this.ComboEditAkt_G = new DevExpress.XtraEditors.ComboBoxEdit();
             this.dateEditTmp_GDat = new DevExpress.XtraEditors.DateEdit();
+            this.textEditInterLand = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup24 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_Nachname = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_Vorname = new DevExpress.XtraLayout.LayoutControlItem();
@@ -223,8 +233,9 @@
             this.textEditAktSignKK = new DevExpress.XtraEditors.TextEdit();
             this.textEditTmp_KKNr = new DevExpress.XtraEditors.TextEdit();
             this.textEditFallnr = new DevExpress.XtraEditors.TextEdit();
-            this.textEditTmp_AufnNr = new DevExpress.XtraEditors.TextEdit();
             this.textEditTmp_KvNr = new DevExpress.XtraEditors.TextEdit();
+            this.comboBoxTmp_V_Status = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditDMP = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup23 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_KvNr = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_V_Status = new DevExpress.XtraLayout.LayoutControlItem();
@@ -240,6 +251,7 @@
             this.textEditTmp_IK = new DevExpress.XtraEditors.TextEdit();
             this.ComboBoxTmp_VKZ = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEditZiel_IKFKT = new DevExpress.XtraEditors.TextEdit();
+            this.textEditTmp_LfdNrGFall = new DevExpress.XtraEditors.ComboBoxEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_IK = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_VKZ = new DevExpress.XtraLayout.LayoutControlItem();
@@ -248,9 +260,7 @@
             this.layoutControl7 = new DevExpress.XtraLayout.LayoutControl();
             this.CheckedCombiEditAufnahmediagnose = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.textEditAufnahmediagnose = new DevExpress.XtraEditors.TextEdit();
-            this.textEditSEAufnahmediagnose = new DevExpress.XtraEditors.TextEdit();
             this.textEditEinDiagnose = new DevExpress.XtraEditors.TextEdit();
-            this.textEditSEEinDiagnose = new DevExpress.XtraEditors.TextEdit();
             this.simpleButtonADDdiagnose = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlGroup27 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup47 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -285,6 +295,7 @@
             this.textEditrefNRKK = new DevExpress.XtraEditors.TextEdit();
             this.textEditrecBetragZahl = new DevExpress.XtraEditors.TextEdit();
             this.textEditIKZahlungWeg = new DevExpress.XtraEditors.TextEdit();
+            this.textEditrecArt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup42 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup13 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemRech_Nr = new DevExpress.XtraLayout.LayoutControlItem();
@@ -294,6 +305,7 @@
             this.layoutControlItem50 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem51 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem55 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem62 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup19 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemSamuElementList = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem48 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -303,6 +315,7 @@
             this.textEditTmp_NF_Diag_1 = new DevExpress.XtraEditors.TextEdit();
             this.dateEditTmp_EntlTag = new DevExpress.XtraEditors.DateEdit();
             this.dateEditTmp_AufnTagDAU = new DevExpress.XtraEditors.DateEdit();
+            this.textEditTmp_NF_ab = new DevExpress.XtraEditors.DateEdit();
             this.layoutControlGroup28 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_AufnTagDAU = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_EntlTag = new DevExpress.XtraLayout.LayoutControlItem();
@@ -319,6 +332,8 @@
             this.textEditetl_SekDlok = new DevExpress.XtraEditors.TextEdit();
             this.textEditetl_HDlok = new DevExpress.XtraEditors.TextEdit();
             this.dateEditetl_Datum = new DevExpress.XtraEditors.DateEdit();
+            this.textEditetl_Grund = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditetl_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup29 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemNDGList = new DevExpress.XtraLayout.LayoutControlItem();
@@ -331,6 +346,7 @@
             this.layoutControlItemetl_HDlok = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemetl_aufnIK = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemetl_SekDlok = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem140 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl10 = new DevExpress.XtraLayout.LayoutControl();
             this.dateEditTmp_EBG = new DevExpress.XtraEditors.DateEdit();
             this.checkedComboBoxEditTmp_EBGList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
@@ -351,6 +367,7 @@
             this.dateEditTmp_AufnTagREC = new DevExpress.XtraEditors.DateEdit();
             this.dateEditTmp_RgDatumREC = new DevExpress.XtraEditors.DateEdit();
             this.textEditTmp_RgNrREC = new DevExpress.XtraEditors.TextEdit();
+            this.textEditTmp_RgArtREC = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup33 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_RgNrREC = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_RgDatumREC = new DevExpress.XtraLayout.LayoutControlItem();
@@ -364,6 +381,7 @@
             this.layoutControlItemPau = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl14 = new DevExpress.XtraLayout.LayoutControl();
             this.textEditTmp_Zuzahlbetrag = new DevExpress.XtraEditors.TextEdit();
+            this.textEditTmp_Zuzahlkennzeichen = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup34 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_Zuzahlbetrag = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_Zuzahlkennzeichen = new DevExpress.XtraLayout.LayoutControlItem();
@@ -376,6 +394,7 @@
             this.textEditEnt_Betrag = new DevExpress.XtraEditors.TextEdit();
             this.checkedComboBoxEditTmp_ENTList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.simpleButtonTmp_ENTList = new DevExpress.XtraEditors.SimpleButton();
+            this.textEditEnt_Art = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup36 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup14 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemEnt_Art = new DevExpress.XtraLayout.LayoutControlItem();
@@ -405,6 +424,8 @@
             this.textEditTmp_EinwArztBSNrA = new DevExpress.XtraEditors.TextEdit();
             this.textEditTmp_Arztnr = new DevExpress.XtraEditors.TextEdit();
             this.dateEditAkt_EBM_Verion = new DevExpress.XtraEditors.DateEdit();
+            this.textEditFAB_für_Diag = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditAkt_KV_Bezirk = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup21 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem63 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem64 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -417,6 +438,7 @@
             this.layoutControlItem123 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem124 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem125 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem141 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl23 = new DevExpress.XtraLayout.LayoutControl();
             this.simpleButtonPRZList = new DevExpress.XtraEditors.SimpleButton();
             this.checkedComboBoxEditPRZList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
@@ -439,6 +461,7 @@
             this.textEditENZent_Anzahl = new DevExpress.XtraEditors.TextEdit();
             this.textEditENZent_Erläuterung = new DevExpress.XtraEditors.TextEdit();
             this.textEditENZent_Betrag = new DevExpress.XtraEditors.TextEdit();
+            this.textEditENZent_Text = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup39 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup41 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem81 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -464,6 +487,9 @@
             this.textEditRecGrund = new DevExpress.XtraEditors.TextEdit();
             this.checkedComboBoxEditENAList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.simpleButtonADDENA = new DevExpress.XtraEditors.SimpleButton();
+            this.textEditentEBM = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditentArt = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditTeamEben = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup38 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup55 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem90 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -507,6 +533,8 @@
             this.simpleButtonADDTmp_LEI = new DevExpress.XtraEditors.SimpleButton();
             this.checkedComboBoxEditTmp_LEIList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
             this.dateEditlei_Tag = new DevExpress.XtraEditors.DateEdit();
+            this.textEditlei_Schluessel = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditlei_Art = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup40 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem27 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -522,6 +550,8 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup72 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
+            this.layoutREC = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutFKT = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutINV_PNV = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -538,6 +568,8 @@
             this.layoutControlItem75 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutPVT = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem59 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutSTA = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem72 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCUX = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutDAU = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -548,8 +580,6 @@
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutFAB = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutREC = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem13 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutZLG = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutENT = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -605,39 +635,11 @@
             this.layoutControlItemReferenz_Nr = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemFileName = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemSyntax_Nr = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutSTA = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem72 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditfab_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_LfdNrGFall = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_V_Status = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditDMP = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditInterLand = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_AufnFAB = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_AufnGrund = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_NF_ab = new DevExpress.XtraEditors.DateEdit();
-            this.textEditfab_DG = new DevExpress.XtraEditors.TextEdit();
-            this.textEditTmp_RgArtREC = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTmp_Zuzahlkennzeichen = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditEnt_Art = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditetl_Grund = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditetl_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem140 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditFAB_für_Diag = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem141 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditAkt_KV_Bezirk = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditentEBM = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditentArt = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditTeamEben = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditENZent_Text = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditlei_Schluessel = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditlei_Art = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditrecArt = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem62 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditInfo = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditKOS_KUEM = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditZPR_PV = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEditRecartRel1 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem142 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.dateEditTmp_AufnNr = new DevExpress.XtraEditors.DateEdit();
+            this.ComboBoxTmp_AufnGrund2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem127 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.ComboBoxEditSEAufnahmediagnose = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditSEEinDiagnose = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl15)).BeginInit();
@@ -648,6 +650,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecBetragZ.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditrecBetrag.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecNr.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRecartRel.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup35)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem53)).BeginInit();
@@ -655,6 +658,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem133)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem134)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem135)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem142)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup52)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem136)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem137)).BeginInit();
@@ -663,6 +667,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditRechnungsNR.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRechnungDatum.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRechnungDatum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInfo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup44)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemRechnungsNR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemInfo)).BeginInit();
@@ -689,6 +694,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_ZDG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_SekD.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditFABList.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup46)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemfab_OP)).BeginInit();
@@ -731,6 +738,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_AB.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_Bis.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_Bis.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditKOS_KUEM.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemKOS_Bis)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemKOS_AB)).BeginInit();
@@ -757,6 +765,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditPauschal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditHonorBE.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_Betrag.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_PV.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemZPR_Betrag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemZPR_PV)).BeginInit();
@@ -782,6 +791,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTag.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_VorsDauer.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_VorsDauer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnFAB.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_AufnGrund1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnTag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnGrund)).BeginInit();
@@ -814,6 +825,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ComboEditAkt_G.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_GDat.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_GDat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInterLand.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Nachname)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Vorname)).BeginInit();
@@ -836,8 +848,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditAktSignKK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_KKNr.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFallnr.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnNr.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_KvNr.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxTmp_V_Status.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditDMP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_KvNr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_V_Status)).BeginInit();
@@ -854,6 +867,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_IK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_VKZ.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditZiel_IKFKT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_LfdNrGFall.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_IK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_VKZ)).BeginInit();
@@ -863,9 +877,7 @@
             this.layoutControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CheckedCombiEditAufnahmediagnose.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditAufnahmediagnose.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSEAufnahmediagnose.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditEinDiagnose.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSEEinDiagnose.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup47)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemAufnahmediagnoseList)).BeginInit();
@@ -902,6 +914,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditrefNRKK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditrecBetragZahl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditIKZahlungWeg.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditrecArt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup42)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemRech_Nr)).BeginInit();
@@ -911,6 +924,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem50)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem51)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem55)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSamuElementList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem48)).BeginInit();
@@ -923,6 +937,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EntlTag.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTagDAU.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTagDAU.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnTagDAU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_EntlTag)).BeginInit();
@@ -940,6 +956,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_HDlok.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemNDGList)).BeginInit();
@@ -952,6 +970,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_HDlok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_aufnIK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_SekDlok)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl10)).BeginInit();
             this.layoutControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EBG.Properties.CalendarTimeProperties)).BeginInit();
@@ -976,6 +995,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgNrREC.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgNrREC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgDatumREC)).BeginInit();
@@ -990,6 +1010,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl14)).BeginInit();
             this.layoutControl14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlbetrag.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlbetrag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlkennzeichen)).BeginInit();
@@ -1004,6 +1025,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEnt_von.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Betrag.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditTmp_ENTList.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Art.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup36)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemEnt_Art)).BeginInit();
@@ -1037,6 +1059,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Arztnr.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditAkt_EBM_Verion.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditAkt_EBM_Verion.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFAB_für_Diag.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAkt_KV_Bezirk.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem63)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem64)).BeginInit();
@@ -1049,6 +1073,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem124)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem125)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem141)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl23)).BeginInit();
             this.layoutControl23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditPRZList.Properties)).BeginInit();
@@ -1073,6 +1098,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Anzahl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Erläuterung.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Betrag.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Text.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup39)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup41)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).BeginInit();
@@ -1099,6 +1125,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditHonor.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecGrund.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditENAList.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditentEBM.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditentArt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTeamEben.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup55)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).BeginInit();
@@ -1143,6 +1172,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditTmp_LEIList.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditlei_Tag.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditlei_Tag.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Schluessel.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Art.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup40)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).BeginInit();
@@ -1157,6 +1188,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup72)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutREC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFKT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutINV_PNV)).BeginInit();
@@ -1173,6 +1206,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutPVT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCUX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDAU)).BeginInit();
@@ -1183,8 +1218,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFAB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutREC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutZLG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutENT)).BeginInit();
@@ -1240,40 +1273,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemReferenz_Nr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFileName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSyntax_Nr)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_LfdNrGFall.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_V_Status.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditDMP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditInterLand.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnFAB.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnGrund.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Art.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFAB_für_Diag.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem141)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditAkt_KV_Bezirk.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditentEBM.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditentArt.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTeamEben.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Text.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Schluessel.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Art.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditrecArt.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditInfo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditKOS_KUEM.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_PV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditRecartRel1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem142)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnNr.Properties.CalendarTimeProperties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnNr.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_AufnGrund2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem127)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEAufnahmediagnose.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEEinDiagnose.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -1350,7 +1355,7 @@
             this.layoutControl15.Controls.Add(this.textEditRecBetragZ);
             this.layoutControl15.Controls.Add(this.textEditrecBetrag);
             this.layoutControl15.Controls.Add(this.textEditRecNr);
-            this.layoutControl15.Controls.Add(this.textEditRecartRel1);
+            this.layoutControl15.Controls.Add(this.textEditRecartRel);
             this.layoutControl15.Location = new System.Drawing.Point(27, 381);
             this.layoutControl15.Name = "layoutControl15";
             this.layoutControl15.Root = this.layoutControlGroup10;
@@ -1370,6 +1375,7 @@
             // 
             // checkedComboBoxEditRelList
             // 
+            this.checkedComboBoxEditRelList.EditValue = " ";
             this.checkedComboBoxEditRelList.Location = new System.Drawing.Point(948, 42);
             this.checkedComboBoxEditRelList.Name = "checkedComboBoxEditRelList";
             this.checkedComboBoxEditRelList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1380,6 +1386,7 @@
             // 
             // textEditIKVer
             // 
+            this.textEditIKVer.EditValue = " ";
             this.textEditIKVer.Location = new System.Drawing.Point(240, 162);
             this.textEditIKVer.Name = "textEditIKVer";
             this.textEditIKVer.Size = new System.Drawing.Size(464, 20);
@@ -1388,6 +1395,7 @@
             // 
             // textEditBetragAuf
             // 
+            this.textEditBetragAuf.EditValue = " ";
             this.textEditBetragAuf.Location = new System.Drawing.Point(240, 138);
             this.textEditBetragAuf.Name = "textEditBetragAuf";
             this.textEditBetragAuf.Size = new System.Drawing.Size(464, 20);
@@ -1396,6 +1404,7 @@
             // 
             // textEditRecBetragZ
             // 
+            this.textEditRecBetragZ.EditValue = " ";
             this.textEditRecBetragZ.Location = new System.Drawing.Point(240, 114);
             this.textEditRecBetragZ.Name = "textEditRecBetragZ";
             this.textEditRecBetragZ.Size = new System.Drawing.Size(464, 20);
@@ -1404,6 +1413,7 @@
             // 
             // textEditrecBetrag
             // 
+            this.textEditrecBetrag.EditValue = " ";
             this.textEditrecBetrag.Location = new System.Drawing.Point(240, 66);
             this.textEditrecBetrag.Name = "textEditrecBetrag";
             this.textEditrecBetrag.Size = new System.Drawing.Size(464, 20);
@@ -1412,11 +1422,40 @@
             // 
             // textEditRecNr
             // 
+            this.textEditRecNr.EditValue = " ";
             this.textEditRecNr.Location = new System.Drawing.Point(240, 42);
             this.textEditRecNr.Name = "textEditRecNr";
             this.textEditRecNr.Size = new System.Drawing.Size(464, 20);
             this.textEditRecNr.StyleController = this.layoutControl15;
             this.textEditRecNr.TabIndex = 4;
+            // 
+            // textEditRecartRel
+            // 
+            this.textEditRecartRel.EditValue = " ";
+            this.textEditRecartRel.Location = new System.Drawing.Point(240, 90);
+            this.textEditRecartRel.Name = "textEditRecartRel";
+            this.textEditRecartRel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditRecartRel.Properties.Items.AddRange(new object[] {
+            "0 Zahlungssatz wird nicht angefordert",
+            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
+            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
+            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
+            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
+            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "1 Zwischenrechnung",
+            "2 Schlussrechnung",
+            "3 Nachtragsrechnung",
+            "4 Gutschrift/Stornierung",
+            "6 Zahlungserinnerung",
+            "7 1. Mahnung",
+            "8 2. Mahnung",
+            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
+                "2003 geltenden Fassung"});
+            this.textEditRecartRel.Size = new System.Drawing.Size(464, 20);
+            this.textEditRecartRel.StyleController = this.layoutControl15;
+            this.textEditRecartRel.TabIndex = 6;
             // 
             // layoutControlGroup10
             // 
@@ -1490,6 +1529,16 @@
             this.layoutControlItem135.Text = "KH-internes Kennzeichen des Versicherten";
             this.layoutControlItem135.TextSize = new System.Drawing.Size(213, 13);
             // 
+            // layoutControlItem142
+            // 
+            this.layoutControlItem142.Control = this.textEditRecartRel;
+            this.layoutControlItem142.CustomizationFormText = "Rechnungsart";
+            this.layoutControlItem142.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem142.Name = "layoutControlItem142";
+            this.layoutControlItem142.Size = new System.Drawing.Size(684, 24);
+            this.layoutControlItem142.Text = "Rechnungsart";
+            this.layoutControlItem142.TextSize = new System.Drawing.Size(213, 13);
+            // 
             // layoutControlGroup52
             // 
             this.layoutControlGroup52.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -1532,6 +1581,7 @@
             // 
             // textEditRechnungsNR
             // 
+            this.textEditRechnungsNR.EditValue = " ";
             this.textEditRechnungsNR.Location = new System.Drawing.Point(137, 36);
             this.textEditRechnungsNR.Name = "textEditRechnungsNR";
             this.textEditRechnungsNR.Size = new System.Drawing.Size(1134, 20);
@@ -1540,7 +1590,7 @@
             // 
             // dateEditRechnungDatum
             // 
-            this.dateEditRechnungDatum.EditValue = null;
+            this.dateEditRechnungDatum.EditValue = " ";
             this.dateEditRechnungDatum.Location = new System.Drawing.Point(137, 60);
             this.dateEditRechnungDatum.Name = "dateEditRechnungDatum";
             this.dateEditRechnungDatum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1550,6 +1600,50 @@
             this.dateEditRechnungDatum.Size = new System.Drawing.Size(1134, 20);
             this.dateEditRechnungDatum.StyleController = this.layoutControl42;
             this.dateEditRechnungDatum.TabIndex = 57;
+            // 
+            // textEditInfo
+            // 
+            this.textEditInfo.EditValue = " ";
+            this.textEditInfo.Location = new System.Drawing.Point(137, 12);
+            this.textEditInfo.Name = "textEditInfo";
+            this.textEditInfo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditInfo.Properties.Items.AddRange(new object[] {
+            "PF000 primäre Fehlbelegung",
+            "SF000 sekundäre Fehlbelegung",
+            "KP000 Kodierprüfung",
+            "FV000 Fragen zur Voraussetzung bestimmter Maßnahmen",
+            "KL000 Freitext bei Nennung anderer/weiterer Prüfgegenstände",
+            "FDK01 Aufforderung zum Falldialog",
+            "FDK02 Annahme der Aufforderung zum Falldialog",
+            "FDK03 Ablehnung eines Falldialogs",
+            "FDK12 Annahme der Aufforderung zur Verlängerung des",
+            "FDK13 Ablehnung der Verlängerung des Falldialogs",
+            "FDK20 Erklärung über die Beendigung des Falldialogs",
+            "BEF00 Beendigung des Prüfverfahrens aufgrund Einigung im Falldialog - ohne Datenk" +
+                "orrektur (§ 5 Abs. 6",
+            "BEK00 Beendigung des Prüfverfahrens aufgrund Datenkorrektur - MDK nicht notwendig" +
+                "",
+            "MDK10 Keine oder nicht vollständige Unterlagen an MDK mit Folge der Aufrechnung",
+            "MDK01 Leistungsrechtliche Entscheidung hat keine Beanstandung der Abrechnung als " +
+                "Ergebnis",
+            "MDK02 Leistungsrechtliche Entscheidung hat Beanstandung der Abrechnung als Ergebn" +
+                "is",
+            "MDK03 Leistungsrechtliche Entscheidung hat aufgrund Datensatzkorrektur (§ 7 Abs. " +
+                "5 PrüfvV) im MDKVerfahren keine Beanstandung der Abrechnung als Ergebnis",
+            "MDK04 Festlegung des Aufschlages gemäß § 275c Abs. 3 SGB V durch die Krankenkasse" +
+                "",
+            "FDI01 Aufforderung zum Falldialog",
+            "FDI02 Annahme der Aufforderung zum Falldialog",
+            "FDI03 Ablehnung eines Falldialogs",
+            "FDI11 Aufforderung zur Verlängerung des Falldialogs",
+            "FDI12 Annahme der Aufforderung zur Verlängerung des Falldialogs",
+            "FDI13 Ablehnung der Verlängerung des Falldialogs",
+            "FDI20 Erklärung über die Beendigung des Falldialogs",
+            "NVI01 Vorschlag eines Nachverfahrens, begründete Stellungnahme"});
+            this.textEditInfo.Size = new System.Drawing.Size(1134, 20);
+            this.textEditInfo.StyleController = this.layoutControl42;
+            this.textEditInfo.TabIndex = 55;
             // 
             // layoutControlGroup44
             // 
@@ -1629,7 +1723,7 @@
             // 
             // dateEditStandardDatum
             // 
-            this.dateEditStandardDatum.EditValue = null;
+            this.dateEditStandardDatum.EditValue = " ";
             this.dateEditStandardDatum.Location = new System.Drawing.Point(177, 66);
             this.dateEditStandardDatum.Name = "dateEditStandardDatum";
             this.dateEditStandardDatum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1645,6 +1739,7 @@
             // 
             // textEditStandNr
             // 
+            this.textEditStandNr.EditValue = " ";
             this.textEditStandNr.Location = new System.Drawing.Point(177, 42);
             this.textEditStandNr.Name = "textEditStandNr";
             this.textEditStandNr.Size = new System.Drawing.Size(461, 20);
@@ -1741,7 +1836,7 @@
             // 
             // dateEditfab_OPT
             // 
-            this.dateEditfab_OPT.EditValue = null;
+            this.dateEditfab_OPT.EditValue = " ";
             this.dateEditfab_OPT.Location = new System.Drawing.Point(197, 162);
             this.dateEditfab_OPT.Name = "dateEditfab_OPT";
             this.dateEditfab_OPT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1754,6 +1849,7 @@
             // 
             // textEditfab_OP
             // 
+            this.textEditfab_OP.EditValue = " ";
             this.textEditfab_OP.Location = new System.Drawing.Point(197, 186);
             this.textEditfab_OP.Name = "textEditfab_OP";
             this.textEditfab_OP.Size = new System.Drawing.Size(449, 20);
@@ -1762,6 +1858,7 @@
             // 
             // textEditfab_ZSekD
             // 
+            this.textEditfab_ZSekD.EditValue = " ";
             this.textEditfab_ZSekD.Location = new System.Drawing.Point(197, 138);
             this.textEditfab_ZSekD.Name = "textEditfab_ZSekD";
             this.textEditfab_ZSekD.Size = new System.Drawing.Size(449, 20);
@@ -1770,6 +1867,7 @@
             // 
             // textEditfab_ZDG
             // 
+            this.textEditfab_ZDG.EditValue = " ";
             this.textEditfab_ZDG.Location = new System.Drawing.Point(197, 114);
             this.textEditfab_ZDG.Name = "textEditfab_ZDG";
             this.textEditfab_ZDG.Size = new System.Drawing.Size(449, 20);
@@ -1788,6 +1886,7 @@
             // 
             // textEditfab_SekD
             // 
+            this.textEditfab_SekD.EditValue = " ";
             this.textEditfab_SekD.Location = new System.Drawing.Point(197, 90);
             this.textEditfab_SekD.Name = "textEditfab_SekD";
             this.textEditfab_SekD.Size = new System.Drawing.Size(449, 20);
@@ -1796,6 +1895,7 @@
             // 
             // checkedComboBoxEditFABList
             // 
+            this.checkedComboBoxEditFABList.EditValue = " ";
             this.checkedComboBoxEditFABList.Location = new System.Drawing.Point(847, 42);
             this.checkedComboBoxEditFABList.Name = "checkedComboBoxEditFABList";
             this.checkedComboBoxEditFABList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -1803,6 +1903,66 @@
             this.checkedComboBoxEditFABList.Size = new System.Drawing.Size(412, 20);
             this.checkedComboBoxEditFABList.StyleController = this.layoutControl11;
             this.checkedComboBoxEditFABList.TabIndex = 4;
+            // 
+            // textEditfab_FAbt
+            // 
+            this.textEditfab_FAbt.EditValue = " ";
+            this.textEditfab_FAbt.Location = new System.Drawing.Point(197, 42);
+            this.textEditfab_FAbt.Name = "textEditfab_FAbt";
+            this.textEditfab_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditfab_FAbt.Properties.Items.AddRange(new object[] {
+            "0100 Innere Medizin",
+            "0200 Geriatrie",
+            "0300 Kardiologie",
+            "0400 Nephrologie",
+            "0500 Hämatologie und internistische Onkologie",
+            "0600 Endokrinologie",
+            "0700 Gastroenterologie",
+            "0800 Pneumologie",
+            "0900 Rheumatologie",
+            "1000 Pädiatrie",
+            "1100 Kinderkardiologie",
+            "1200 Neonatologie",
+            "1300 Kinderchirurgie",
+            "1400 Lungen- und Bronchialheilkunde",
+            "1500 Allgemeine Chirurgie",
+            "1600 Unfallchirurgie",
+            "1700 Neurochirurgie",
+            "1800 Gefäßchirurgie",
+            "1900 Plastische Chirurgie",
+            "2000 Thoraxchirurgie",
+            "2100 Herzchirurgie",
+            "2200 Urologie",
+            "2300 Orthopädie",
+            "2400 Frauenheilkunde und Geburtshilfe",
+            "2500 davon Geburtshilfe",
+            "2600 Hals-, Nasen-, Ohrenheilkunde",
+            "2700 Augenheilkunde",
+            "2800 Neurologie",
+            "2900 Allgemeine Psychiatrie",
+            "3000 Kinder- und Jugendpsychiatrie",
+            "3100 Psychosomatik/Psychotherapie",
+            "3200 Nuklearmedizin",
+            "3300 Strahlenheilkunde",
+            "3400 Dermatologie",
+            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+            "3600 Intensivmedizin",
+            "2316 Orthopädie und Unfallchirurgie",
+            "2425 Frauenheilkunde",
+            "3700 Sonstige Fachabteilung"});
+            this.textEditfab_FAbt.Size = new System.Drawing.Size(449, 20);
+            this.textEditfab_FAbt.StyleController = this.layoutControl11;
+            this.textEditfab_FAbt.TabIndex = 4;
+            // 
+            // textEditfab_DG
+            // 
+            this.textEditfab_DG.EditValue = " ";
+            this.textEditfab_DG.Location = new System.Drawing.Point(197, 66);
+            this.textEditfab_DG.Name = "textEditfab_DG";
+            this.textEditfab_DG.Size = new System.Drawing.Size(449, 20);
+            this.textEditfab_DG.StyleController = this.layoutControl11;
+            this.textEditfab_DG.TabIndex = 7;
             // 
             // layoutControlGroup9
             // 
@@ -1943,6 +2103,7 @@
             // 
             // textEditPrfP
             // 
+            this.textEditPrfP.EditValue = " ";
             this.textEditPrfP.Location = new System.Drawing.Point(137, 354);
             this.textEditPrfP.Name = "textEditPrfP";
             this.textEditPrfP.Size = new System.Drawing.Size(527, 20);
@@ -1951,6 +2112,7 @@
             // 
             // textEditNDSEk
             // 
+            this.textEditNDSEk.EditValue = " ";
             this.textEditNDSEk.Location = new System.Drawing.Point(137, 330);
             this.textEditNDSEk.Name = "textEditNDSEk";
             this.textEditNDSEk.Size = new System.Drawing.Size(527, 20);
@@ -1959,6 +2121,7 @@
             // 
             // textEditPrfN
             // 
+            this.textEditPrfN.EditValue = " ";
             this.textEditPrfN.Location = new System.Drawing.Point(137, 306);
             this.textEditPrfN.Name = "textEditPrfN";
             this.textEditPrfN.Size = new System.Drawing.Size(527, 20);
@@ -1967,6 +2130,7 @@
             // 
             // textEditHDSEk
             // 
+            this.textEditHDSEk.EditValue = " ";
             this.textEditHDSEk.Location = new System.Drawing.Point(137, 282);
             this.textEditHDSEk.Name = "textEditHDSEk";
             this.textEditHDSEk.Size = new System.Drawing.Size(527, 20);
@@ -1975,6 +2139,7 @@
             // 
             // textEditPrfvH
             // 
+            this.textEditPrfvH.EditValue = " ";
             this.textEditPrfvH.Location = new System.Drawing.Point(137, 258);
             this.textEditPrfvH.Name = "textEditPrfvH";
             this.textEditPrfvH.Size = new System.Drawing.Size(527, 20);
@@ -2003,6 +2168,7 @@
             // 
             // memoEditText
             // 
+            this.memoEditText.EditValue = " ";
             this.memoEditText.Location = new System.Drawing.Point(137, 42);
             this.memoEditText.Name = "memoEditText";
             this.memoEditText.Size = new System.Drawing.Size(527, 212);
@@ -2136,6 +2302,7 @@
             // 
             // textEditHighT
             // 
+            this.textEditHighT.EditValue = " ";
             this.textEditHighT.Location = new System.Drawing.Point(155, 132);
             this.textEditHighT.Name = "textEditHighT";
             this.textEditHighT.Size = new System.Drawing.Size(1116, 20);
@@ -2144,6 +2311,7 @@
             // 
             // textEditKOSZTag
             // 
+            this.textEditKOSZTag.EditValue = " ";
             this.textEditKOSZTag.Location = new System.Drawing.Point(155, 108);
             this.textEditKOSZTag.Name = "textEditKOSZTag";
             this.textEditKOSZTag.Size = new System.Drawing.Size(1116, 20);
@@ -2152,7 +2320,7 @@
             // 
             // dateEditKOSDatum
             // 
-            this.dateEditKOSDatum.EditValue = null;
+            this.dateEditKOSDatum.EditValue = " ";
             this.dateEditKOSDatum.Location = new System.Drawing.Point(155, 12);
             this.dateEditKOSDatum.Name = "dateEditKOSDatum";
             this.dateEditKOSDatum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2165,7 +2333,7 @@
             // 
             // dateEditKOS_AB
             // 
-            this.dateEditKOS_AB.EditValue = null;
+            this.dateEditKOS_AB.EditValue = " ";
             this.dateEditKOS_AB.Location = new System.Drawing.Point(155, 60);
             this.dateEditKOS_AB.Name = "dateEditKOS_AB";
             this.dateEditKOS_AB.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2178,7 +2346,7 @@
             // 
             // dateEditKOS_Bis
             // 
-            this.dateEditKOS_Bis.EditValue = null;
+            this.dateEditKOS_Bis.EditValue = " ";
             this.dateEditKOS_Bis.Location = new System.Drawing.Point(155, 84);
             this.dateEditKOS_Bis.Name = "dateEditKOS_Bis";
             this.dateEditKOS_Bis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2188,6 +2356,59 @@
             this.dateEditKOS_Bis.Size = new System.Drawing.Size(1116, 20);
             this.dateEditKOS_Bis.StyleController = this.layoutControl34;
             this.dateEditKOS_Bis.TabIndex = 5;
+            // 
+            // textEditKOS_KUEM
+            // 
+            this.textEditKOS_KUEM.EditValue = " ";
+            this.textEditKOS_KUEM.Location = new System.Drawing.Point(155, 36);
+            this.textEditKOS_KUEM.Name = "textEditKOS_KUEM";
+            this.textEditKOS_KUEM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditKOS_KUEM.Properties.DisplayFormat.FormatString = "d";
+            this.textEditKOS_KUEM.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.textEditKOS_KUEM.Properties.EditFormat.FormatString = "d";
+            this.textEditKOS_KUEM.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.textEditKOS_KUEM.Properties.Items.AddRange(new object[] {
+            "01 Kostenübernahme, kein Pflegegrad vorhanden",
+            "A1 Kostenübernahme, kein Pflegegrad vorhanden, Einstufung beantragt",
+            "B1 Kostenübernahme, bestehender Pflegegrad 1",
+            "C1 Kostenübernahme, bestehender Pflegegrad 1, Antrag auf Neueinstufung ",
+            "D1 Kostenübernahme, bestehender Pflegegrad 2 Nl",
+            "E1 Kostenübernahme, bestehender Pflegegrad 2, Antrag auf Neueinstufung",
+            "F1 Kostenübernahme, bestehender Pflegegrad 3",
+            "G1 Kostenübernahme, bestehender Pflegegrad 3, Antrag auf Neueinstufung",
+            "H1 Kostenübernahme, bestehender Pflegegrad 4 Nl",
+            "K1 Kostenübernahme, bestehender Pflegegrad 4, Antrag auf Neueinstufung",
+            "L1 Kostenübernahme, bestehender Pflegegrad 5",
+            "M1 Kostenübernahme, bestehender Pflegegrad 5, Antrag auf Neueinstufung",
+            "02 Änderung der Kostenübernahme",
+            "03 Ablehnung, kein Leistungsanspruch",
+            "04 Kostenübernahme, Rechnung zusätzlich in Papierform (Auslands-Versicherter/Auft" +
+                "ragsleistung)",
+            "05 Ablehnung, Unfallversicherungsträger zuständig",
+            "06 Ablehnung, Rentenversicherungsträger zuständig",
+            "07 Ablehnung, Krankenversicherungsträger nicht zuständig",
+            "08 Bestätigung des Versichertenverhältnisses, kein Pflegegrad vorhanden Nl",
+            "A8 Bestätigung des Versichertenverhältnisses, kein Pflegegrad vorhanden, Einstufu" +
+                "ng beantragt",
+            "B8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 1",
+            "C8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 1, Antrag au" +
+                "f Neueinstufung",
+            "D8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 2 Nl",
+            "E8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 2, Antrag au" +
+                "f Neueinstufung",
+            "F8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 3",
+            "G8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 3, Antrag au" +
+                "f Neueinstufung",
+            "H8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 4",
+            "K8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 4, Antrag au" +
+                "f Neueinstufung",
+            "L8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 5",
+            "M8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 5, Antrag au" +
+                "f Neueinstufung"});
+            this.textEditKOS_KUEM.Size = new System.Drawing.Size(1116, 20);
+            this.textEditKOS_KUEM.StyleController = this.layoutControl34;
+            this.textEditKOS_KUEM.TabIndex = 4;
             // 
             // layoutControlGroup7
             // 
@@ -2275,6 +2496,7 @@
             // 
             // textEditAnforderung
             // 
+            this.textEditAnforderung.EditValue = " ";
             this.textEditAnforderung.Location = new System.Drawing.Point(211, 354);
             this.textEditAnforderung.Name = "textEditAnforderung";
             this.textEditAnforderung.Size = new System.Drawing.Size(408, 20);
@@ -2283,6 +2505,7 @@
             // 
             // textEditKosten
             // 
+            this.textEditKosten.EditValue = " ";
             this.textEditKosten.Location = new System.Drawing.Point(211, 330);
             this.textEditKosten.Name = "textEditKosten";
             this.textEditKosten.Size = new System.Drawing.Size(408, 20);
@@ -2301,6 +2524,7 @@
             // 
             // checkedComboBoxEditTmp_TextANFMList
             // 
+            this.checkedComboBoxEditTmp_TextANFMList.EditValue = " ";
             this.checkedComboBoxEditTmp_TextANFMList.Location = new System.Drawing.Point(834, 42);
             this.checkedComboBoxEditTmp_TextANFMList.Name = "checkedComboBoxEditTmp_TextANFMList";
             this.checkedComboBoxEditTmp_TextANFMList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2311,6 +2535,7 @@
             // 
             // memoEditMediBeg
             // 
+            this.memoEditMediBeg.EditValue = " ";
             this.memoEditMediBeg.Location = new System.Drawing.Point(211, 42);
             this.memoEditMediBeg.Name = "memoEditMediBeg";
             this.memoEditMediBeg.Size = new System.Drawing.Size(408, 284);
@@ -2412,6 +2637,7 @@
             // 
             // textEditPauschal
             // 
+            this.textEditPauschal.EditValue = " ";
             this.textEditPauschal.Location = new System.Drawing.Point(223, 84);
             this.textEditPauschal.Name = "textEditPauschal";
             this.textEditPauschal.Size = new System.Drawing.Size(1048, 20);
@@ -2420,6 +2646,7 @@
             // 
             // textEditHonorBE
             // 
+            this.textEditHonorBE.EditValue = " ";
             this.textEditHonorBE.Location = new System.Drawing.Point(223, 60);
             this.textEditHonorBE.Name = "textEditHonorBE";
             this.textEditHonorBE.Size = new System.Drawing.Size(1048, 20);
@@ -2428,11 +2655,76 @@
             // 
             // textEditZPR_Betrag
             // 
+            this.textEditZPR_Betrag.EditValue = " ";
             this.textEditZPR_Betrag.Location = new System.Drawing.Point(223, 12);
             this.textEditZPR_Betrag.Name = "textEditZPR_Betrag";
             this.textEditZPR_Betrag.Size = new System.Drawing.Size(1048, 20);
             this.textEditZPR_Betrag.StyleController = this.layoutControl32;
             this.textEditZPR_Betrag.TabIndex = 4;
+            // 
+            // textEditZPR_PV
+            // 
+            this.textEditZPR_PV.EditValue = " ";
+            this.textEditZPR_PV.Location = new System.Drawing.Point(223, 36);
+            this.textEditZPR_PV.Name = "textEditZPR_PV";
+            this.textEditZPR_PV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditZPR_PV.Properties.Items.AddRange(new object[] {
+            "01 Rechnungsbetrag wird angewiesen",
+            "02 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich)",
+            "03 Rechnung wurde bereits bezahlt",
+            "04 Krankenkasse ist nicht Kostenträger",
+            "05 Rechnungsbetrag wird teilweise angewiesen",
+            "06 Es handelt sich bei der Erkrankung um einen Arbeitsunfall bzw. eine Berufskran" +
+                "kheit. Berufsgenossenschaft schaft",
+            "07 Es handelt sich um einen BVG-Fall, einen Grenzgänger oder einen Auslandsversic" +
+                "herten oder einen",
+            "11 Rechnungsbetrag wird angewiesen",
+            "12 Rechnung wird zur Zeit geprüft",
+            "13 Rechnung wurde bereits bezahlt",
+            "15 Rechnungsbetrag wird teilweise angewiesen",
+            "21 Rechnungsbetrag wird angewiesen,Verfahrensunterlagen sind gesondert zur Verfüg" +
+                "ung zu stellen",
+            "22 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Verfah" +
+                "rensunterlagen sind gesondert zur Verfügung zu stellen",
+            "23 Rechnung wurde bereits bezahlt,Verfahrensunterlagen sind gesondert zur Verfügu" +
+                "ng zu stellen",
+            "25 Rechnungsbetrag wird teilweise angewiesen,Verfahrensunterlagen sind gesondert " +
+                "zur Verfügung zu stellen",
+            "31 Rechnungsbetrag wird angewiesen,Verfahrensunterlagen sind gesondert zur Verfüg" +
+                "ung zu stellen",
+            "32 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Verfah" +
+                "rensunterlagen sind gesondert zur Verfügung zu stellen",
+            "33 Rechnung wurde bereits bezahlt,Verfahrensunterlagen sind gesondert zur Verfügu" +
+                "ng zu stellen",
+            "35 Rechnungsbetrag wird teilweise angewiesen,Rechnungsbetrag wird teilweise angew" +
+                "iesen,",
+            "41 Rechnungsbetrag wird angewiesen,Belege über entstandene Kosten sind gesondert " +
+                "zur Verfügung zu stellen",
+            "42 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Belege" +
+                " über entstandene Kosten sind gesondert zur Verfügung zu stellen",
+            "43 Rechnung wurde bereits bezahlt,Belege über entstandene Kosten sind gesondert z" +
+                "ur Verfügung zu stellen",
+            "45 Rechnungsbetrag wird teilweise angewiesen,Belege über entstandene Kosten sind " +
+                "gesondert zur Verfügung zu stellen",
+            "51 Rechnungsbetrag wird angewiesen,Belege über entstandene Kosten und Verfahrensu" +
+                "nterlagen sind gesondert zur Verfügung zu stellen",
+            "52 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Belege" +
+                " über entstandene Kosten und Verfahrensunterlagen sind gesondert zur Verfügung z" +
+                "u stellen",
+            "53 Rechnung wurde bereits bezahlt,Belege über entstandene Kosten und Verfahrensun" +
+                "terlagen sind gesondert zur Verfügung zu stellen",
+            "55 Rechnungsbetrag wird teilweise angewiesen,Belege über entstandene Kosten und V" +
+                "erfahrensunterlagen sind gesondert zur Verfügung zu stellen",
+            "61 Rechnungsbetrag wird angewiesen,Beleg über Unzustellbarkeit ist gesondert zur " +
+                "Verfügung zu stellen",
+            "62 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Beleg " +
+                "über Unzustellbarkeit ist gesondert zur Verfügung zu stellen",
+            "65 Rechnungsbetrag wird teilweise angewiesen,Beleg über Unzustellbarkeit ist geso" +
+                "ndert zur Verfügung zu stellen"});
+            this.textEditZPR_PV.Size = new System.Drawing.Size(1048, 20);
+            this.textEditZPR_PV.StyleController = this.layoutControl32;
+            this.textEditZPR_PV.TabIndex = 5;
             // 
             // layoutControlGroup6
             // 
@@ -2752,6 +3044,7 @@
             // 
             // layoutControl6
             // 
+            this.layoutControl6.Controls.Add(this.ComboBoxTmp_AufnGrund2);
             this.layoutControl6.Controls.Add(this.textEditTmp_AufnGewicht);
             this.layoutControl6.Controls.Add(this.textEditTmp_EinwZArzt);
             this.layoutControl6.Controls.Add(this.textEditTmp_EinwStelle);
@@ -2761,7 +3054,7 @@
             this.layoutControl6.Controls.Add(this.dateEditTmp_AufnTag);
             this.layoutControl6.Controls.Add(this.dateEditTmp_VorsDauer);
             this.layoutControl6.Controls.Add(this.textEditTmp_AufnFAB);
-            this.layoutControl6.Controls.Add(this.textEditTmp_AufnGrund);
+            this.layoutControl6.Controls.Add(this.ComboBoxTmp_AufnGrund1);
             this.layoutControl6.Location = new System.Drawing.Point(27, 381);
             this.layoutControl6.Name = "layoutControl6";
             this.layoutControl6.Root = this.layoutControlGroup26;
@@ -2771,6 +3064,7 @@
             // 
             // textEditTmp_AufnGewicht
             // 
+            this.textEditTmp_AufnGewicht.EditValue = " ";
             this.textEditTmp_AufnGewicht.Location = new System.Drawing.Point(249, 228);
             this.textEditTmp_AufnGewicht.Name = "textEditTmp_AufnGewicht";
             this.textEditTmp_AufnGewicht.Size = new System.Drawing.Size(1022, 20);
@@ -2779,6 +3073,7 @@
             // 
             // textEditTmp_EinwZArzt
             // 
+            this.textEditTmp_EinwZArzt.EditValue = " ";
             this.textEditTmp_EinwZArzt.Location = new System.Drawing.Point(249, 204);
             this.textEditTmp_EinwZArzt.Name = "textEditTmp_EinwZArzt";
             this.textEditTmp_EinwZArzt.Size = new System.Drawing.Size(1022, 20);
@@ -2787,6 +3082,7 @@
             // 
             // textEditTmp_EinwStelle
             // 
+            this.textEditTmp_EinwStelle.EditValue = " ";
             this.textEditTmp_EinwStelle.Location = new System.Drawing.Point(249, 180);
             this.textEditTmp_EinwStelle.Name = "textEditTmp_EinwStelle";
             this.textEditTmp_EinwStelle.Size = new System.Drawing.Size(1022, 20);
@@ -2795,6 +3091,7 @@
             // 
             // textEditTmp_EinwIK
             // 
+            this.textEditTmp_EinwIK.EditValue = " ";
             this.textEditTmp_EinwIK.Location = new System.Drawing.Point(249, 156);
             this.textEditTmp_EinwIK.Name = "textEditTmp_EinwIK";
             this.textEditTmp_EinwIK.Size = new System.Drawing.Size(1022, 20);
@@ -2803,6 +3100,7 @@
             // 
             // textEditTmp_EinwArzt
             // 
+            this.textEditTmp_EinwArzt.EditValue = " ";
             this.textEditTmp_EinwArzt.Location = new System.Drawing.Point(249, 108);
             this.textEditTmp_EinwArzt.Name = "textEditTmp_EinwArzt";
             this.textEditTmp_EinwArzt.Size = new System.Drawing.Size(1022, 20);
@@ -2811,6 +3109,7 @@
             // 
             // textEditTmp_EinwArztBSNr
             // 
+            this.textEditTmp_EinwArztBSNr.EditValue = " ";
             this.textEditTmp_EinwArztBSNr.Location = new System.Drawing.Point(249, 132);
             this.textEditTmp_EinwArztBSNr.Name = "textEditTmp_EinwArztBSNr";
             this.textEditTmp_EinwArztBSNr.Size = new System.Drawing.Size(1022, 20);
@@ -2819,7 +3118,7 @@
             // 
             // dateEditTmp_AufnTag
             // 
-            this.dateEditTmp_AufnTag.EditValue = null;
+            this.dateEditTmp_AufnTag.EditValue = " ";
             this.dateEditTmp_AufnTag.Location = new System.Drawing.Point(249, 12);
             this.dateEditTmp_AufnTag.Name = "dateEditTmp_AufnTag";
             this.dateEditTmp_AufnTag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2843,7 +3142,7 @@
             // 
             // dateEditTmp_VorsDauer
             // 
-            this.dateEditTmp_VorsDauer.EditValue = null;
+            this.dateEditTmp_VorsDauer.EditValue = " ";
             this.dateEditTmp_VorsDauer.Location = new System.Drawing.Point(249, 84);
             this.dateEditTmp_VorsDauer.Name = "dateEditTmp_VorsDauer";
             this.dateEditTmp_VorsDauer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -2860,6 +3159,80 @@
             this.dateEditTmp_VorsDauer.StyleController = this.layoutControl6;
             this.dateEditTmp_VorsDauer.TabIndex = 9;
             // 
+            // textEditTmp_AufnFAB
+            // 
+            this.textEditTmp_AufnFAB.EditValue = " ";
+            this.textEditTmp_AufnFAB.Location = new System.Drawing.Point(249, 60);
+            this.textEditTmp_AufnFAB.Name = "textEditTmp_AufnFAB";
+            this.textEditTmp_AufnFAB.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_AufnFAB.Properties.Items.AddRange(new object[] {
+            "0100 Innere Medizin",
+            "0200 Geriatrie",
+            "0300 Kardiologie",
+            "0400 Nephrologie",
+            "0500 Hämatologie und internistische Onkologie",
+            "0600 Endokrinologie",
+            "0700 Gastroenterologie",
+            "0800 Pneumologie",
+            "0900 Rheumatologie",
+            "1000 Pädiatrie",
+            "1100 Kinderkardiologie",
+            "1200 Neonatologie",
+            "1300 Kinderchirurgie",
+            "1400 Lungen- und Bronchialheilkunde",
+            "1600 Unfallchirurgie",
+            "1700 Neurochirurgie",
+            "1800 Gefäßchirurgie",
+            "1900 Plastische Chirurgie",
+            "2000 Thoraxchirurgie",
+            "2100 Herzchirurgie",
+            "2200 Urologie",
+            "2300 Orthopädie",
+            "2400 Frauenheilkunde und Geburtshilfe",
+            "2500 davon Geburtshilfe",
+            "2600 Hals-, Nasen-, Ohrenheilkunde",
+            "2700 Augenheilkunde",
+            "2800 Neurologie",
+            "2900 Allgemeine Psychiatrie",
+            "3000 Kinder- und Jugendpsychiatrie",
+            "3100 Psychosomatik/Psychotherapie",
+            "3200 Nuklearmedizin",
+            "3300 Strahlenheilkunde",
+            "3400 Dermatologie",
+            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+            "3600 Intensivmedizin",
+            "2316 Orthopädie und Unfallchirurgie",
+            "2425 Frauenheilkunde",
+            "3700 Sonstige Fachabteilung",
+            "1500 Allgemeine Chirurgie"});
+            this.textEditTmp_AufnFAB.Size = new System.Drawing.Size(1022, 20);
+            this.textEditTmp_AufnFAB.StyleController = this.layoutControl6;
+            this.textEditTmp_AufnFAB.TabIndex = 8;
+            // 
+            // ComboBoxTmp_AufnGrund1
+            // 
+            this.ComboBoxTmp_AufnGrund1.EditValue = " ";
+            this.ComboBoxTmp_AufnGrund1.Location = new System.Drawing.Point(249, 36);
+            this.ComboBoxTmp_AufnGrund1.Name = "ComboBoxTmp_AufnGrund1";
+            this.ComboBoxTmp_AufnGrund1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ComboBoxTmp_AufnGrund1.Properties.Items.AddRange(new object[] {
+            "01 Krankenhausbehandlung, vollstationär",
+            "02 Krankenhausbehandlung, vollstationär mit vorausgegangener vorstationärer Behan" +
+                "dlung",
+            "03 Krankenhausbehandlung, teilstationär",
+            "04 vorstationäre Behandlung ohne anschließende vollstationäre Behandlung",
+            "05 Stationäre Entbindung",
+            "06 Geburt",
+            "07 Wiederaufnahme wegen Komplikationen (Fallpauschale) nach KFPV 2003",
+            "08 Stationäre Aufnahme zur Organentnahme",
+            "09 frei",
+            "10 Stationsäquivalente Behandlung"});
+            this.ComboBoxTmp_AufnGrund1.Size = new System.Drawing.Size(390, 20);
+            this.ComboBoxTmp_AufnGrund1.StyleController = this.layoutControl6;
+            this.ComboBoxTmp_AufnGrund1.TabIndex = 7;
+            // 
             // layoutControlGroup26
             // 
             this.layoutControlGroup26.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -2874,7 +3247,8 @@
             this.layoutControlItemTmp_EinwStelle,
             this.layoutControlItemTmp_AufnGewicht,
             this.layoutControlItemTmp_EinwZArzt,
-            this.layoutControlItemTmp_EinwArztBSNr});
+            this.layoutControlItemTmp_EinwArztBSNr,
+            this.layoutControlItem127});
             this.layoutControlGroup26.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup26.Name = "layoutControlGroup26";
             this.layoutControlGroup26.Size = new System.Drawing.Size(1283, 398);
@@ -2891,11 +3265,11 @@
             // 
             // layoutControlItemTmp_AufnGrund
             // 
-            this.layoutControlItemTmp_AufnGrund.Control = this.textEditTmp_AufnGrund;
+            this.layoutControlItemTmp_AufnGrund.Control = this.ComboBoxTmp_AufnGrund1;
             this.layoutControlItemTmp_AufnGrund.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemTmp_AufnGrund.Name = "layoutControlItemTmp_AufnGrund";
-            this.layoutControlItemTmp_AufnGrund.Size = new System.Drawing.Size(1263, 24);
-            this.layoutControlItemTmp_AufnGrund.Text = "Aufnahmegrund";
+            this.layoutControlItemTmp_AufnGrund.Size = new System.Drawing.Size(631, 24);
+            this.layoutControlItemTmp_AufnGrund.Text = "Aufnahmegrund (1. und 2. Stelle)";
             this.layoutControlItemTmp_AufnGrund.TextSize = new System.Drawing.Size(234, 13);
             // 
             // layoutControlItemTmp_AufnFAB
@@ -2983,6 +3357,7 @@
             // 
             // ComboEditICD_Prefix
             // 
+            this.ComboEditICD_Prefix.EditValue = " ";
             this.ComboEditICD_Prefix.Location = new System.Drawing.Point(74, 12);
             this.ComboEditICD_Prefix.Name = "ComboEditICD_Prefix";
             this.ComboEditICD_Prefix.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3013,6 +3388,7 @@
             // 
             // ComboEditOPS_Prefix
             // 
+            this.ComboEditOPS_Prefix.EditValue = " ";
             this.ComboEditOPS_Prefix.Location = new System.Drawing.Point(74, 36);
             this.ComboEditOPS_Prefix.Name = "ComboEditOPS_Prefix";
             this.ComboEditOPS_Prefix.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3094,6 +3470,7 @@
             // 
             // textEditAkt_Namenszusatz
             // 
+            this.textEditAkt_Namenszusatz.EditValue = " ";
             this.textEditAkt_Namenszusatz.Location = new System.Drawing.Point(183, 228);
             this.textEditAkt_Namenszusatz.Name = "textEditAkt_Namenszusatz";
             this.textEditAkt_Namenszusatz.Size = new System.Drawing.Size(1088, 20);
@@ -3102,6 +3479,7 @@
             // 
             // textEditAkt_Anschriftenzusatz
             // 
+            this.textEditAkt_Anschriftenzusatz.EditValue = " ";
             this.textEditAkt_Anschriftenzusatz.Location = new System.Drawing.Point(183, 276);
             this.textEditAkt_Anschriftenzusatz.Name = "textEditAkt_Anschriftenzusatz";
             this.textEditAkt_Anschriftenzusatz.Size = new System.Drawing.Size(1088, 20);
@@ -3111,6 +3489,7 @@
             // 
             // textEditAkt_Vorsatzwort
             // 
+            this.textEditAkt_Vorsatzwort.EditValue = " ";
             this.textEditAkt_Vorsatzwort.Location = new System.Drawing.Point(183, 252);
             this.textEditAkt_Vorsatzwort.Name = "textEditAkt_Vorsatzwort";
             this.textEditAkt_Vorsatzwort.Size = new System.Drawing.Size(1088, 20);
@@ -3120,6 +3499,7 @@
             // 
             // textEditTmp_VSt
             // 
+            this.textEditTmp_VSt.EditValue = " ";
             this.textEditTmp_VSt.Location = new System.Drawing.Point(183, 180);
             this.textEditTmp_VSt.Name = "textEditTmp_VSt";
             this.textEditTmp_VSt.Size = new System.Drawing.Size(1088, 20);
@@ -3129,6 +3509,7 @@
             // 
             // textEditTmpOrt
             // 
+            this.textEditTmpOrt.EditValue = " ";
             this.textEditTmpOrt.Location = new System.Drawing.Point(183, 156);
             this.textEditTmpOrt.Name = "textEditTmpOrt";
             this.textEditTmpOrt.Size = new System.Drawing.Size(1088, 20);
@@ -3138,6 +3519,7 @@
             // 
             // textEditTmpPLZ
             // 
+            this.textEditTmpPLZ.EditValue = " ";
             this.textEditTmpPLZ.Location = new System.Drawing.Point(183, 132);
             this.textEditTmpPLZ.Name = "textEditTmpPLZ";
             this.textEditTmpPLZ.Size = new System.Drawing.Size(1088, 20);
@@ -3147,6 +3529,7 @@
             // 
             // textEditTmpStrasse
             // 
+            this.textEditTmpStrasse.EditValue = " ";
             this.textEditTmpStrasse.Location = new System.Drawing.Point(183, 108);
             this.textEditTmpStrasse.Name = "textEditTmpStrasse";
             this.textEditTmpStrasse.Size = new System.Drawing.Size(1088, 20);
@@ -3156,6 +3539,7 @@
             // 
             // textEditTmp_Vorname
             // 
+            this.textEditTmp_Vorname.EditValue = " ";
             this.textEditTmp_Vorname.Location = new System.Drawing.Point(183, 36);
             this.textEditTmp_Vorname.Name = "textEditTmp_Vorname";
             this.textEditTmp_Vorname.Size = new System.Drawing.Size(1088, 20);
@@ -3165,6 +3549,7 @@
             // 
             // textEditTmp_Nachname
             // 
+            this.textEditTmp_Nachname.EditValue = " ";
             this.textEditTmp_Nachname.Location = new System.Drawing.Point(183, 12);
             this.textEditTmp_Nachname.Name = "textEditTmp_Nachname";
             this.textEditTmp_Nachname.Size = new System.Drawing.Size(1088, 20);
@@ -3174,6 +3559,7 @@
             // 
             // ComboEditAkt_G
             // 
+            this.ComboEditAkt_G.EditValue = " ";
             this.ComboEditAkt_G.Location = new System.Drawing.Point(183, 60);
             this.ComboEditAkt_G.Name = "ComboEditAkt_G";
             this.ComboEditAkt_G.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3190,7 +3576,7 @@
             // 
             // dateEditTmp_GDat
             // 
-            this.dateEditTmp_GDat.EditValue = null;
+            this.dateEditTmp_GDat.EditValue = " ";
             this.dateEditTmp_GDat.Location = new System.Drawing.Point(183, 84);
             this.dateEditTmp_GDat.Name = "dateEditTmp_GDat";
             this.dateEditTmp_GDat.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3207,6 +3593,211 @@
             this.dateEditTmp_GDat.StyleController = this.layoutControl4;
             this.dateEditTmp_GDat.TabIndex = 7;
             this.dateEditTmp_GDat.ToolTip = "NAD[4]";
+            // 
+            // textEditInterLand
+            // 
+            this.textEditInterLand.EditValue = " ";
+            this.textEditInterLand.Location = new System.Drawing.Point(183, 204);
+            this.textEditInterLand.Name = "textEditInterLand";
+            this.textEditInterLand.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditInterLand.Properties.Items.AddRange(new object[] {
+            "ET  Ägypten",
+            "ETH Äthiopien",
+            "AFG Afghanistan",
+            "AL  Albanien",
+            "DZ  Algerien",
+            "AND Andorra",
+            "ANG Angola",
+            "AB  Antigua und Babuda",
+            "RA  Argentinien",
+            "AR  Armenien",
+            "AZ  Aserbaidschan",
+            "AUS  Australien",
+            "BS  Bahamas",
+            "BRN  Bahrain",
+            "BD Bangladesch",
+            "BDS Barbados",
+            "BY Belarus (Weißrußland)",
+            "B Belgien",
+            "BH Belize (brit. Honduras)",
+            "BEN Benin (Dahorney)",
+            "BHU Bhutan",
+            "BOL Bolivien",
+            "BIH Bosnien-Herzegowina",
+            "RB Botsuana",
+            "BR Brasilien",
+            "BRU Brunei Darussalam",
+            "BG Bulgarien",
+            "D  Bundesrepublik Deutschland ",
+            "BF Burkina Faso",
+            "RU Burundi",
+            "RCH Chile",
+            "RC China (Taiwan)",
+            "CHI China (Volksrepublik)",
+            "CR Costa Rica",
+            "CI Côte d’Ivoire (Elfenbeinküste)",
+            "DK Dänemark",
+            "WD Dominica",
+            "DOM Dominikanische Republik",
+            "EC Ecuador",
+            "ES El Salvador",
+            "ER Eritrea",
+            "EST Estland",
+            "FR Faröer (dän.)",
+            "FAL Falklandinseln",
+            "FJI Fidschi",
+            "FIN Finnland",
+            "F  Frankreich",
+            "GAB Gabun",
+            "WAG Gambia",
+            "GE Georgien",
+            "GH Ghana",
+            "GBZ Gibraltar",
+            "WG Grenada",
+            "GR Griechenland",
+            "GB Vereinigtes Königreich (Großbritannien",
+            "GBA Alderney",
+            "GBG Guernsey",
+            "GBJ Jersey",
+            "GBM Insel Man",
+            "GCA Guatemala",
+            "GUI Guinea",
+            "GUI Guinea",
+            "RH Haiti",
+            "HN Honduras",
+            "HN Honduras",
+            "IND Indien",
+            "RI Indonesien",
+            "IRQ Irak",
+            "IR Iran",
+            "IRL Irland",
+            "IS Island",
+            "IL Israel",
+            "I  Italien",
+            "JA Jamaika",
+            "J  Japan",
+            "JEM Jemen",
+            "JOR Jordanien",
+            "K  Kambodscha",
+            "KAM Kamerun",
+            "CDN Kanada",
+            "KZ Kasachstan",
+            "Q  Katar",
+            "EAK Kenia",
+            "KS Kirgisistan",
+            "CO Kolumbien",
+            "RCB Kongo",
+            "CB Kongo, Demokratische Republik",
+            "ROK Korea (Südkorea)",
+            "RKS Kosovo",
+            "HR Kroatien",
+            "C Kuba",
+            "KWT Kuwait",
+            "LAO Laos, Demokratische Volksrepublik",
+            "LS Lesotho",
+            "LV Lettland",
+            "RL Libanon",
+            "LBA Liberia",
+            "LBY Libyen",
+            "FL Liechtenstein",
+            "LT Litauen",
+            "L  Luxemburg",
+            "RM Madagaskar",
+            "MK Mazedonien",
+            "MW Malawi",
+            "MAL Malaysia",
+            "MDI Malediven",
+            "RMM Mali",
+            "M Malta",
+            "MA Marokko",
+            "RIM Mauretanien",
+            "MS Mauritius",
+            "MEX Mexiko",
+            "MIK Mikronesien, Föderierte Staaten von",
+            "MD Moldau",
+            "MC Monaco",
+            "MNG Mongolei",
+            "MNE Montenegro",
+            "MOC Mosambik",
+            "MYA Myanmar (Birma)",
+            "NAM Namibia",
+            "NAU Nauru",
+            "NEP Nepal",
+            "NZ Neuseeland",
+            "NIC Nicaragua",
+            "NA Niederl. Antillen (Curacao)",
+            "NL Niederlande",
+            "RN Niger",
+            "WAN Nigeria",
+            "N Norwegen",
+            "A  Österreich",
+            "OM Oman",
+            "PK Pakistan",
+            "PA Panama",
+            "PAP Papua-Neuguinea",
+            "PY Paraguay",
+            "PE Peru",
+            "RP Philippinen",
+            "PL Polen",
+            "P Portugal",
+            "RWA Ruanda",
+            "RO Rumänien",
+            "RUS Russische Föderation",
+            "SAL Salomonen",
+            "WL Santa Lucia",
+            "WV St. Vincent u. die Grenadinen",
+            "Z Sambia",
+            "WS Samoa (Westsamoa)",
+            "RSM San Marino",
+            "SAN Sansibar",
+            "STO Sao Tome und Principe",
+            "KSA Saudi Arabien, Königreich",
+            "S   Schweden",
+            "CH Schweiz",
+            "SN Senegal",
+            "SRB Serbien",
+            "SY Seychellen",
+            "WAL Sierra Leone",
+            "ZW Simbabwe",
+            "SGP Singapur",
+            "SK Slowakische Republik",
+            "SLO Slowenien",
+            "SP Somalia",
+            "E  Spanien",
+            "SRL Sri Lanka (Ceylon)",
+            "STK St. Kitts und Nevis",
+            "SUD Sudan",
+            "ZA Südafrika",
+            "SME Suriname",
+            "SD Swasiland",
+            "SYR Syrien",
+            "TJ Tadschikistan",
+            "EAT Tansania",
+            "THA Thailand",
+            "RT Togo",
+            "TT Trinidad und Tobago",
+            "TSD Tschad",
+            "CZ Tschechische Republik",
+            "TN Tunesien",
+            "TR Türkei",
+            "TM Turkmenistan",
+            "EAU Uganda",
+            "UA Ukraine",
+            "H Ungarn",
+            "ROU Urugay",
+            "UZ Usbekistan",
+            "V   Vatikanstadt",
+            "YV Venezuela",
+            "UAE Vereinigte Arabische Emirate",
+            "USA Vereinigte Staaten von Amerika",
+            "VN Vietnam",
+            "RCA Zentralafrikanische Republik",
+            "CY Zypern"});
+            this.textEditInterLand.Size = new System.Drawing.Size(1088, 20);
+            this.textEditInterLand.StyleController = this.layoutControl4;
+            this.textEditInterLand.TabIndex = 12;
+            this.textEditInterLand.ToolTip = "NAD[10]";
             // 
             // layoutControlGroup24
             // 
@@ -3346,10 +3937,10 @@
             this.layoutControl3.Controls.Add(this.textEditAktSignKK);
             this.layoutControl3.Controls.Add(this.textEditTmp_KKNr);
             this.layoutControl3.Controls.Add(this.textEditFallnr);
-            this.layoutControl3.Controls.Add(this.textEditTmp_AufnNr);
             this.layoutControl3.Controls.Add(this.textEditTmp_KvNr);
-            this.layoutControl3.Controls.Add(this.textEditTmp_V_Status);
-            this.layoutControl3.Controls.Add(this.textEditDMP);
+            this.layoutControl3.Controls.Add(this.comboBoxTmp_V_Status);
+            this.layoutControl3.Controls.Add(this.ComboBoxEditDMP);
+            this.layoutControl3.Controls.Add(this.dateEditTmp_AufnNr);
             this.layoutControl3.Location = new System.Drawing.Point(27, 381);
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(2580, 490, 250, 350);
@@ -3360,7 +3951,7 @@
             // 
             // dateEditTmp_Zuzahltage
             // 
-            this.dateEditTmp_Zuzahltage.EditValue = null;
+            this.dateEditTmp_Zuzahltage.EditValue = " ";
             this.dateEditTmp_Zuzahltage.Location = new System.Drawing.Point(225, 204);
             this.dateEditTmp_Zuzahltage.Name = "dateEditTmp_Zuzahltage";
             this.dateEditTmp_Zuzahltage.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3373,6 +3964,7 @@
             // 
             // textEditTmp_VertragsKnz
             // 
+            this.textEditTmp_VertragsKnz.EditValue = " ";
             this.textEditTmp_VertragsKnz.Location = new System.Drawing.Point(225, 228);
             this.textEditTmp_VertragsKnz.Name = "textEditTmp_VertragsKnz";
             this.textEditTmp_VertragsKnz.Size = new System.Drawing.Size(1046, 20);
@@ -3381,6 +3973,7 @@
             // 
             // comboBoxEditSpecialPerson
             // 
+            this.comboBoxEditSpecialPerson.EditValue = " ";
             this.comboBoxEditSpecialPerson.Location = new System.Drawing.Point(225, 60);
             this.comboBoxEditSpecialPerson.Name = "comboBoxEditSpecialPerson";
             this.comboBoxEditSpecialPerson.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3398,9 +3991,11 @@
             this.comboBoxEditSpecialPerson.Size = new System.Drawing.Size(1046, 20);
             this.comboBoxEditSpecialPerson.StyleController = this.layoutControl3;
             this.comboBoxEditSpecialPerson.TabIndex = 10;
+            this.comboBoxEditSpecialPerson.SelectedIndexChanged += new System.EventHandler(this.comboBoxEditSpecialPerson_SelectedIndexChanged);
             // 
             // textEditAktSignKK
             // 
+            this.textEditAktSignKK.EditValue = " ";
             this.textEditAktSignKK.Location = new System.Drawing.Point(225, 180);
             this.textEditAktSignKK.Name = "textEditAktSignKK";
             this.textEditAktSignKK.Size = new System.Drawing.Size(1046, 20);
@@ -3410,6 +4005,7 @@
             // 
             // textEditTmp_KKNr
             // 
+            this.textEditTmp_KKNr.EditValue = " ";
             this.textEditTmp_KKNr.Location = new System.Drawing.Point(225, 132);
             this.textEditTmp_KKNr.Name = "textEditTmp_KKNr";
             this.textEditTmp_KKNr.Size = new System.Drawing.Size(1046, 20);
@@ -3419,6 +4015,7 @@
             // 
             // textEditFallnr
             // 
+            this.textEditFallnr.EditValue = " ";
             this.textEditFallnr.Location = new System.Drawing.Point(225, 156);
             this.textEditFallnr.Name = "textEditFallnr";
             this.textEditFallnr.Size = new System.Drawing.Size(1046, 20);
@@ -3426,23 +4023,55 @@
             this.textEditFallnr.TabIndex = 7;
             this.textEditFallnr.ToolTip = "Inv[8]";
             // 
-            // textEditTmp_AufnNr
-            // 
-            this.textEditTmp_AufnNr.Location = new System.Drawing.Point(225, 108);
-            this.textEditTmp_AufnNr.Name = "textEditTmp_AufnNr";
-            this.textEditTmp_AufnNr.Size = new System.Drawing.Size(1046, 20);
-            this.textEditTmp_AufnNr.StyleController = this.layoutControl3;
-            this.textEditTmp_AufnNr.TabIndex = 6;
-            this.textEditTmp_AufnNr.ToolTip = "Inv[6]";
-            // 
             // textEditTmp_KvNr
             // 
+            this.textEditTmp_KvNr.EditValue = " ";
             this.textEditTmp_KvNr.Location = new System.Drawing.Point(225, 12);
             this.textEditTmp_KvNr.Name = "textEditTmp_KvNr";
             this.textEditTmp_KvNr.Size = new System.Drawing.Size(1046, 20);
             this.textEditTmp_KvNr.StyleController = this.layoutControl3;
             this.textEditTmp_KvNr.TabIndex = 4;
             this.textEditTmp_KvNr.ToolTip = "Inv[1]";
+            // 
+            // comboBoxTmp_V_Status
+            // 
+            this.comboBoxTmp_V_Status.EditValue = " ";
+            this.comboBoxTmp_V_Status.Location = new System.Drawing.Point(225, 36);
+            this.comboBoxTmp_V_Status.Name = "comboBoxTmp_V_Status";
+            this.comboBoxTmp_V_Status.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.comboBoxTmp_V_Status.Properties.Items.AddRange(new object[] {
+            "1 Mitglied",
+            "3 Familienversicherter",
+            "5 Rentner und deren Familienangehörige",
+            "9 Auslandsversicherte"});
+            this.comboBoxTmp_V_Status.Size = new System.Drawing.Size(1046, 20);
+            this.comboBoxTmp_V_Status.StyleController = this.layoutControl3;
+            this.comboBoxTmp_V_Status.TabIndex = 5;
+            this.comboBoxTmp_V_Status.ToolTip = "Inv[2]";
+            // 
+            // ComboBoxEditDMP
+            // 
+            this.ComboBoxEditDMP.EditValue = " ";
+            this.ComboBoxEditDMP.Location = new System.Drawing.Point(225, 84);
+            this.ComboBoxEditDMP.Name = "ComboBoxEditDMP";
+            this.ComboBoxEditDMP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ComboBoxEditDMP.Properties.Items.AddRange(new object[] {
+            "00 keine DMP-Teilnahme",
+            "01 Diabetes mellitus Typ 2",
+            "02 Brustkrebs",
+            "03 koronare Herzkrankheit",
+            "04 Diabetes mellitus Typ 1",
+            "05 Asthma bronchiale",
+            "06 COPD",
+            "07 Chronische Herzinsuffizienz",
+            "08 Depression",
+            "09 Rückenschmerz",
+            "99 Auslandsversicherte"});
+            this.ComboBoxEditDMP.Size = new System.Drawing.Size(1046, 20);
+            this.ComboBoxEditDMP.StyleController = this.layoutControl3;
+            this.ComboBoxEditDMP.TabIndex = 11;
             // 
             // layoutControlGroup23
             // 
@@ -3476,7 +4105,7 @@
             // 
             // layoutControlItemTmp_V_Status
             // 
-            this.layoutControlItemTmp_V_Status.Control = this.textEditTmp_V_Status;
+            this.layoutControlItemTmp_V_Status.Control = this.comboBoxTmp_V_Status;
             this.layoutControlItemTmp_V_Status.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemTmp_V_Status.Name = "layoutControlItemTmp_V_Status";
             this.layoutControlItemTmp_V_Status.OptionsToolTip.ToolTipTitle = "SELECT VersichStatus FROM Faelle ";
@@ -3486,7 +4115,7 @@
             // 
             // layoutControlItemTmp_AufnNr
             // 
-            this.layoutControlItemTmp_AufnNr.Control = this.textEditTmp_AufnNr;
+            this.layoutControlItemTmp_AufnNr.Control = this.dateEditTmp_AufnNr;
             this.layoutControlItemTmp_AufnNr.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItemTmp_AufnNr.Name = "layoutControlItemTmp_AufnNr";
             this.layoutControlItemTmp_AufnNr.OptionsToolTip.ToolTipTitle = "SELECT Aufnahmenr FROM Faelle";
@@ -3524,7 +4153,7 @@
             // 
             // layoutControlItemDMP
             // 
-            this.layoutControlItemDMP.Control = this.textEditDMP;
+            this.layoutControlItemDMP.Control = this.ComboBoxEditDMP;
             this.layoutControlItemDMP.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemDMP.Name = "layoutControlItemDMP";
             this.layoutControlItemDMP.Size = new System.Drawing.Size(1263, 24);
@@ -3575,6 +4204,7 @@
             // 
             // textEditTmp_IK
             // 
+            this.textEditTmp_IK.EditValue = " ";
             this.textEditTmp_IK.Location = new System.Drawing.Point(208, 60);
             this.textEditTmp_IK.Name = "textEditTmp_IK";
             this.textEditTmp_IK.Size = new System.Drawing.Size(1063, 20);
@@ -3584,6 +4214,7 @@
             // 
             // ComboBoxTmp_VKZ
             // 
+            this.ComboBoxTmp_VKZ.EditValue = " ";
             this.ComboBoxTmp_VKZ.Location = new System.Drawing.Point(208, 12);
             this.ComboBoxTmp_VKZ.Name = "ComboBoxTmp_VKZ";
             this.ComboBoxTmp_VKZ.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3631,12 +4262,29 @@
             // 
             // textEditZiel_IKFKT
             // 
+            this.textEditZiel_IKFKT.EditValue = " ";
             this.textEditZiel_IKFKT.Location = new System.Drawing.Point(208, 84);
             this.textEditZiel_IKFKT.Name = "textEditZiel_IKFKT";
             this.textEditZiel_IKFKT.Size = new System.Drawing.Size(1063, 20);
             this.textEditZiel_IKFKT.StyleController = this.layoutControl2;
             this.textEditZiel_IKFKT.TabIndex = 49;
             this.textEditZiel_IKFKT.ToolTip = "FKT[4]";
+            // 
+            // textEditTmp_LfdNrGFall
+            // 
+            this.textEditTmp_LfdNrGFall.EditValue = " ";
+            this.textEditTmp_LfdNrGFall.Location = new System.Drawing.Point(208, 36);
+            this.textEditTmp_LfdNrGFall.Name = "textEditTmp_LfdNrGFall";
+            this.textEditTmp_LfdNrGFall.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_LfdNrGFall.Properties.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03"});
+            this.textEditTmp_LfdNrGFall.Size = new System.Drawing.Size(1063, 20);
+            this.textEditTmp_LfdNrGFall.StyleController = this.layoutControl2;
+            this.textEditTmp_LfdNrGFall.TabIndex = 6;
+            this.textEditTmp_LfdNrGFall.ToolTip = "FKT[2]";
             // 
             // Root
             // 
@@ -3695,10 +4343,10 @@
             // 
             this.layoutControl7.Controls.Add(this.CheckedCombiEditAufnahmediagnose);
             this.layoutControl7.Controls.Add(this.textEditAufnahmediagnose);
-            this.layoutControl7.Controls.Add(this.textEditSEAufnahmediagnose);
             this.layoutControl7.Controls.Add(this.textEditEinDiagnose);
-            this.layoutControl7.Controls.Add(this.textEditSEEinDiagnose);
             this.layoutControl7.Controls.Add(this.simpleButtonADDdiagnose);
+            this.layoutControl7.Controls.Add(this.ComboBoxEditSEAufnahmediagnose);
+            this.layoutControl7.Controls.Add(this.ComboBoxEditSEEinDiagnose);
             this.layoutControl7.Location = new System.Drawing.Point(27, 381);
             this.layoutControl7.Name = "layoutControl7";
             this.layoutControl7.Root = this.layoutControlGroup27;
@@ -3720,35 +4368,21 @@
             // 
             // textEditAufnahmediagnose
             // 
+            this.textEditAufnahmediagnose.EditValue = " ";
             this.textEditAufnahmediagnose.Location = new System.Drawing.Point(176, 42);
             this.textEditAufnahmediagnose.Name = "textEditAufnahmediagnose";
             this.textEditAufnahmediagnose.Size = new System.Drawing.Size(491, 20);
             this.textEditAufnahmediagnose.StyleController = this.layoutControl7;
             this.textEditAufnahmediagnose.TabIndex = 4;
             // 
-            // textEditSEAufnahmediagnose
-            // 
-            this.textEditSEAufnahmediagnose.Location = new System.Drawing.Point(176, 66);
-            this.textEditSEAufnahmediagnose.Name = "textEditSEAufnahmediagnose";
-            this.textEditSEAufnahmediagnose.Size = new System.Drawing.Size(491, 20);
-            this.textEditSEAufnahmediagnose.StyleController = this.layoutControl7;
-            this.textEditSEAufnahmediagnose.TabIndex = 6;
-            // 
             // textEditEinDiagnose
             // 
+            this.textEditEinDiagnose.EditValue = " ";
             this.textEditEinDiagnose.Location = new System.Drawing.Point(176, 90);
             this.textEditEinDiagnose.Name = "textEditEinDiagnose";
             this.textEditEinDiagnose.Size = new System.Drawing.Size(491, 20);
             this.textEditEinDiagnose.StyleController = this.layoutControl7;
             this.textEditEinDiagnose.TabIndex = 7;
-            // 
-            // textEditSEEinDiagnose
-            // 
-            this.textEditSEEinDiagnose.Location = new System.Drawing.Point(176, 114);
-            this.textEditSEEinDiagnose.Name = "textEditSEEinDiagnose";
-            this.textEditSEEinDiagnose.Size = new System.Drawing.Size(491, 20);
-            this.textEditSEEinDiagnose.StyleController = this.layoutControl7;
-            this.textEditSEEinDiagnose.TabIndex = 8;
             // 
             // simpleButtonADDdiagnose
             // 
@@ -3826,7 +4460,7 @@
             // 
             // layoutControlItemSEAufnahmediagnose
             // 
-            this.layoutControlItemSEAufnahmediagnose.Control = this.textEditSEAufnahmediagnose;
+            this.layoutControlItemSEAufnahmediagnose.Control = this.ComboBoxEditSEAufnahmediagnose;
             this.layoutControlItemSEAufnahmediagnose.CustomizationFormText = "Sekundär-Diagnose Aufnahme";
             this.layoutControlItemSEAufnahmediagnose.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemSEAufnahmediagnose.Name = "layoutControlItemSEAufnahmediagnose";
@@ -3846,7 +4480,7 @@
             // 
             // layoutControlItem69
             // 
-            this.layoutControlItem69.Control = this.textEditSEEinDiagnose;
+            this.layoutControlItem69.Control = this.ComboBoxEditSEEinDiagnose;
             this.layoutControlItem69.CustomizationFormText = "Sekundär-Diagnose Einweisung";
             this.layoutControlItem69.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItem69.Name = "layoutControlItem69";
@@ -3866,6 +4500,7 @@
             // 
             // comboBoxEditTMP_Currency
             // 
+            this.comboBoxEditTMP_Currency.EditValue = " ";
             this.comboBoxEditTMP_Currency.Location = new System.Drawing.Point(123, 12);
             this.comboBoxEditTMP_Currency.Name = "comboBoxEditTMP_Currency";
             this.comboBoxEditTMP_Currency.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -3912,6 +4547,7 @@
             // 
             // textEditTmp_IKBeitrag
             // 
+            this.textEditTmp_IKBeitrag.EditValue = " ";
             this.textEditTmp_IKBeitrag.Location = new System.Drawing.Point(223, 60);
             this.textEditTmp_IKBeitrag.Name = "textEditTmp_IKBeitrag";
             this.textEditTmp_IKBeitrag.Size = new System.Drawing.Size(1048, 20);
@@ -3920,6 +4556,7 @@
             // 
             // textEditTmp_SammelRgBeitrag
             // 
+            this.textEditTmp_SammelRgBeitrag.EditValue = " ";
             this.textEditTmp_SammelRgBeitrag.Location = new System.Drawing.Point(223, 36);
             this.textEditTmp_SammelRgBeitrag.Name = "textEditTmp_SammelRgBeitrag";
             this.textEditTmp_SammelRgBeitrag.Size = new System.Drawing.Size(1048, 20);
@@ -3928,6 +4565,7 @@
             // 
             // textEditTmp_SammelbelegBeitrag
             // 
+            this.textEditTmp_SammelbelegBeitrag.EditValue = " ";
             this.textEditTmp_SammelbelegBeitrag.Location = new System.Drawing.Point(223, 12);
             this.textEditTmp_SammelbelegBeitrag.Name = "textEditTmp_SammelbelegBeitrag";
             this.textEditTmp_SammelbelegBeitrag.Size = new System.Drawing.Size(1048, 20);
@@ -3936,6 +4574,7 @@
             // 
             // textEditTmp_SammelbelegNr
             // 
+            this.textEditTmp_SammelbelegNr.EditValue = " ";
             this.textEditTmp_SammelbelegNr.Location = new System.Drawing.Point(223, 84);
             this.textEditTmp_SammelbelegNr.Name = "textEditTmp_SammelbelegNr";
             this.textEditTmp_SammelbelegNr.Size = new System.Drawing.Size(1048, 20);
@@ -4013,6 +4652,7 @@
             // 
             // textEditrechNR
             // 
+            this.textEditrechNR.EditValue = " ";
             this.textEditrechNR.Location = new System.Drawing.Point(235, 42);
             this.textEditrechNR.Name = "textEditrechNR";
             this.textEditrechNR.Size = new System.Drawing.Size(353, 20);
@@ -4021,6 +4661,7 @@
             // 
             // textEditKHkennzeichnen
             // 
+            this.textEditKHkennzeichnen.EditValue = " ";
             this.textEditKHkennzeichnen.Location = new System.Drawing.Point(235, 186);
             this.textEditKHkennzeichnen.Name = "textEditKHkennzeichnen";
             this.textEditKHkennzeichnen.Size = new System.Drawing.Size(353, 20);
@@ -4039,6 +4680,7 @@
             // 
             // checkedComboBoxEditRecList
             // 
+            this.checkedComboBoxEditRecList.EditValue = " ";
             this.checkedComboBoxEditRecList.Location = new System.Drawing.Point(827, 42);
             this.checkedComboBoxEditRecList.Name = "checkedComboBoxEditRecList";
             this.checkedComboBoxEditRecList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4049,7 +4691,7 @@
             // 
             // dateEditrechDate
             // 
-            this.dateEditrechDate.EditValue = null;
+            this.dateEditrechDate.EditValue = " ";
             this.dateEditrechDate.Location = new System.Drawing.Point(235, 66);
             this.dateEditrechDate.Name = "dateEditrechDate";
             this.dateEditrechDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4062,6 +4704,7 @@
             // 
             // textEditrechBetrag
             // 
+            this.textEditrechBetrag.EditValue = " ";
             this.textEditrechBetrag.Location = new System.Drawing.Point(235, 90);
             this.textEditrechBetrag.Name = "textEditrechBetrag";
             this.textEditrechBetrag.Size = new System.Drawing.Size(353, 20);
@@ -4070,6 +4713,7 @@
             // 
             // textEditrefNRKK
             // 
+            this.textEditrefNRKK.EditValue = " ";
             this.textEditrefNRKK.Location = new System.Drawing.Point(235, 114);
             this.textEditrefNRKK.Name = "textEditrefNRKK";
             this.textEditrefNRKK.Size = new System.Drawing.Size(353, 20);
@@ -4078,6 +4722,7 @@
             // 
             // textEditrecBetragZahl
             // 
+            this.textEditrecBetragZahl.EditValue = " ";
             this.textEditrecBetragZahl.Location = new System.Drawing.Point(235, 162);
             this.textEditrecBetragZahl.Name = "textEditrecBetragZahl";
             this.textEditrecBetragZahl.Size = new System.Drawing.Size(353, 20);
@@ -4086,11 +4731,40 @@
             // 
             // textEditIKZahlungWeg
             // 
+            this.textEditIKZahlungWeg.EditValue = " ";
             this.textEditIKZahlungWeg.Location = new System.Drawing.Point(235, 210);
             this.textEditIKZahlungWeg.Name = "textEditIKZahlungWeg";
             this.textEditIKZahlungWeg.Size = new System.Drawing.Size(353, 20);
             this.textEditIKZahlungWeg.StyleController = this.layoutControl28;
             this.textEditIKZahlungWeg.TabIndex = 8;
+            // 
+            // textEditrecArt
+            // 
+            this.textEditrecArt.EditValue = " ";
+            this.textEditrecArt.Location = new System.Drawing.Point(235, 138);
+            this.textEditrecArt.Name = "textEditrecArt";
+            this.textEditrecArt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditrecArt.Properties.Items.AddRange(new object[] {
+            "0 Zahlungssatz wird nicht angefordert",
+            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
+            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
+            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
+            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
+            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "1 Zwischenrechnung",
+            "2 Schlussrechnung",
+            "3 Nachtragsrechnung",
+            "4 Gutschrift/Stornierung",
+            "6 Zahlungserinnerung",
+            "7 1. Mahnung",
+            "8 2. Mahnung",
+            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
+                "2003 geltenden Fassung"});
+            this.textEditrecArt.Size = new System.Drawing.Size(353, 20);
+            this.textEditrecArt.StyleController = this.layoutControl28;
+            this.textEditrecArt.TabIndex = 6;
             // 
             // layoutControlGroup42
             // 
@@ -4191,6 +4865,16 @@
             this.layoutControlItem55.Text = "IK des Krankenhauses für Zahlungsweg";
             this.layoutControlItem55.TextSize = new System.Drawing.Size(208, 13);
             // 
+            // layoutControlItem62
+            // 
+            this.layoutControlItem62.Control = this.textEditrecArt;
+            this.layoutControlItem62.CustomizationFormText = "Rechnungsart";
+            this.layoutControlItem62.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem62.Name = "layoutControlItem62";
+            this.layoutControlItem62.Size = new System.Drawing.Size(568, 24);
+            this.layoutControlItem62.Text = "Rechnungsart";
+            this.layoutControlItem62.TextSize = new System.Drawing.Size(208, 13);
+            // 
             // layoutControlGroup19
             // 
             this.layoutControlGroup19.CustomizationFormText = "layoutControlGroup15";
@@ -4239,6 +4923,7 @@
             // 
             // textEditTmp_BeatmStd
             // 
+            this.textEditTmp_BeatmStd.EditValue = " ";
             this.textEditTmp_BeatmStd.Location = new System.Drawing.Point(273, 132);
             this.textEditTmp_BeatmStd.Name = "textEditTmp_BeatmStd";
             this.textEditTmp_BeatmStd.Size = new System.Drawing.Size(998, 20);
@@ -4247,6 +4932,7 @@
             // 
             // textEditTmp_NF_Diag_2
             // 
+            this.textEditTmp_NF_Diag_2.EditValue = " ";
             this.textEditTmp_NF_Diag_2.Location = new System.Drawing.Point(273, 84);
             this.textEditTmp_NF_Diag_2.Name = "textEditTmp_NF_Diag_2";
             this.textEditTmp_NF_Diag_2.Size = new System.Drawing.Size(998, 20);
@@ -4255,6 +4941,7 @@
             // 
             // textEditTmp_NF_Diag_1
             // 
+            this.textEditTmp_NF_Diag_1.EditValue = " ";
             this.textEditTmp_NF_Diag_1.Location = new System.Drawing.Point(273, 60);
             this.textEditTmp_NF_Diag_1.Name = "textEditTmp_NF_Diag_1";
             this.textEditTmp_NF_Diag_1.Size = new System.Drawing.Size(998, 20);
@@ -4263,7 +4950,7 @@
             // 
             // dateEditTmp_EntlTag
             // 
-            this.dateEditTmp_EntlTag.EditValue = null;
+            this.dateEditTmp_EntlTag.EditValue = " ";
             this.dateEditTmp_EntlTag.Location = new System.Drawing.Point(273, 36);
             this.dateEditTmp_EntlTag.Name = "dateEditTmp_EntlTag";
             this.dateEditTmp_EntlTag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4276,7 +4963,7 @@
             // 
             // dateEditTmp_AufnTagDAU
             // 
-            this.dateEditTmp_AufnTagDAU.EditValue = null;
+            this.dateEditTmp_AufnTagDAU.EditValue = " ";
             this.dateEditTmp_AufnTagDAU.Location = new System.Drawing.Point(273, 12);
             this.dateEditTmp_AufnTagDAU.Name = "dateEditTmp_AufnTagDAU";
             this.dateEditTmp_AufnTagDAU.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4286,6 +4973,25 @@
             this.dateEditTmp_AufnTagDAU.Size = new System.Drawing.Size(998, 20);
             this.dateEditTmp_AufnTagDAU.StyleController = this.layoutControl8;
             this.dateEditTmp_AufnTagDAU.TabIndex = 4;
+            // 
+            // textEditTmp_NF_ab
+            // 
+            this.textEditTmp_NF_ab.EditValue = " ";
+            this.textEditTmp_NF_ab.Location = new System.Drawing.Point(273, 108);
+            this.textEditTmp_NF_ab.Name = "textEditTmp_NF_ab";
+            this.textEditTmp_NF_ab.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_NF_ab.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_NF_ab.Properties.DisplayFormat.FormatString = "";
+            this.textEditTmp_NF_ab.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.textEditTmp_NF_ab.Properties.EditFormat.FormatString = "";
+            this.textEditTmp_NF_ab.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.textEditTmp_NF_ab.Properties.Mask.EditMask = "";
+            this.textEditTmp_NF_ab.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.textEditTmp_NF_ab.Size = new System.Drawing.Size(998, 20);
+            this.textEditTmp_NF_ab.StyleController = this.layoutControl8;
+            this.textEditTmp_NF_ab.TabIndex = 8;
             // 
             // layoutControlGroup28
             // 
@@ -4388,6 +5094,7 @@
             // 
             // textEditetl_aufnIK
             // 
+            this.textEditetl_aufnIK.EditValue = " ";
             this.textEditetl_aufnIK.Location = new System.Drawing.Point(193, 162);
             this.textEditetl_aufnIK.Name = "textEditetl_aufnIK";
             this.textEditetl_aufnIK.Size = new System.Drawing.Size(364, 20);
@@ -4396,6 +5103,7 @@
             // 
             // textEditdg_SekDLok
             // 
+            this.textEditdg_SekDLok.EditValue = " ";
             this.textEditdg_SekDLok.Location = new System.Drawing.Point(1111, 66);
             this.textEditdg_SekDLok.Name = "textEditdg_SekDLok";
             this.textEditdg_SekDLok.Size = new System.Drawing.Size(148, 20);
@@ -4404,6 +5112,7 @@
             // 
             // textEditndg_NDLok
             // 
+            this.textEditndg_NDLok.EditValue = " ";
             this.textEditndg_NDLok.Location = new System.Drawing.Point(1111, 42);
             this.textEditndg_NDLok.Name = "textEditndg_NDLok";
             this.textEditndg_NDLok.Size = new System.Drawing.Size(148, 20);
@@ -4412,6 +5121,7 @@
             // 
             // checkedComboBoxEditNDGList
             // 
+            this.checkedComboBoxEditNDGList.EditValue = " ";
             this.checkedComboBoxEditNDGList.Location = new System.Drawing.Point(754, 42);
             this.checkedComboBoxEditNDGList.Name = "checkedComboBoxEditNDGList";
             this.checkedComboBoxEditNDGList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4422,6 +5132,7 @@
             // 
             // textEditetl_SekDlok
             // 
+            this.textEditetl_SekDlok.EditValue = " ";
             this.textEditetl_SekDlok.Location = new System.Drawing.Point(193, 138);
             this.textEditetl_SekDlok.Name = "textEditetl_SekDlok";
             this.textEditetl_SekDlok.Size = new System.Drawing.Size(364, 20);
@@ -4430,6 +5141,7 @@
             // 
             // textEditetl_HDlok
             // 
+            this.textEditetl_HDlok.EditValue = " ";
             this.textEditetl_HDlok.Location = new System.Drawing.Point(193, 114);
             this.textEditetl_HDlok.Name = "textEditetl_HDlok";
             this.textEditetl_HDlok.Size = new System.Drawing.Size(364, 20);
@@ -4438,7 +5150,7 @@
             // 
             // dateEditetl_Datum
             // 
-            this.dateEditetl_Datum.EditValue = null;
+            this.dateEditetl_Datum.EditValue = " ";
             this.dateEditetl_Datum.Location = new System.Drawing.Point(193, 42);
             this.dateEditetl_Datum.Name = "dateEditetl_Datum";
             this.dateEditetl_Datum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4449,6 +5161,110 @@
             this.dateEditetl_Datum.Size = new System.Drawing.Size(364, 20);
             this.dateEditetl_Datum.StyleController = this.layoutControl9;
             this.dateEditetl_Datum.TabIndex = 4;
+            // 
+            // textEditetl_Grund
+            // 
+            this.textEditetl_Grund.EditValue = " ";
+            this.textEditetl_Grund.Location = new System.Drawing.Point(193, 66);
+            this.textEditetl_Grund.Name = "textEditetl_Grund";
+            this.textEditetl_Grund.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditetl_Grund.Properties.Items.AddRange(new object[] {
+            "01 Behandlung regulär beendet",
+            "02 Behandlung regulär beendet, nachstationäre Behandlung vorgesehen",
+            "03 Behandlung aus sonstigen Gründen beendet",
+            "04 Behandlung gegen ärztlichen Rat beendet",
+            "05 Zuständigkeitswechsel des Kostenträgers",
+            "06 Verlegung in ein anderes Krankenhaus",
+            "07 Tod",
+            "08 Verlegung in ein anderes Krankenhaus im Rahmen einer Zusammenarbeit (§ 14 Abs." +
+                " 5 Satz 2 BPflV in der am 31.12.2003 geltenden Fassung)",
+            "09 Entlassung in eine Rehabilitationseinrichtung",
+            "10 Entlassung in eine Pflegeeinrichtung",
+            "11 Entlassung in ein Hospiz",
+            "12 interne Verlegung",
+            "13 externe Verlegung zur psychiatrischen Behandlung",
+            "14 Behandlung aus sonstigen Gründen beendet, nachstationäre Behandlung vorgesehen" +
+                "",
+            "15 Behandlung gegen ärztlichen Rat beendet, nachstationäre Behandlung vorgesehen",
+            "16 externe Verlegung mit Rückverlegung oder Wechsel zwischen den Entgeltbereichen" +
+                " der DRG-Fallpauschalen,nach der BPflV oder für besondere Einrichtungen nach § 1" +
+                "7b Abs. 1 Satz 15 KHG mit Rückverlegung",
+            "17 interne Verlegung mit Wechsel zwischen den Entgeltbereichen der DRG-Fallpausch" +
+                "alen, nach der BPflV oder für besondere Einrichtungen nach § 17b Abs. 1 Satz 15 " +
+                "KHG ",
+            "18 Rückverlegung",
+            "19 Entlassung vor Wiederaufnahme mit Neueinstufung",
+            "20 Entlassung vor Wiederaufnahme mit Neueinstufung wegen Komplikation",
+            "21 Entlassung oder Verlegung mit nachfolgender Wiederaufnahme",
+            "22 Fallabschluss (interne Verlegung) bei Wechsel zwischen voll-, teilstationärer " +
+                "und stationsäquivalenter Behandlung ",
+            "23 Beginn eines externen Aufenthalts mit Abwesenheit über Mitternacht (BPflV-Bere" +
+                "ich – für verlegende Fachabteilung)",
+            "24 Beendigung eines externen Aufenthalts mit Abwesenheit über Mitternacht  (BPflV" +
+                "-Bereich – für Pseudo-Fachabteilung 0003)",
+            "25 Entlassung zum Jahresende bei Aufnahme im Vorjahr (für Zwecke der Abrechnung -" +
+                " § 4 PEPPV)",
+            "26 Beginn eines Zeitraumes ohne direkten Patientenkontakt (stationsäquivalente Be" +
+                "handlung)",
+            "27 Beendigung eines Zeitraumes ohne direkten Patientenkontakt (stationsäquivalent" +
+                "e Behandlung – für  Pseudo-Fachabteilung 0004)",
+            "28 Behandlung regulär beendet, beatmet entlassen",
+            "29 Behandlung regulär beendet, beatmet verlegt"});
+            this.textEditetl_Grund.Size = new System.Drawing.Size(364, 20);
+            this.textEditetl_Grund.StyleController = this.layoutControl9;
+            this.textEditetl_Grund.TabIndex = 5;
+            // 
+            // textEditetl_FAbt
+            // 
+            this.textEditetl_FAbt.EditValue = " ";
+            this.textEditetl_FAbt.Location = new System.Drawing.Point(193, 90);
+            this.textEditetl_FAbt.Name = "textEditetl_FAbt";
+            this.textEditetl_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditetl_FAbt.Properties.Items.AddRange(new object[] {
+            "0100 Innere Medizin",
+            "0200 Geriatrie",
+            "0300 Kardiologie",
+            "0400 Nephrologie",
+            "0500 Hämatologie und internistische Onkologie",
+            "0600 Endokrinologie",
+            "0700 Gastroenterologie",
+            "0800 Pneumologie",
+            "0900 Rheumatologie",
+            "1000 Pädiatrie",
+            "1100 Kinderkardiologie",
+            "1200 Neonatologie",
+            "1300 Kinderchirurgie",
+            "1400 Lungen- und Bronchialheilkunde",
+            "1500 Allgemeine Chirurgie",
+            "1600 Unfallchirurgie",
+            "1700 Neurochirurgie",
+            "1800 Gefäßchirurgie",
+            "1900 Plastische Chirurgie",
+            "2000 Thoraxchirurgie",
+            "2100 Herzchirurgie",
+            "2200 Urologie",
+            "2300 Orthopädie",
+            "2400 Frauenheilkunde und Geburtshilfe",
+            "2500 davon Geburtshilfe",
+            "2600 Hals-, Nasen-, Ohrenheilkunde",
+            "2700 Augenheilkunde",
+            "2800 Neurologie",
+            "2900 Allgemeine Psychiatrie",
+            "3000 Kinder- und Jugendpsychiatrie",
+            "3100 Psychosomatik/Psychotherapie",
+            "3200 Nuklearmedizin",
+            "3300 Strahlenheilkunde",
+            "3400 Dermatologie",
+            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+            "3600 Intensivmedizin",
+            "2316 Orthopädie und Unfallchirurgie",
+            "2425 Frauenheilkunde",
+            "3700 Sonstige Fachabteilung"});
+            this.textEditetl_FAbt.Size = new System.Drawing.Size(364, 20);
+            this.textEditetl_FAbt.StyleController = this.layoutControl9;
+            this.textEditetl_FAbt.TabIndex = 12;
             // 
             // layoutControlGroup29
             // 
@@ -4569,6 +5385,16 @@
             this.layoutControlItemetl_SekDlok.Text = "Sekundär-Diagnose";
             this.layoutControlItemetl_SekDlok.TextSize = new System.Drawing.Size(166, 13);
             // 
+            // layoutControlItem140
+            // 
+            this.layoutControlItem140.Control = this.textEditetl_FAbt;
+            this.layoutControlItem140.CustomizationFormText = "layoutControlItem140";
+            this.layoutControlItem140.Location = new System.Drawing.Point(0, 48);
+            this.layoutControlItem140.Name = "layoutControlItem140";
+            this.layoutControlItem140.Size = new System.Drawing.Size(537, 24);
+            this.layoutControlItem140.Text = "Fachabteilung";
+            this.layoutControlItem140.TextSize = new System.Drawing.Size(166, 13);
+            // 
             // layoutControl10
             // 
             this.layoutControl10.Controls.Add(this.dateEditTmp_EBG);
@@ -4583,7 +5409,7 @@
             // 
             // dateEditTmp_EBG
             // 
-            this.dateEditTmp_EBG.EditValue = null;
+            this.dateEditTmp_EBG.EditValue = " ";
             this.dateEditTmp_EBG.Location = new System.Drawing.Point(121, 42);
             this.dateEditTmp_EBG.Name = "dateEditTmp_EBG";
             this.dateEditTmp_EBG.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4602,6 +5428,7 @@
             // 
             // checkedComboBoxEditTmp_EBGList
             // 
+            this.checkedComboBoxEditTmp_EBGList.EditValue = " ";
             this.checkedComboBoxEditTmp_EBGList.Location = new System.Drawing.Point(756, 42);
             this.checkedComboBoxEditTmp_EBGList.Name = "checkedComboBoxEditTmp_EBGList";
             this.checkedComboBoxEditTmp_EBGList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4702,6 +5529,7 @@
             // 
             // textEditPau
             // 
+            this.textEditPau.EditValue = " ";
             this.textEditPau.Location = new System.Drawing.Point(209, 228);
             this.textEditPau.Name = "textEditPau";
             this.textEditPau.Size = new System.Drawing.Size(1062, 20);
@@ -4710,6 +5538,7 @@
             // 
             // textEditHonorSu
             // 
+            this.textEditHonorSu.EditValue = " ";
             this.textEditHonorSu.Location = new System.Drawing.Point(209, 204);
             this.textEditHonorSu.Name = "textEditHonorSu";
             this.textEditHonorSu.Size = new System.Drawing.Size(1062, 20);
@@ -4718,6 +5547,7 @@
             // 
             // textEditTmp_IKZahlwegREC
             // 
+            this.textEditTmp_IKZahlwegREC.EditValue = " ";
             this.textEditTmp_IKZahlwegREC.Location = new System.Drawing.Point(209, 180);
             this.textEditTmp_IKZahlwegREC.Name = "textEditTmp_IKZahlwegREC";
             this.textEditTmp_IKZahlwegREC.Size = new System.Drawing.Size(1062, 20);
@@ -4726,6 +5556,7 @@
             // 
             // textEditTmp_RefNrREC
             // 
+            this.textEditTmp_RefNrREC.EditValue = " ";
             this.textEditTmp_RefNrREC.Location = new System.Drawing.Point(209, 156);
             this.textEditTmp_RefNrREC.Name = "textEditTmp_RefNrREC";
             this.textEditTmp_RefNrREC.Size = new System.Drawing.Size(1062, 20);
@@ -4734,6 +5565,7 @@
             // 
             // textEditTmp_DebNrREC
             // 
+            this.textEditTmp_DebNrREC.EditValue = " ";
             this.textEditTmp_DebNrREC.Location = new System.Drawing.Point(209, 132);
             this.textEditTmp_DebNrREC.Name = "textEditTmp_DebNrREC";
             this.textEditTmp_DebNrREC.Size = new System.Drawing.Size(1062, 20);
@@ -4747,10 +5579,11 @@
             this.textEditTmp_RgBetragREC.Size = new System.Drawing.Size(1062, 20);
             this.textEditTmp_RgBetragREC.StyleController = this.layoutControl13;
             this.textEditTmp_RgBetragREC.TabIndex = 8;
+            this.textEditTmp_RgBetragREC.EditValueChanged += new System.EventHandler(this.textEditTmp_RgBetragREC_EditValueChanged);
             // 
             // dateEditTmp_AufnTagREC
             // 
-            this.dateEditTmp_AufnTagREC.EditValue = null;
+            this.dateEditTmp_AufnTagREC.EditValue = " ";
             this.dateEditTmp_AufnTagREC.Location = new System.Drawing.Point(209, 84);
             this.dateEditTmp_AufnTagREC.Name = "dateEditTmp_AufnTagREC";
             this.dateEditTmp_AufnTagREC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4763,7 +5596,7 @@
             // 
             // dateEditTmp_RgDatumREC
             // 
-            this.dateEditTmp_RgDatumREC.EditValue = null;
+            this.dateEditTmp_RgDatumREC.EditValue = " ";
             this.dateEditTmp_RgDatumREC.Location = new System.Drawing.Point(209, 36);
             this.dateEditTmp_RgDatumREC.Name = "dateEditTmp_RgDatumREC";
             this.dateEditTmp_RgDatumREC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4776,11 +5609,40 @@
             // 
             // textEditTmp_RgNrREC
             // 
+            this.textEditTmp_RgNrREC.EditValue = " ";
             this.textEditTmp_RgNrREC.Location = new System.Drawing.Point(209, 12);
             this.textEditTmp_RgNrREC.Name = "textEditTmp_RgNrREC";
             this.textEditTmp_RgNrREC.Size = new System.Drawing.Size(1062, 20);
             this.textEditTmp_RgNrREC.StyleController = this.layoutControl13;
             this.textEditTmp_RgNrREC.TabIndex = 4;
+            // 
+            // textEditTmp_RgArtREC
+            // 
+            this.textEditTmp_RgArtREC.EditValue = " ";
+            this.textEditTmp_RgArtREC.Location = new System.Drawing.Point(209, 60);
+            this.textEditTmp_RgArtREC.Name = "textEditTmp_RgArtREC";
+            this.textEditTmp_RgArtREC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_RgArtREC.Properties.Items.AddRange(new object[] {
+            "0 Zahlungssatz wird nicht angefordert",
+            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
+            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
+            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
+            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
+            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "1 Zwischenrechnung",
+            "2 Schlussrechnung",
+            "3 Nachtragsrechnung",
+            "4 Gutschrift/Stornierung",
+            "6 Zahlungserinnerung",
+            "7 1. Mahnung",
+            "8 2. Mahnung",
+            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
+                "2003 geltenden Fassung"});
+            this.textEditTmp_RgArtREC.Size = new System.Drawing.Size(1062, 20);
+            this.textEditTmp_RgArtREC.StyleController = this.layoutControl13;
+            this.textEditTmp_RgArtREC.TabIndex = 6;
             // 
             // layoutControlGroup33
             // 
@@ -4905,11 +5767,33 @@
             // 
             // textEditTmp_Zuzahlbetrag
             // 
+            this.textEditTmp_Zuzahlbetrag.EditValue = " ";
             this.textEditTmp_Zuzahlbetrag.Location = new System.Drawing.Point(128, 12);
             this.textEditTmp_Zuzahlbetrag.Name = "textEditTmp_Zuzahlbetrag";
             this.textEditTmp_Zuzahlbetrag.Size = new System.Drawing.Size(1143, 20);
             this.textEditTmp_Zuzahlbetrag.StyleController = this.layoutControl14;
             this.textEditTmp_Zuzahlbetrag.TabIndex = 4;
+            // 
+            // textEditTmp_Zuzahlkennzeichen
+            // 
+            this.textEditTmp_Zuzahlkennzeichen.EditValue = " ";
+            this.textEditTmp_Zuzahlkennzeichen.Location = new System.Drawing.Point(128, 36);
+            this.textEditTmp_Zuzahlkennzeichen.Name = "textEditTmp_Zuzahlkennzeichen";
+            this.textEditTmp_Zuzahlkennzeichen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTmp_Zuzahlkennzeichen.Properties.Items.AddRange(new object[] {
+            "1 keine Zuzahlungspflicht",
+            "2 Zuzahlung verrechnet und vom Versicherten vollständig geleistet",
+            "4 keine Zuzahlungspflicht auf Grund gültiger Bescheinigung nach § 62 SGB V",
+            "5 keine Zuzahlungspflicht auf Grund gültiger Quittung nach § 61 SGB V",
+            "6 geringere Zuzahlung auf Grund gültiger Quittung nach § 61 SGB V verrechnet und " +
+                "vom Versicherten vollständig geleistet ",
+            "7 geringere Zuzahlung auf Grund gültiger Quittung nach § 61 SGB V verrechnet und " +
+                "vom Versicherten nicht oder nur teilweise geleistet ",
+            "8 Zuzahlung verrechnet und vom Versicherten nicht oder nur teilweise geleistet"});
+            this.textEditTmp_Zuzahlkennzeichen.Size = new System.Drawing.Size(1143, 20);
+            this.textEditTmp_Zuzahlkennzeichen.StyleController = this.layoutControl14;
+            this.textEditTmp_Zuzahlkennzeichen.TabIndex = 5;
             // 
             // layoutControlGroup34
             // 
@@ -4961,6 +5845,7 @@
             // 
             // textEditEnt_TagWundh
             // 
+            this.textEditEnt_TagWundh.EditValue = " ";
             this.textEditEnt_TagWundh.Location = new System.Drawing.Point(198, 186);
             this.textEditEnt_TagWundh.Name = "textEditEnt_TagWundh";
             this.textEditEnt_TagWundh.Size = new System.Drawing.Size(438, 20);
@@ -4969,6 +5854,7 @@
             // 
             // textEditEnt_TgOhne
             // 
+            this.textEditEnt_TgOhne.EditValue = " ";
             this.textEditEnt_TgOhne.Location = new System.Drawing.Point(198, 162);
             this.textEditEnt_TgOhne.Name = "textEditEnt_TgOhne";
             this.textEditEnt_TgOhne.Size = new System.Drawing.Size(438, 20);
@@ -4977,6 +5863,7 @@
             // 
             // textEditEnt_Anz
             // 
+            this.textEditEnt_Anz.EditValue = " ";
             this.textEditEnt_Anz.Location = new System.Drawing.Point(198, 138);
             this.textEditEnt_Anz.Name = "textEditEnt_Anz";
             this.textEditEnt_Anz.Size = new System.Drawing.Size(438, 20);
@@ -4985,7 +5872,7 @@
             // 
             // dateEditEnt_bis
             // 
-            this.dateEditEnt_bis.EditValue = null;
+            this.dateEditEnt_bis.EditValue = " ";
             this.dateEditEnt_bis.Location = new System.Drawing.Point(198, 114);
             this.dateEditEnt_bis.Name = "dateEditEnt_bis";
             this.dateEditEnt_bis.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -4998,7 +5885,7 @@
             // 
             // dateEditEnt_von
             // 
-            this.dateEditEnt_von.EditValue = null;
+            this.dateEditEnt_von.EditValue = " ";
             this.dateEditEnt_von.Location = new System.Drawing.Point(198, 90);
             this.dateEditEnt_von.Name = "dateEditEnt_von";
             this.dateEditEnt_von.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5011,6 +5898,7 @@
             // 
             // textEditEnt_Betrag
             // 
+            this.textEditEnt_Betrag.EditValue = " ";
             this.textEditEnt_Betrag.Location = new System.Drawing.Point(198, 66);
             this.textEditEnt_Betrag.Name = "textEditEnt_Betrag";
             this.textEditEnt_Betrag.Size = new System.Drawing.Size(438, 20);
@@ -5019,6 +5907,7 @@
             // 
             // checkedComboBoxEditTmp_ENTList
             // 
+            this.checkedComboBoxEditTmp_ENTList.EditValue = " ";
             this.checkedComboBoxEditTmp_ENTList.Location = new System.Drawing.Point(838, 42);
             this.checkedComboBoxEditTmp_ENTList.Name = "checkedComboBoxEditTmp_ENTList";
             this.checkedComboBoxEditTmp_ENTList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5036,6 +5925,61 @@
             this.simpleButtonTmp_ENTList.TabIndex = 5;
             this.simpleButtonTmp_ENTList.Text = "ADD";
             this.simpleButtonTmp_ENTList.Click += new System.EventHandler(this.simpleButtonTmp_ENTList_Click);
+            // 
+            // textEditEnt_Art
+            // 
+            this.textEditEnt_Art.EditValue = " ";
+            this.textEditEnt_Art.Location = new System.Drawing.Point(198, 42);
+            this.textEditEnt_Art.Name = "textEditEnt_Art";
+            this.textEditEnt_Art.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditEnt_Art.Properties.Items.AddRange(new object[] {
+            "01 Tagesgleicher Pflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychia" +
+                "trie und Psychosomatik/Psychotherapie",
+            resources.GetString("textEditEnt_Art.Properties.Items"),
+            "41 Entgelt für vorstationäre Behandlung",
+            "42 Entgelt für nachstationäre Behandlung",
+            "43 Pflegesatz bei Beurlaubung",
+            "44 Modellvorhaben nach § 24 BPflV bzw. 26 BPflV (Altvorhaben)",
+            "45 Wahlleistung Unterkunft (nur für Knappschaft)",
+            "46 Zuschlag für Qualitätssicherung nach § 7 Abs. 1 Satz 1 Nr. 7 KHEntgG oder § 7 " +
+                "Satz 1 Nr. 3 BPflV",
+            "47 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 un" +
+                "d Satz 2  und sonstiger Zu- und Abschlag",
+            "48 DRG-Systemzuschlag",
+            "49 Abrechnungsergänzungen",
+            "60 Sonderfall",
+            "61 Entgelt für integrierte Versorgung nach § 140c SGB V",
+            "62 Abschlag bei Entgelten für integrierte Versorgung nach § 140c SGB V",
+            "63 Entgelt für Modellvorhaben nach § 63 SGB V",
+            "65 Zusatzentgelt für DMP",
+            "70 DRG-Fallpauschale nach § 7 Abs. 1 Satz 1 Nr. 1 KHEntgG ",
+            "71 Entgelt bei Überschreiten der oberen GVD nach § 1 Abs. 2 Satz 1 FPV oder tages" +
+                "bezogene teilstationäre DRG-Fallpauschale ab 2. Tag",
+            "72 Abschlag bei Verlegungen nach § 1 Abs. 1 Satz 3 FPV",
+            "73 Abschlag bei Nichterreichen der unteren GVD nach § 1 Abs. 3 Satz 1 FPV",
+            "74 Entgelt für Pflegeerlös/Tag [ab 1.1.2020] Nn",
+            "75 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
+            "76 Zusatzentgelt nach § 7 Abs. 1 Satz 1 Nr. 2, 3, 5 oder 6 KHEntgG",
+            "78 Teilstationäre Leistung nach § 6 Abs. 2 FPV",
+            "80 Entgelt für neue Untersuchungs- und Behandlungsmethoden nach § 6 Abs. 2 KHEntg" +
+                "G (fallbezogen)",
+            "81 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 6 Ab" +
+                "s. 2 KHEntgG",
+            "82 Abschlag bei Verlegung für fallbezogene Entgelte nach § 6 Abs. 2 KHEntgG",
+            "83 Abschlag bei Nichterreichen der unteren GVD für fallbezogene Entgelte nach § 6" +
+                " Abs. 2 KHEntgG",
+            "84 Pflegeanteil für tages- oder fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. " +
+                "5 KHEntgG [ab 1.1.2020]",
+            "85 Tagesbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
+            "86 Fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
+            "87 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 7 Ab" +
+                "s. 1 Satz 1 Nr. 5 KHEntgG ",
+            "88 Abschlag bei Verlegung für fallbezogene Entgelte nach § 7 Abs. 1 Satz 1 Nr. 5 " +
+                "KHEntgG"});
+            this.textEditEnt_Art.Size = new System.Drawing.Size(438, 20);
+            this.textEditEnt_Art.StyleController = this.layoutControl16;
+            this.textEditEnt_Art.TabIndex = 4;
             // 
             // layoutControlGroup36
             // 
@@ -5171,6 +6115,7 @@
             // 
             // textEditAkt_BIC
             // 
+            this.textEditAkt_BIC.EditValue = " ";
             this.textEditAkt_BIC.Location = new System.Drawing.Point(39, 36);
             this.textEditAkt_BIC.Name = "textEditAkt_BIC";
             this.textEditAkt_BIC.Size = new System.Drawing.Size(1232, 20);
@@ -5179,6 +6124,7 @@
             // 
             // textEditAkt_IBAN
             // 
+            this.textEditAkt_IBAN.EditValue = " ";
             this.textEditAkt_IBAN.Location = new System.Drawing.Point(39, 12);
             this.textEditAkt_IBAN.Name = "textEditAkt_IBAN";
             this.textEditAkt_IBAN.Size = new System.Drawing.Size(1232, 20);
@@ -5239,7 +6185,7 @@
             // 
             // dateEditAkt_ASV_Ueberweisungsdatum
             // 
-            this.dateEditAkt_ASV_Ueberweisungsdatum.EditValue = null;
+            this.dateEditAkt_ASV_Ueberweisungsdatum.EditValue = " ";
             this.dateEditAkt_ASV_Ueberweisungsdatum.Location = new System.Drawing.Point(265, 228);
             this.dateEditAkt_ASV_Ueberweisungsdatum.Name = "dateEditAkt_ASV_Ueberweisungsdatum";
             this.dateEditAkt_ASV_Ueberweisungsdatum.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5252,6 +6198,7 @@
             // 
             // textEditTmp_BSNr
             // 
+            this.textEditTmp_BSNr.EditValue = " ";
             this.textEditTmp_BSNr.Location = new System.Drawing.Point(265, 204);
             this.textEditTmp_BSNr.Name = "textEditTmp_BSNr";
             this.textEditTmp_BSNr.Size = new System.Drawing.Size(1006, 20);
@@ -5260,6 +6207,7 @@
             // 
             // textEditTmp_NrKooparzt
             // 
+            this.textEditTmp_NrKooparzt.EditValue = " ";
             this.textEditTmp_NrKooparzt.Location = new System.Drawing.Point(265, 180);
             this.textEditTmp_NrKooparzt.Name = "textEditTmp_NrKooparzt";
             this.textEditTmp_NrKooparzt.Size = new System.Drawing.Size(1006, 20);
@@ -5268,6 +6216,7 @@
             // 
             // textEditTmp_NrBelegarzt
             // 
+            this.textEditTmp_NrBelegarzt.EditValue = " ";
             this.textEditTmp_NrBelegarzt.Location = new System.Drawing.Point(265, 156);
             this.textEditTmp_NrBelegarzt.Name = "textEditTmp_NrBelegarzt";
             this.textEditTmp_NrBelegarzt.Size = new System.Drawing.Size(1006, 20);
@@ -5276,6 +6225,7 @@
             // 
             // textEditTmp_EinwDiag2
             // 
+            this.textEditTmp_EinwDiag2.EditValue = " ";
             this.textEditTmp_EinwDiag2.Location = new System.Drawing.Point(265, 132);
             this.textEditTmp_EinwDiag2.Name = "textEditTmp_EinwDiag2";
             this.textEditTmp_EinwDiag2.Size = new System.Drawing.Size(1006, 20);
@@ -5284,6 +6234,7 @@
             // 
             // textEditTmp_EinwDiag1
             // 
+            this.textEditTmp_EinwDiag1.EditValue = " ";
             this.textEditTmp_EinwDiag1.Location = new System.Drawing.Point(265, 108);
             this.textEditTmp_EinwDiag1.Name = "textEditTmp_EinwDiag1";
             this.textEditTmp_EinwDiag1.Size = new System.Drawing.Size(1006, 20);
@@ -5292,6 +6243,7 @@
             // 
             // textEditTmp_Zahnarztnr
             // 
+            this.textEditTmp_Zahnarztnr.EditValue = " ";
             this.textEditTmp_Zahnarztnr.Location = new System.Drawing.Point(265, 84);
             this.textEditTmp_Zahnarztnr.Name = "textEditTmp_Zahnarztnr";
             this.textEditTmp_Zahnarztnr.Size = new System.Drawing.Size(1006, 20);
@@ -5300,6 +6252,7 @@
             // 
             // textEditTmp_EinwArztBSNrA
             // 
+            this.textEditTmp_EinwArztBSNrA.EditValue = " ";
             this.textEditTmp_EinwArztBSNrA.Location = new System.Drawing.Point(265, 60);
             this.textEditTmp_EinwArztBSNrA.Name = "textEditTmp_EinwArztBSNrA";
             this.textEditTmp_EinwArztBSNrA.Size = new System.Drawing.Size(1006, 20);
@@ -5308,6 +6261,7 @@
             // 
             // textEditTmp_Arztnr
             // 
+            this.textEditTmp_Arztnr.EditValue = " ";
             this.textEditTmp_Arztnr.Location = new System.Drawing.Point(265, 36);
             this.textEditTmp_Arztnr.Name = "textEditTmp_Arztnr";
             this.textEditTmp_Arztnr.Size = new System.Drawing.Size(1006, 20);
@@ -5316,7 +6270,7 @@
             // 
             // dateEditAkt_EBM_Verion
             // 
-            this.dateEditAkt_EBM_Verion.EditValue = null;
+            this.dateEditAkt_EBM_Verion.EditValue = " ";
             this.dateEditAkt_EBM_Verion.Location = new System.Drawing.Point(265, 276);
             this.dateEditAkt_EBM_Verion.Name = "dateEditAkt_EBM_Verion";
             this.dateEditAkt_EBM_Verion.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5332,6 +6286,87 @@
             this.dateEditAkt_EBM_Verion.Size = new System.Drawing.Size(1006, 20);
             this.dateEditAkt_EBM_Verion.StyleController = this.layoutControl21;
             this.dateEditAkt_EBM_Verion.TabIndex = 15;
+            // 
+            // textEditFAB_für_Diag
+            // 
+            this.textEditFAB_für_Diag.EditValue = " ";
+            this.textEditFAB_für_Diag.Location = new System.Drawing.Point(265, 12);
+            this.textEditFAB_für_Diag.Name = "textEditFAB_für_Diag";
+            this.textEditFAB_für_Diag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditFAB_für_Diag.Properties.Items.AddRange(new object[] {
+            "0100 Innere Medizin",
+            "0200 Geriatrie",
+            "0300 Kardiologie",
+            "0400 Nephrologie",
+            "0500 Hämatologie und internistische Onkologie",
+            "0600 Endokrinologie",
+            "0700 Gastroenterologie",
+            "0800 Pneumologie",
+            "0900 Rheumatologie",
+            "1000 Pädiatrie",
+            "1100 Kinderkardiologie",
+            "1200 Neonatologie",
+            "1300 Kinderchirurgie",
+            "1400 Lungen- und Bronchialheilkunde",
+            "1500 Allgemeine Chirurgie",
+            "1600 Unfallchirurgie",
+            "1700 Neurochirurgie",
+            "1800 Gefäßchirurgie",
+            "1900 Plastische Chirurgie",
+            "2000 Thoraxchirurgie",
+            "2100 Herzchirurgie",
+            "2200 Urologie",
+            "2300 Orthopädie",
+            "2400 Frauenheilkunde und Geburtshilfe",
+            "2500 davon Geburtshilfe",
+            "2600 Hals-, Nasen-, Ohrenheilkunde",
+            "2700 Augenheilkunde",
+            "2800 Neurologie",
+            "2900 Allgemeine Psychiatrie",
+            "3000 Kinder- und Jugendpsychiatrie",
+            "3100 Psychosomatik/Psychotherapie",
+            "3200 Nuklearmedizin",
+            "3300 Strahlenheilkunde",
+            "3400 Dermatologie",
+            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
+            "3600 Intensivmedizin",
+            "2316 Orthopädie und Unfallchirurgie",
+            "2425 Frauenheilkunde",
+            "3700 Sonstige Fachabteilung"});
+            this.textEditFAB_für_Diag.Size = new System.Drawing.Size(1006, 20);
+            this.textEditFAB_für_Diag.StyleController = this.layoutControl21;
+            this.textEditFAB_für_Diag.TabIndex = 4;
+            // 
+            // textEditAkt_KV_Bezirk
+            // 
+            this.textEditAkt_KV_Bezirk.EditValue = " ";
+            this.textEditAkt_KV_Bezirk.Location = new System.Drawing.Point(265, 252);
+            this.textEditAkt_KV_Bezirk.Name = "textEditAkt_KV_Bezirk";
+            this.textEditAkt_KV_Bezirk.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditAkt_KV_Bezirk.Properties.Items.AddRange(new object[] {
+            "01 Schleswig-Holstein",
+            "02 Hamburg",
+            "03 Bremen",
+            "17 Niedersachsen",
+            "20 Westfalen-Lippe",
+            "38 Nordrhein",
+            "46 Hessen",
+            "51 Rheinland-Pfalz",
+            "52 Baden-Württemberg",
+            "71 Bayern",
+            "72 Berlin",
+            "73 Saarland",
+            "78 Mecklenburg-Vorpommern",
+            "83 Brandenburg",
+            "88 Sachsen-Anhalt",
+            "93 Thüringen",
+            "98 Sachsen"});
+            this.textEditAkt_KV_Bezirk.Size = new System.Drawing.Size(1006, 20);
+            this.textEditAkt_KV_Bezirk.StyleController = this.layoutControl21;
+            this.textEditAkt_KV_Bezirk.TabIndex = 14;
+            this.textEditAkt_KV_Bezirk.SelectedIndexChanged += new System.EventHandler(this.textEditAkt_KV_Bezirk_SelectedIndexChanged);
             // 
             // layoutControlGroup21
             // 
@@ -5454,6 +6489,16 @@
             this.layoutControlItem125.Text = "EBM-Version";
             this.layoutControlItem125.TextSize = new System.Drawing.Size(250, 13);
             // 
+            // layoutControlItem141
+            // 
+            this.layoutControlItem141.Control = this.textEditFAB_für_Diag;
+            this.layoutControlItem141.CustomizationFormText = "Fachabteilung";
+            this.layoutControlItem141.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem141.Name = "layoutControlItem141";
+            this.layoutControlItem141.Size = new System.Drawing.Size(1263, 24);
+            this.layoutControlItem141.Text = "Fachabteilung";
+            this.layoutControlItem141.TextSize = new System.Drawing.Size(250, 13);
+            // 
             // layoutControl23
             // 
             this.layoutControl23.Controls.Add(this.simpleButtonPRZList);
@@ -5480,6 +6525,7 @@
             // 
             // checkedComboBoxEditPRZList
             // 
+            this.checkedComboBoxEditPRZList.EditValue = " ";
             this.checkedComboBoxEditPRZList.Location = new System.Drawing.Point(722, 42);
             this.checkedComboBoxEditPRZList.Name = "checkedComboBoxEditPRZList";
             this.checkedComboBoxEditPRZList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5490,6 +6536,7 @@
             // 
             // textEditTMPprz_LSpende
             // 
+            this.textEditTMPprz_LSpende.EditValue = " ";
             this.textEditTMPprz_LSpende.Location = new System.Drawing.Point(98, 90);
             this.textEditTMPprz_LSpende.Name = "textEditTMPprz_LSpende";
             this.textEditTMPprz_LSpende.Size = new System.Drawing.Size(522, 20);
@@ -5498,7 +6545,7 @@
             // 
             // dateEditTMPprz_Tag
             // 
-            this.dateEditTMPprz_Tag.EditValue = null;
+            this.dateEditTMPprz_Tag.EditValue = " ";
             this.dateEditTMPprz_Tag.Location = new System.Drawing.Point(98, 66);
             this.dateEditTMPprz_Tag.Name = "dateEditTMPprz_Tag";
             this.dateEditTMPprz_Tag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5511,6 +6558,7 @@
             // 
             // textEditTMPprz_Kode
             // 
+            this.textEditTMPprz_Kode.EditValue = " ";
             this.textEditTMPprz_Kode.Location = new System.Drawing.Point(98, 42);
             this.textEditTMPprz_Kode.Name = "textEditTMPprz_Kode";
             this.textEditTMPprz_Kode.Size = new System.Drawing.Size(522, 20);
@@ -5634,6 +6682,7 @@
             // 
             // textEditENZent_Anteil
             // 
+            this.textEditENZent_Anteil.EditValue = " ";
             this.textEditENZent_Anteil.Location = new System.Drawing.Point(189, 162);
             this.textEditENZent_Anteil.Name = "textEditENZent_Anteil";
             this.textEditENZent_Anteil.Size = new System.Drawing.Size(414, 20);
@@ -5642,7 +6691,7 @@
             // 
             // dateEditENZent_Tag
             // 
-            this.dateEditENZent_Tag.EditValue = null;
+            this.dateEditENZent_Tag.EditValue = " ";
             this.dateEditENZent_Tag.Location = new System.Drawing.Point(189, 138);
             this.dateEditENZent_Tag.Name = "dateEditENZent_Tag";
             this.dateEditENZent_Tag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5655,6 +6704,7 @@
             // 
             // textEditENZent_Anzahl
             // 
+            this.textEditENZent_Anzahl.EditValue = " ";
             this.textEditENZent_Anzahl.Location = new System.Drawing.Point(189, 114);
             this.textEditENZent_Anzahl.Name = "textEditENZent_Anzahl";
             this.textEditENZent_Anzahl.Size = new System.Drawing.Size(414, 20);
@@ -5663,6 +6713,7 @@
             // 
             // textEditENZent_Erläuterung
             // 
+            this.textEditENZent_Erläuterung.EditValue = " ";
             this.textEditENZent_Erläuterung.Location = new System.Drawing.Point(189, 66);
             this.textEditENZent_Erläuterung.Name = "textEditENZent_Erläuterung";
             this.textEditENZent_Erläuterung.Size = new System.Drawing.Size(414, 20);
@@ -5671,11 +6722,52 @@
             // 
             // textEditENZent_Betrag
             // 
+            this.textEditENZent_Betrag.EditValue = " ";
             this.textEditENZent_Betrag.Location = new System.Drawing.Point(189, 42);
             this.textEditENZent_Betrag.Name = "textEditENZent_Betrag";
             this.textEditENZent_Betrag.Size = new System.Drawing.Size(414, 20);
             this.textEditENZent_Betrag.StyleController = this.layoutControl25;
             this.textEditENZent_Betrag.TabIndex = 4;
+            // 
+            // textEditENZent_Text
+            // 
+            this.textEditENZent_Text.EditValue = " ";
+            this.textEditENZent_Text.Location = new System.Drawing.Point(189, 90);
+            this.textEditENZent_Text.Name = "textEditENZent_Text";
+            this.textEditENZent_Text.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditENZent_Text.Properties.Items.AddRange(new object[] {
+            "01 Im Körper verbleibende Implantate in Summe",
+            "02 Röntgenkontrastmittel",
+            "03 Pauschalvergütung Qualitätssicherung",
+            "04 Pauschalvergütung Sachmittel (auch für §§ 116b, 117, 118, 119 SGB V)",
+            "05 honorarsummenrelevante Pauschalvergütung",
+            "06 teilweise honorarsummenrelevante Pauschalvergütung",
+            resources.GetString("textEditENZent_Text.Properties.Items"),
+            "08 Iris-Retraktoren, Kapselspannringe und Injektionshalterungen bei ophthalmochir" +
+                "urgischen Eingriffen",
+            "09 Ophthalmica (Viskoelastika, Perfluordecaline, Silikonöl, C3F8-Gas) bei ophthal" +
+                "mochirurgischen Leistungen",
+            "10 Narkosegase, Sauerstoff",
+            "12 Erstattung für Arzneimittel (75 v.H. des Apotheken-Einkaufspreises nach Lauert" +
+                "axe zuzüglich Mehrwertsteuer)",
+            resources.GetString("textEditENZent_Text.Properties.Items1"),
+            "14 Nahtmaterial",
+            "15 Diagnostische und interventionelle Katheter einschl. Führungsdraht im Zusammen" +
+                "hang mit gastroskopischen Leistungen (inkl. Leistungen an den Gallenwegen)  ",
+            "16 Trokare, Endoclips und Einmalapplikatoren für Clips im Zusammenhang mit laparo" +
+                "skopischen Leistungen",
+            "17 Diagnostische und interventionelle Katheter einschl. Führungsdraht im Zusammen" +
+                "hang mit Leistungen zur In-Vitro-Fertilisation abzüglich des Patienteneigenantei" +
+                "ls",
+            "18 Schienen, Kompressionsstrümpfe (nicht Anti-Thrombosestrümpfe) ",
+            "50 Pauschale für Sprechstundenbedarf (nur für §§ 116b, 117, 118, 119 SGB V)",
+            "51 Pauschale für Sprechstundenbedarf inklusive Kontrastmittel (nur für §§ 116b (a" +
+                "lt), 117, 118 und 119  SGB V)",
+            "52 Kontrastmittelpauschale (nur für §§ 116b, 117, 118 und 119 SGB V)"});
+            this.textEditENZent_Text.Size = new System.Drawing.Size(414, 20);
+            this.textEditENZent_Text.StyleController = this.layoutControl25;
+            this.textEditENZent_Text.TabIndex = 6;
             // 
             // layoutControlGroup39
             // 
@@ -5813,6 +6905,7 @@
             // 
             // textEditGeAnzahl
             // 
+            this.textEditGeAnzahl.EditValue = " ";
             this.textEditGeAnzahl.Location = new System.Drawing.Point(227, 354);
             this.textEditGeAnzahl.Name = "textEditGeAnzahl";
             this.textEditGeAnzahl.Size = new System.Drawing.Size(406, 20);
@@ -5821,6 +6914,7 @@
             // 
             // textEditGeCodi
             // 
+            this.textEditGeCodi.EditValue = " ";
             this.textEditGeCodi.Location = new System.Drawing.Point(227, 330);
             this.textEditGeCodi.Name = "textEditGeCodi";
             this.textEditGeCodi.Size = new System.Drawing.Size(406, 20);
@@ -5829,6 +6923,7 @@
             // 
             // textEditTeamFiktion
             // 
+            this.textEditTeamFiktion.EditValue = " ";
             this.textEditTeamFiktion.Location = new System.Drawing.Point(227, 282);
             this.textEditTeamFiktion.Name = "textEditTeamFiktion";
             this.textEditTeamFiktion.Size = new System.Drawing.Size(406, 20);
@@ -5837,6 +6932,7 @@
             // 
             // textEditDoppel
             // 
+            this.textEditDoppel.EditValue = " ";
             this.textEditDoppel.Location = new System.Drawing.Point(227, 258);
             this.textEditDoppel.Name = "textEditDoppel";
             this.textEditDoppel.Size = new System.Drawing.Size(406, 20);
@@ -5845,6 +6941,7 @@
             // 
             // textEditentZahl
             // 
+            this.textEditentZahl.EditValue = " ";
             this.textEditentZahl.Location = new System.Drawing.Point(227, 234);
             this.textEditentZahl.Name = "textEditentZahl";
             this.textEditentZahl.Size = new System.Drawing.Size(406, 20);
@@ -5853,6 +6950,7 @@
             // 
             // textEditentBetrag
             // 
+            this.textEditentBetrag.EditValue = " ";
             this.textEditentBetrag.Location = new System.Drawing.Point(227, 210);
             this.textEditentBetrag.Name = "textEditentBetrag";
             this.textEditentBetrag.Size = new System.Drawing.Size(406, 20);
@@ -5861,6 +6959,7 @@
             // 
             // textEditPunkW
             // 
+            this.textEditPunkW.EditValue = " ";
             this.textEditPunkW.Location = new System.Drawing.Point(227, 186);
             this.textEditPunkW.Name = "textEditPunkW";
             this.textEditPunkW.Size = new System.Drawing.Size(406, 20);
@@ -5869,6 +6968,7 @@
             // 
             // textEditPunkZ
             // 
+            this.textEditPunkZ.EditValue = " ";
             this.textEditPunkZ.Location = new System.Drawing.Point(227, 162);
             this.textEditPunkZ.Name = "textEditPunkZ";
             this.textEditPunkZ.Size = new System.Drawing.Size(406, 20);
@@ -5877,7 +6977,7 @@
             // 
             // dateEditTagB
             // 
-            this.dateEditTagB.EditValue = null;
+            this.dateEditTagB.EditValue = " ";
             this.dateEditTagB.Location = new System.Drawing.Point(227, 138);
             this.dateEditTagB.Name = "dateEditTagB";
             this.dateEditTagB.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5890,6 +6990,7 @@
             // 
             // textEditHonor
             // 
+            this.textEditHonor.EditValue = " ";
             this.textEditHonor.Location = new System.Drawing.Point(227, 114);
             this.textEditHonor.Name = "textEditHonor";
             this.textEditHonor.Size = new System.Drawing.Size(406, 20);
@@ -5898,6 +6999,7 @@
             // 
             // textEditRecGrund
             // 
+            this.textEditRecGrund.EditValue = " ";
             this.textEditRecGrund.Location = new System.Drawing.Point(227, 90);
             this.textEditRecGrund.Name = "textEditRecGrund";
             this.textEditRecGrund.Size = new System.Drawing.Size(406, 20);
@@ -5906,6 +7008,7 @@
             // 
             // checkedComboBoxEditENAList
             // 
+            this.checkedComboBoxEditENAList.EditValue = " ";
             this.checkedComboBoxEditENAList.Location = new System.Drawing.Point(864, 42);
             this.checkedComboBoxEditENAList.Name = "checkedComboBoxEditENAList";
             this.checkedComboBoxEditENAList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5923,6 +7026,80 @@
             this.simpleButtonADDENA.TabIndex = 4;
             this.simpleButtonADDENA.Text = "ADD";
             this.simpleButtonADDENA.Click += new System.EventHandler(this.simpleButtonADDENA_Click);
+            // 
+            // textEditentEBM
+            // 
+            this.textEditentEBM.EditValue = " ";
+            this.textEditentEBM.Location = new System.Drawing.Point(227, 66);
+            this.textEditentEBM.Name = "textEditentEBM";
+            this.textEditentEBM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditentEBM.Properties.Items.AddRange(new object[] {
+            "001 Allgemeinärzte, Praktische Ärzte, Hausärztliche Internisten",
+            "002 Anästhesisten",
+            "003 Chirurgen",
+            "004 Frauenärzte",
+            "005 Hautärzte",
+            "006 HNO-Ärzte",
+            "007 Fachärzte für Kinder- und Jugendmedizin",
+            "008 Nervenärzte, Neurologen, Ärzte für Psychiatrie und Psychotherapie,Ärzte für K" +
+                "inder- und Jugendpsychiatrie und -psychotherapie",
+            "009 Notfallärzte",
+            "010 Orthopäden, Ärzte für Physikalische und Rehabilitative Medizin",
+            "011 Nuklearmediziner",
+            "012 Radiologen",
+            "013 Strahlentherapeuten",
+            "014 Urologen",
+            "015 Fachärztliche Internisten ohne Schwerpunkt (Teilgebiet)",
+            "016 - Angiologie",
+            "017 - Endokrinologie",
+            "018 - Gastroenterologie",
+            "019 - Hämatologie und Internistische Onkologie",
+            "020 - Kardiologie",
+            "021 - Nephrologie",
+            "022 - Pneumologie",
+            "023 - Rheumatologie",
+            "024 - Orthopäden mit Schwerpunkt Rheumatologie"});
+            this.textEditentEBM.Size = new System.Drawing.Size(406, 20);
+            this.textEditentEBM.StyleController = this.layoutControl24;
+            this.textEditentEBM.TabIndex = 7;
+            // 
+            // textEditentArt
+            // 
+            this.textEditentArt.EditValue = " ";
+            this.textEditentArt.Location = new System.Drawing.Point(227, 42);
+            this.textEditentArt.Name = "textEditentArt";
+            this.textEditentArt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditentArt.Properties.Items.AddRange(new object[] {
+            "0 Ambulantes Operieren nach § 115b SGB V, Ambulante Behandlung nach § 116b SGB V",
+            "1 -------------------------------------------",
+            "2 Hochschulambulanzen nach § 117 Abs. 1 und Abs. 2 SGB V",
+            "3 Psychiatrische Institutsambulanzen nach § 118 SGB V",
+            "4 Sozialpädiatrische Zentren nach § 119 SGB V",
+            "5 Integrierte Versorgung nach § 140a SGB V",
+            "6 Kinderspezialambulanzen (ergänzende fall- oder einrichtungsbezogene Pauschale) " +
+                "nach § 120 Abs. 1a SGB V",
+            "7 Ambulanzen an Ausbildungsstätten nach § 6 PsychThG - § 117 Abs. 3 SGB V",
+            "8 Medizinische Behandlungszentren (MBZ) nach § 119c SGB V [ab 1.4.2017]"});
+            this.textEditentArt.Size = new System.Drawing.Size(406, 20);
+            this.textEditentArt.StyleController = this.layoutControl24;
+            this.textEditentArt.TabIndex = 6;
+            // 
+            // textEditTeamEben
+            // 
+            this.textEditTeamEben.EditValue = " ";
+            this.textEditTeamEben.Location = new System.Drawing.Point(227, 306);
+            this.textEditTeamEben.Name = "textEditTeamEben";
+            this.textEditTeamEben.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditTeamEben.Properties.Items.AddRange(new object[] {
+            "1 Teamleitung",
+            "2 Mitglied des Kernteams",
+            "3 Hinzugezogener Facharzt"});
+            this.textEditTeamEben.Size = new System.Drawing.Size(406, 20);
+            this.textEditTeamEben.StyleController = this.layoutControl24;
+            this.textEditTeamEben.TabIndex = 17;
             // 
             // layoutControlGroup38
             // 
@@ -6142,6 +7319,7 @@
             // 
             // checkedComboBoxEditBDGList
             // 
+            this.checkedComboBoxEditBDGList.EditValue = " ";
             this.checkedComboBoxEditBDGList.Location = new System.Drawing.Point(868, 42);
             this.checkedComboBoxEditBDGList.Name = "checkedComboBoxEditBDGList";
             this.checkedComboBoxEditBDGList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -6152,6 +7330,7 @@
             // 
             // textEditTmpHSA
             // 
+            this.textEditTmpHSA.EditValue = " ";
             this.textEditTmpHSA.Location = new System.Drawing.Point(223, 162);
             this.textEditTmpHSA.Name = "textEditTmpHSA";
             this.textEditTmpHSA.Size = new System.Drawing.Size(418, 20);
@@ -6160,6 +7339,7 @@
             // 
             // textEditTmpStandNr
             // 
+            this.textEditTmpStandNr.EditValue = " ";
             this.textEditTmpStandNr.Location = new System.Drawing.Point(223, 138);
             this.textEditTmpStandNr.Name = "textEditTmpStandNr";
             this.textEditTmpStandNr.Size = new System.Drawing.Size(418, 20);
@@ -6168,6 +7348,7 @@
             // 
             // textEditTmpTeam
             // 
+            this.textEditTmpTeam.EditValue = " ";
             this.textEditTmpTeam.Location = new System.Drawing.Point(223, 114);
             this.textEditTmpTeam.Name = "textEditTmpTeam";
             this.textEditTmpTeam.Size = new System.Drawing.Size(418, 20);
@@ -6176,6 +7357,7 @@
             // 
             // textEditTmpArt
             // 
+            this.textEditTmpArt.EditValue = " ";
             this.textEditTmpArt.Location = new System.Drawing.Point(223, 90);
             this.textEditTmpArt.Name = "textEditTmpArt";
             this.textEditTmpArt.Size = new System.Drawing.Size(418, 20);
@@ -6184,6 +7366,7 @@
             // 
             // textEditTmpSEK
             // 
+            this.textEditTmpSEK.EditValue = " ";
             this.textEditTmpSEK.Location = new System.Drawing.Point(223, 66);
             this.textEditTmpSEK.Name = "textEditTmpSEK";
             this.textEditTmpSEK.Size = new System.Drawing.Size(418, 20);
@@ -6192,6 +7375,7 @@
             // 
             // textEditTmpBDiagnose
             // 
+            this.textEditTmpBDiagnose.EditValue = " ";
             this.textEditTmpBDiagnose.Location = new System.Drawing.Point(223, 42);
             this.textEditTmpBDiagnose.Name = "textEditTmpBDiagnose";
             this.textEditTmpBDiagnose.Size = new System.Drawing.Size(418, 20);
@@ -6332,6 +7516,7 @@
             // 
             // checkedComboBoxEditTmp_LEIList
             // 
+            this.checkedComboBoxEditTmp_LEIList.EditValue = " ";
             this.checkedComboBoxEditTmp_LEIList.Location = new System.Drawing.Point(788, 42);
             this.checkedComboBoxEditTmp_LEIList.Name = "checkedComboBoxEditTmp_LEIList";
             this.checkedComboBoxEditTmp_LEIList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -6342,7 +7527,7 @@
             // 
             // dateEditlei_Tag
             // 
-            this.dateEditlei_Tag.EditValue = null;
+            this.dateEditlei_Tag.EditValue = " ";
             this.dateEditlei_Tag.Location = new System.Drawing.Point(162, 90);
             this.dateEditlei_Tag.Name = "dateEditlei_Tag";
             this.dateEditlei_Tag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -6352,6 +7537,43 @@
             this.dateEditlei_Tag.Size = new System.Drawing.Size(460, 20);
             this.dateEditlei_Tag.StyleController = this.layoutControl26;
             this.dateEditlei_Tag.TabIndex = 6;
+            // 
+            // textEditlei_Schluessel
+            // 
+            this.textEditlei_Schluessel.EditValue = " ";
+            this.textEditlei_Schluessel.Location = new System.Drawing.Point(162, 66);
+            this.textEditlei_Schluessel.Name = "textEditlei_Schluessel";
+            this.textEditlei_Schluessel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditlei_Schluessel.Properties.Items.AddRange(new object[] {
+            "22",
+            "23",
+            "28",
+            "28",
+            "29",
+            "9999"});
+            this.textEditlei_Schluessel.Size = new System.Drawing.Size(460, 20);
+            this.textEditlei_Schluessel.StyleController = this.layoutControl26;
+            this.textEditlei_Schluessel.TabIndex = 5;
+            // 
+            // textEditlei_Art
+            // 
+            this.textEditlei_Art.EditValue = " ";
+            this.textEditlei_Art.Location = new System.Drawing.Point(162, 42);
+            this.textEditlei_Art.Name = "textEditlei_Art";
+            this.textEditlei_Art.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditlei_Art.Properties.Items.AddRange(new object[] {
+            "A1 PIA Leistungsdokumentation gemäß Schüssel 23",
+            "A2 Leistungsbereich der Behandlung nach § 116b SGB V gemäß Schlüssel 22",
+            "A3 geplante ambulante Operation ist nicht zustande gekommen",
+            "A4 Dokumentation für Einrichtungen nach §§ 119, 119c SGB V (soweit vereinbart)",
+            "A6 Dokumentation schwerer Verlaufsformen nach § 116b SGB V gemäß Schlüssel 29",
+            "A7 Dokumentation für Einrichtungen nach § 117 SGB V (soweit individuell vereinbar" +
+                "t)"});
+            this.textEditlei_Art.Size = new System.Drawing.Size(460, 20);
+            this.textEditlei_Art.StyleController = this.layoutControl26;
+            this.textEditlei_Art.TabIndex = 4;
             // 
             // layoutControlGroup40
             // 
@@ -6509,8 +7731,8 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutUWD;
-            this.tabbedControlGroup1.SelectedTabPageIndex = 26;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutREL;
+            this.tabbedControlGroup1.SelectedTabPageIndex = 30;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(1293, 430);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutFKT,
@@ -6544,6 +7766,24 @@
             this.layoutTXT,
             this.layoutKOS,
             this.layoutREL});
+            // 
+            // layoutREC
+            // 
+            this.layoutREC.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem13});
+            this.layoutREC.Location = new System.Drawing.Point(0, 0);
+            this.layoutREC.Name = "layoutREC";
+            this.layoutREC.Size = new System.Drawing.Size(1287, 402);
+            this.layoutREC.Text = "Rechnung (REC)";
+            // 
+            // layoutControlItem13
+            // 
+            this.layoutControlItem13.Control = this.layoutControl13;
+            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem13.Name = "layoutControlItem13";
+            this.layoutControlItem13.Size = new System.Drawing.Size(1287, 402);
+            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem13.TextVisible = false;
             // 
             // layoutFKT
             // 
@@ -6689,6 +7929,24 @@
             this.layoutControlItem59.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem59.TextVisible = false;
             // 
+            // layoutSTA
+            // 
+            this.layoutSTA.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem72});
+            this.layoutSTA.Location = new System.Drawing.Point(0, 0);
+            this.layoutSTA.Name = "layoutSTA";
+            this.layoutSTA.Size = new System.Drawing.Size(1287, 402);
+            this.layoutSTA.Text = "Standort (STA)";
+            // 
+            // layoutControlItem72
+            // 
+            this.layoutControlItem72.Control = this.layoutControl41;
+            this.layoutControlItem72.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem72.Name = "layoutControlItem72";
+            this.layoutControlItem72.Size = new System.Drawing.Size(1287, 402);
+            this.layoutControlItem72.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem72.TextVisible = false;
+            // 
             // layoutCUX
             // 
             this.layoutCUX.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -6781,24 +8039,6 @@
             this.layoutControlItem11.Size = new System.Drawing.Size(1287, 402);
             this.layoutControlItem11.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem11.TextVisible = false;
-            // 
-            // layoutREC
-            // 
-            this.layoutREC.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem13});
-            this.layoutREC.Location = new System.Drawing.Point(0, 0);
-            this.layoutREC.Name = "layoutREC";
-            this.layoutREC.Size = new System.Drawing.Size(1287, 402);
-            this.layoutREC.Text = "Rechnung (REC)";
-            // 
-            // layoutControlItem13
-            // 
-            this.layoutControlItem13.Control = this.layoutControl13;
-            this.layoutControlItem13.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(1287, 402);
-            this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem13.TextVisible = false;
             // 
             // layoutZLG
             // 
@@ -7255,7 +8495,7 @@
             this.layoutControlItemZiel_IK.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemZiel_IK.Name = "layoutControlItemZiel_IK";
             this.layoutControlItemZiel_IK.Size = new System.Drawing.Size(1293, 24);
-            this.layoutControlItemZiel_IK.Text = "Ziel_IK";
+            this.layoutControlItemZiel_IK.Text = "Empfänger";
             this.layoutControlItemZiel_IK.TextSize = new System.Drawing.Size(61, 13);
             // 
             // layoutControlItemInput_IK
@@ -7264,7 +8504,7 @@
             this.layoutControlItemInput_IK.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemInput_IK.Name = "layoutControlItemInput_IK";
             this.layoutControlItemInput_IK.Size = new System.Drawing.Size(1293, 24);
-            this.layoutControlItemInput_IK.Text = "Input_IK";
+            this.layoutControlItemInput_IK.Text = "Absender";
             this.layoutControlItemInput_IK.TextSize = new System.Drawing.Size(61, 13);
             // 
             // layoutControlItemErstelldatum
@@ -7303,1104 +8543,81 @@
             this.layoutControlItemSyntax_Nr.Text = "Syntax_Nr";
             this.layoutControlItemSyntax_Nr.TextSize = new System.Drawing.Size(61, 13);
             // 
-            // layoutSTA
+            // dateEditTmp_AufnNr
             // 
-            this.layoutSTA.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem72});
-            this.layoutSTA.Location = new System.Drawing.Point(0, 0);
-            this.layoutSTA.Name = "layoutSTA";
-            this.layoutSTA.Size = new System.Drawing.Size(1287, 402);
-            this.layoutSTA.Text = "Standort (STA)";
-            // 
-            // layoutControlItem72
-            // 
-            this.layoutControlItem72.Control = this.layoutControl41;
-            this.layoutControlItem72.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem72.Name = "layoutControlItem72";
-            this.layoutControlItem72.Size = new System.Drawing.Size(1287, 402);
-            this.layoutControlItem72.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem72.TextVisible = false;
-            // 
-            // textEditfab_FAbt
-            // 
-            this.textEditfab_FAbt.Location = new System.Drawing.Point(197, 42);
-            this.textEditfab_FAbt.Name = "textEditfab_FAbt";
-            this.textEditfab_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditTmp_AufnNr.EditValue = " ";
+            this.dateEditTmp_AufnNr.Location = new System.Drawing.Point(225, 108);
+            this.dateEditTmp_AufnNr.Name = "dateEditTmp_AufnNr";
+            this.dateEditTmp_AufnNr.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditfab_FAbt.Properties.Items.AddRange(new object[] {
-            "0100 Innere Medizin",
-            "0200 Geriatrie",
-            "0300 Kardiologie",
-            "0400 Nephrologie",
-            "0500 Hämatologie und internistische Onkologie",
-            "0600 Endokrinologie",
-            "0700 Gastroenterologie",
-            "0800 Pneumologie",
-            "0900 Rheumatologie",
-            "1000 Pädiatrie",
-            "1100 Kinderkardiologie",
-            "1200 Neonatologie",
-            "1300 Kinderchirurgie",
-            "1400 Lungen- und Bronchialheilkunde",
-            "1500 Allgemeine Chirurgie",
-            "1600 Unfallchirurgie",
-            "1700 Neurochirurgie",
-            "1800 Gefäßchirurgie",
-            "1900 Plastische Chirurgie",
-            "2000 Thoraxchirurgie",
-            "2100 Herzchirurgie",
-            "2200 Urologie",
-            "2300 Orthopädie",
-            "2400 Frauenheilkunde und Geburtshilfe",
-            "2500 davon Geburtshilfe",
-            "2600 Hals-, Nasen-, Ohrenheilkunde",
-            "2700 Augenheilkunde",
-            "2800 Neurologie",
-            "2900 Allgemeine Psychiatrie",
-            "3000 Kinder- und Jugendpsychiatrie",
-            "3100 Psychosomatik/Psychotherapie",
-            "3200 Nuklearmedizin",
-            "3300 Strahlenheilkunde",
-            "3400 Dermatologie",
-            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
-            "3600 Intensivmedizin",
-            "2316 Orthopädie und Unfallchirurgie",
-            "2425 Frauenheilkunde",
-            "3700 Sonstige Fachabteilung"});
-            this.textEditfab_FAbt.Size = new System.Drawing.Size(449, 20);
-            this.textEditfab_FAbt.StyleController = this.layoutControl11;
-            this.textEditfab_FAbt.TabIndex = 4;
-            // 
-            // textEditTmp_LfdNrGFall
-            // 
-            this.textEditTmp_LfdNrGFall.Location = new System.Drawing.Point(208, 36);
-            this.textEditTmp_LfdNrGFall.Name = "textEditTmp_LfdNrGFall";
-            this.textEditTmp_LfdNrGFall.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.dateEditTmp_AufnNr.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_LfdNrGFall.Properties.Items.AddRange(new object[] {
-            "01",
-            "02",
-            "03"});
-            this.textEditTmp_LfdNrGFall.Size = new System.Drawing.Size(1063, 20);
-            this.textEditTmp_LfdNrGFall.StyleController = this.layoutControl2;
-            this.textEditTmp_LfdNrGFall.TabIndex = 6;
-            this.textEditTmp_LfdNrGFall.ToolTip = "FKT[2]";
+            this.dateEditTmp_AufnNr.Properties.DisplayFormat.FormatString = "";
+            this.dateEditTmp_AufnNr.Properties.EditFormat.FormatString = "";
+            this.dateEditTmp_AufnNr.Properties.Mask.EditMask = "";
+            this.dateEditTmp_AufnNr.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
+            this.dateEditTmp_AufnNr.Size = new System.Drawing.Size(1046, 20);
+            this.dateEditTmp_AufnNr.StyleController = this.layoutControl3;
+            this.dateEditTmp_AufnNr.TabIndex = 6;
+            this.dateEditTmp_AufnNr.ToolTip = "Inv[6]";
             // 
-            // textEditTmp_V_Status
+            // ComboBoxTmp_AufnGrund2
             // 
-            this.textEditTmp_V_Status.Location = new System.Drawing.Point(225, 36);
-            this.textEditTmp_V_Status.Name = "textEditTmp_V_Status";
-            this.textEditTmp_V_Status.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ComboBoxTmp_AufnGrund2.EditValue = " ";
+            this.ComboBoxTmp_AufnGrund2.Location = new System.Drawing.Point(880, 36);
+            this.ComboBoxTmp_AufnGrund2.Name = "ComboBoxTmp_AufnGrund2";
+            this.ComboBoxTmp_AufnGrund2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_V_Status.Properties.Items.AddRange(new object[] {
-            "1 Mitglied",
-            "3 Familienversicherter",
-            "5 Rentner und deren Familienangehörige",
-            "9 Auslandsversicherte"});
-            this.textEditTmp_V_Status.Size = new System.Drawing.Size(1046, 20);
-            this.textEditTmp_V_Status.StyleController = this.layoutControl3;
-            this.textEditTmp_V_Status.TabIndex = 5;
-            this.textEditTmp_V_Status.ToolTip = "Inv[2]";
+            this.ComboBoxTmp_AufnGrund2.Properties.Items.AddRange(new object[] {
+            "01 Normalfall",
+            "02 Arbeitsunfall/Berufskrankheit (§ 11 Abs. 5 SGB V)",
+            "03 Verkehrsunfall/Sportunfall/Sonstiger Unfall (z.B. § 116 SGB X)",
+            "04 Hinweis auf Einwirkung von äußerer Gewalt",
+            "05 frei",
+            "06 Kriegsbeschädigten-Leiden/BVG-Leiden",
+            "07 Notfall"});
+            this.ComboBoxTmp_AufnGrund2.Size = new System.Drawing.Size(391, 20);
+            this.ComboBoxTmp_AufnGrund2.StyleController = this.layoutControl6;
+            this.ComboBoxTmp_AufnGrund2.TabIndex = 15;
             // 
-            // textEditDMP
+            // layoutControlItem127
             // 
-            this.textEditDMP.Location = new System.Drawing.Point(225, 84);
-            this.textEditDMP.Name = "textEditDMP";
-            this.textEditDMP.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.layoutControlItem127.Control = this.ComboBoxTmp_AufnGrund2;
+            this.layoutControlItem127.Location = new System.Drawing.Point(631, 24);
+            this.layoutControlItem127.Name = "layoutControlItem127";
+            this.layoutControlItem127.Size = new System.Drawing.Size(632, 24);
+            this.layoutControlItem127.Text = "Aufnahmegrund (3. und 4. Stelle)";
+            this.layoutControlItem127.TextSize = new System.Drawing.Size(234, 13);
+            // 
+            // ComboBoxEditSEAufnahmediagnose
+            // 
+            this.ComboBoxEditSEAufnahmediagnose.EditValue = " ";
+            this.ComboBoxEditSEAufnahmediagnose.Location = new System.Drawing.Point(176, 66);
+            this.ComboBoxEditSEAufnahmediagnose.Name = "ComboBoxEditSEAufnahmediagnose";
+            this.ComboBoxEditSEAufnahmediagnose.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditDMP.Properties.Items.AddRange(new object[] {
-            "00 keine DMP-Teilnahme",
-            "01 Diabetes mellitus Typ 2",
-            "02 Brustkrebs",
-            "03 koronare Herzkrankheit",
-            "04 Diabetes mellitus Typ 1",
-            "05 Asthma bronchiale",
-            "06 COPD",
-            "07 Chronische Herzinsuffizienz",
-            "08 Depression",
-            "09 Rückenschmerz",
-            "99 Auslandsversicherte"});
-            this.textEditDMP.Size = new System.Drawing.Size(1046, 20);
-            this.textEditDMP.StyleController = this.layoutControl3;
-            this.textEditDMP.TabIndex = 11;
+            this.ComboBoxEditSEAufnahmediagnose.Properties.Items.AddRange(new object[] {
+            "R rechts",
+            "L links",
+            "B beidseitig"});
+            this.ComboBoxEditSEAufnahmediagnose.Size = new System.Drawing.Size(491, 20);
+            this.ComboBoxEditSEAufnahmediagnose.StyleController = this.layoutControl7;
+            this.ComboBoxEditSEAufnahmediagnose.TabIndex = 6;
             // 
-            // textEditInterLand
+            // ComboBoxEditSEEinDiagnose
             // 
-            this.textEditInterLand.Location = new System.Drawing.Point(183, 204);
-            this.textEditInterLand.Name = "textEditInterLand";
-            this.textEditInterLand.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ComboBoxEditSEEinDiagnose.EditValue = " ";
+            this.ComboBoxEditSEEinDiagnose.Location = new System.Drawing.Point(176, 114);
+            this.ComboBoxEditSEEinDiagnose.Name = "ComboBoxEditSEEinDiagnose";
+            this.ComboBoxEditSEEinDiagnose.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditInterLand.Properties.Items.AddRange(new object[] {
-            "ET  Ägypten",
-            "ETH Äthiopien",
-            "AFG Afghanistan",
-            "AL  Albanien",
-            "DZ  Algerien",
-            "AND Andorra",
-            "ANG Angola",
-            "AB  Antigua und Babuda",
-            "RA  Argentinien",
-            "AR  Armenien",
-            "AZ  Aserbaidschan",
-            "AUS  Australien",
-            "BS  Bahamas",
-            "BRN  Bahrain",
-            "BD Bangladesch",
-            "BDS Barbados",
-            "BY Belarus (Weißrußland)",
-            "B Belgien",
-            "BH Belize (brit. Honduras)",
-            "BEN Benin (Dahorney)",
-            "BHU Bhutan",
-            "BOL Bolivien",
-            "BIH Bosnien-Herzegowina",
-            "RB Botsuana",
-            "BR Brasilien",
-            "BRU Brunei Darussalam",
-            "BG Bulgarien",
-            "D  Bundesrepublik Deutschland ",
-            "BF Burkina Faso",
-            "RU Burundi",
-            "RCH Chile",
-            "RC China (Taiwan)",
-            "CHI China (Volksrepublik)",
-            "CR Costa Rica",
-            "CI Côte d’Ivoire (Elfenbeinküste)",
-            "DK Dänemark",
-            "WD Dominica",
-            "DOM Dominikanische Republik",
-            "EC Ecuador",
-            "ES El Salvador",
-            "ER Eritrea",
-            "EST Estland",
-            "FR Faröer (dän.)",
-            "FAL Falklandinseln",
-            "FJI Fidschi",
-            "FIN Finnland",
-            "F  Frankreich",
-            "GAB Gabun",
-            "WAG Gambia",
-            "GE Georgien",
-            "GH Ghana",
-            "GBZ Gibraltar",
-            "WG Grenada",
-            "GR Griechenland",
-            "GB Vereinigtes Königreich (Großbritannien",
-            "GBA Alderney",
-            "GBG Guernsey",
-            "GBJ Jersey",
-            "GBM Insel Man",
-            "GCA Guatemala",
-            "GUI Guinea",
-            "GUI Guinea",
-            "RH Haiti",
-            "HN Honduras",
-            "HN Honduras",
-            "IND Indien",
-            "RI Indonesien",
-            "IRQ Irak",
-            "IR Iran",
-            "IRL Irland",
-            "IS Island",
-            "IL Israel",
-            "I  Italien",
-            "JA Jamaika",
-            "J  Japan",
-            "JEM Jemen",
-            "JOR Jordanien",
-            "K  Kambodscha",
-            "KAM Kamerun",
-            "CDN Kanada",
-            "KZ Kasachstan",
-            "Q  Katar",
-            "EAK Kenia",
-            "KS Kirgisistan",
-            "CO Kolumbien",
-            "RCB Kongo",
-            "CB Kongo, Demokratische Republik",
-            "ROK Korea (Südkorea)",
-            "RKS Kosovo",
-            "HR Kroatien",
-            "C Kuba",
-            "KWT Kuwait",
-            "LAO Laos, Demokratische Volksrepublik",
-            "LS Lesotho",
-            "LV Lettland",
-            "RL Libanon",
-            "LBA Liberia",
-            "LBY Libyen",
-            "FL Liechtenstein",
-            "LT Litauen",
-            "L  Luxemburg",
-            "RM Madagaskar",
-            "MK Mazedonien",
-            "MW Malawi",
-            "MAL Malaysia",
-            "MDI Malediven",
-            "RMM Mali",
-            "M Malta",
-            "MA Marokko",
-            "RIM Mauretanien",
-            "MS Mauritius",
-            "MEX Mexiko",
-            "MIK Mikronesien, Föderierte Staaten von",
-            "MD Moldau",
-            "MC Monaco",
-            "MNG Mongolei",
-            "MNE Montenegro",
-            "MOC Mosambik",
-            "MYA Myanmar (Birma)",
-            "NAM Namibia",
-            "NAU Nauru",
-            "NEP Nepal",
-            "NZ Neuseeland",
-            "NIC Nicaragua",
-            "NA Niederl. Antillen (Curacao)",
-            "NL Niederlande",
-            "RN Niger",
-            "WAN Nigeria",
-            "N Norwegen",
-            "A  Österreich",
-            "OM Oman",
-            "PK Pakistan",
-            "PA Panama",
-            "PAP Papua-Neuguinea",
-            "PY Paraguay",
-            "PE Peru",
-            "RP Philippinen",
-            "PL Polen",
-            "P Portugal",
-            "RWA Ruanda",
-            "RO Rumänien",
-            "RUS Russische Föderation",
-            "SAL Salomonen",
-            "WL Santa Lucia",
-            "WV St. Vincent u. die Grenadinen",
-            "Z Sambia",
-            "WS Samoa (Westsamoa)",
-            "RSM San Marino",
-            "SAN Sansibar",
-            "STO Sao Tome und Principe",
-            "KSA Saudi Arabien, Königreich",
-            "S   Schweden",
-            "CH Schweiz",
-            "SN Senegal",
-            "SRB Serbien",
-            "SY Seychellen",
-            "WAL Sierra Leone",
-            "ZW Simbabwe",
-            "SGP Singapur",
-            "SK Slowakische Republik",
-            "SLO Slowenien",
-            "SP Somalia",
-            "E  Spanien",
-            "SRL Sri Lanka (Ceylon)",
-            "STK St. Kitts und Nevis",
-            "SUD Sudan",
-            "ZA Südafrika",
-            "SME Suriname",
-            "SD Swasiland",
-            "SYR Syrien",
-            "TJ Tadschikistan",
-            "EAT Tansania",
-            "THA Thailand",
-            "RT Togo",
-            "TT Trinidad und Tobago",
-            "TSD Tschad",
-            "CZ Tschechische Republik",
-            "TN Tunesien",
-            "TR Türkei",
-            "TM Turkmenistan",
-            "EAU Uganda",
-            "UA Ukraine",
-            "H Ungarn",
-            "ROU Urugay",
-            "UZ Usbekistan",
-            "V   Vatikanstadt",
-            "YV Venezuela",
-            "UAE Vereinigte Arabische Emirate",
-            "USA Vereinigte Staaten von Amerika",
-            "VN Vietnam",
-            "RCA Zentralafrikanische Republik",
-            "CY Zypern"});
-            this.textEditInterLand.Size = new System.Drawing.Size(1088, 20);
-            this.textEditInterLand.StyleController = this.layoutControl4;
-            this.textEditInterLand.TabIndex = 12;
-            this.textEditInterLand.ToolTip = "NAD[10]";
-            // 
-            // textEditTmp_AufnFAB
-            // 
-            this.textEditTmp_AufnFAB.Location = new System.Drawing.Point(249, 60);
-            this.textEditTmp_AufnFAB.Name = "textEditTmp_AufnFAB";
-            this.textEditTmp_AufnFAB.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_AufnFAB.Properties.Items.AddRange(new object[] {
-            "0100 Innere Medizin",
-            "0200 Geriatrie",
-            "0300 Kardiologie",
-            "0400 Nephrologie",
-            "0500 Hämatologie und internistische Onkologie",
-            "0600 Endokrinologie",
-            "0700 Gastroenterologie",
-            "0800 Pneumologie",
-            "0900 Rheumatologie",
-            "1000 Pädiatrie",
-            "1100 Kinderkardiologie",
-            "1200 Neonatologie",
-            "1300 Kinderchirurgie",
-            "1400 Lungen- und Bronchialheilkunde",
-            "1600 Unfallchirurgie",
-            "1700 Neurochirurgie",
-            "1800 Gefäßchirurgie",
-            "1900 Plastische Chirurgie",
-            "2000 Thoraxchirurgie",
-            "2100 Herzchirurgie",
-            "2200 Urologie",
-            "2300 Orthopädie",
-            "2400 Frauenheilkunde und Geburtshilfe",
-            "2500 davon Geburtshilfe",
-            "2600 Hals-, Nasen-, Ohrenheilkunde",
-            "2700 Augenheilkunde",
-            "2800 Neurologie",
-            "2900 Allgemeine Psychiatrie",
-            "3000 Kinder- und Jugendpsychiatrie",
-            "3100 Psychosomatik/Psychotherapie",
-            "3200 Nuklearmedizin",
-            "3300 Strahlenheilkunde",
-            "3400 Dermatologie",
-            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
-            "3600 Intensivmedizin",
-            "2316 Orthopädie und Unfallchirurgie",
-            "2425 Frauenheilkunde",
-            "3700 Sonstige Fachabteilung"});
-            this.textEditTmp_AufnFAB.Size = new System.Drawing.Size(1022, 20);
-            this.textEditTmp_AufnFAB.StyleController = this.layoutControl6;
-            this.textEditTmp_AufnFAB.TabIndex = 8;
-            // 
-            // textEditTmp_AufnGrund
-            // 
-            this.textEditTmp_AufnGrund.Location = new System.Drawing.Point(249, 36);
-            this.textEditTmp_AufnGrund.Name = "textEditTmp_AufnGrund";
-            this.textEditTmp_AufnGrund.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_AufnGrund.Properties.Items.AddRange(new object[] {
-            "01 Krankenhausbehandlung, vollstationär",
-            "02 Krankenhausbehandlung, vollstationär mit vorausgegangener vorstationärer Behan" +
-                "dlung",
-            "03 Krankenhausbehandlung, teilstationär",
-            "04 vorstationäre Behandlung ohne anschließende vollstationäre Behandlung",
-            "05 Stationäre Entbindung",
-            "06 Geburt",
-            "07 Wiederaufnahme wegen Komplikationen (Fallpauschale) nach KFPV 2003",
-            "08 Stationäre Aufnahme zur Organentnahme",
-            "09 frei",
-            "10 Stationsäquivalente Behandlung"});
-            this.textEditTmp_AufnGrund.Size = new System.Drawing.Size(1022, 20);
-            this.textEditTmp_AufnGrund.StyleController = this.layoutControl6;
-            this.textEditTmp_AufnGrund.TabIndex = 7;
-            // 
-            // textEditTmp_NF_ab
-            // 
-            this.textEditTmp_NF_ab.EditValue = null;
-            this.textEditTmp_NF_ab.Location = new System.Drawing.Point(273, 108);
-            this.textEditTmp_NF_ab.Name = "textEditTmp_NF_ab";
-            this.textEditTmp_NF_ab.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_NF_ab.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_NF_ab.Properties.DisplayFormat.FormatString = "";
-            this.textEditTmp_NF_ab.Properties.EditFormat.FormatString = "";
-            this.textEditTmp_NF_ab.Properties.Mask.EditMask = "";
-            this.textEditTmp_NF_ab.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.None;
-            this.textEditTmp_NF_ab.Size = new System.Drawing.Size(998, 20);
-            this.textEditTmp_NF_ab.StyleController = this.layoutControl8;
-            this.textEditTmp_NF_ab.TabIndex = 8;
-            // 
-            // textEditfab_DG
-            // 
-            this.textEditfab_DG.Location = new System.Drawing.Point(197, 66);
-            this.textEditfab_DG.Name = "textEditfab_DG";
-            this.textEditfab_DG.Size = new System.Drawing.Size(449, 20);
-            this.textEditfab_DG.StyleController = this.layoutControl11;
-            this.textEditfab_DG.TabIndex = 7;
-            // 
-            // textEditTmp_RgArtREC
-            // 
-            this.textEditTmp_RgArtREC.Location = new System.Drawing.Point(209, 60);
-            this.textEditTmp_RgArtREC.Name = "textEditTmp_RgArtREC";
-            this.textEditTmp_RgArtREC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_RgArtREC.Properties.Items.AddRange(new object[] {
-            "0 Zahlungssatz wird nicht angefordert",
-            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
-            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
-            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
-            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
-            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "1 Zwischenrechnung",
-            "2 Schlussrechnung",
-            "3 Nachtragsrechnung",
-            "4 Gutschrift/Stornierung",
-            "6 Zahlungserinnerung",
-            "7 1. Mahnung",
-            "8 2. Mahnung",
-            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
-                "2003 geltenden Fassung"});
-            this.textEditTmp_RgArtREC.Size = new System.Drawing.Size(1062, 20);
-            this.textEditTmp_RgArtREC.StyleController = this.layoutControl13;
-            this.textEditTmp_RgArtREC.TabIndex = 6;
-            // 
-            // textEditTmp_Zuzahlkennzeichen
-            // 
-            this.textEditTmp_Zuzahlkennzeichen.Location = new System.Drawing.Point(128, 36);
-            this.textEditTmp_Zuzahlkennzeichen.Name = "textEditTmp_Zuzahlkennzeichen";
-            this.textEditTmp_Zuzahlkennzeichen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_Zuzahlkennzeichen.Properties.Items.AddRange(new object[] {
-            "1 keine Zuzahlungspflicht",
-            "2 Zuzahlung verrechnet und vom Versicherten vollständig geleistet",
-            "4 keine Zuzahlungspflicht auf Grund gültiger Bescheinigung nach § 62 SGB V",
-            "5 keine Zuzahlungspflicht auf Grund gültiger Quittung nach § 61 SGB V",
-            "6 geringere Zuzahlung auf Grund gültiger Quittung nach § 61 SGB V verrechnet und " +
-                "vom Versicherten vollständig geleistet ",
-            "7 geringere Zuzahlung auf Grund gültiger Quittung nach § 61 SGB V verrechnet und " +
-                "vom Versicherten nicht oder nur teilweise geleistet ",
-            "8 Zuzahlung verrechnet und vom Versicherten nicht oder nur teilweise geleistet"});
-            this.textEditTmp_Zuzahlkennzeichen.Size = new System.Drawing.Size(1143, 20);
-            this.textEditTmp_Zuzahlkennzeichen.StyleController = this.layoutControl14;
-            this.textEditTmp_Zuzahlkennzeichen.TabIndex = 5;
-            // 
-            // textEditEnt_Art
-            // 
-            this.textEditEnt_Art.Location = new System.Drawing.Point(198, 42);
-            this.textEditEnt_Art.Name = "textEditEnt_Art";
-            this.textEditEnt_Art.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditEnt_Art.Properties.Items.AddRange(new object[] {
-            "01 Tagesgleicher Pflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychia" +
-                "trie und Psychosomatik/Psychotherapie",
-            resources.GetString("textEditEnt_Art.Properties.Items"),
-            "41 Entgelt für vorstationäre Behandlung",
-            "42 Entgelt für nachstationäre Behandlung",
-            "43 Pflegesatz bei Beurlaubung",
-            "44 Modellvorhaben nach § 24 BPflV bzw. 26 BPflV (Altvorhaben)",
-            "45 Wahlleistung Unterkunft (nur für Knappschaft)",
-            "46 Zuschlag für Qualitätssicherung nach § 7 Abs. 1 Satz 1 Nr. 7 KHEntgG oder § 7 " +
-                "Satz 1 Nr. 3 BPflV",
-            "47 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 un" +
-                "d Satz 2  und sonstiger Zu- und Abschlag",
-            "48 DRG-Systemzuschlag",
-            "49 Abrechnungsergänzungen",
-            "60 Sonderfall",
-            "61 Entgelt für integrierte Versorgung nach § 140c SGB V",
-            "62 Abschlag bei Entgelten für integrierte Versorgung nach § 140c SGB V",
-            "63 Entgelt für Modellvorhaben nach § 63 SGB V",
-            "65 Zusatzentgelt für DMP",
-            "70 DRG-Fallpauschale nach § 7 Abs. 1 Satz 1 Nr. 1 KHEntgG ",
-            "71 Entgelt bei Überschreiten der oberen GVD nach § 1 Abs. 2 Satz 1 FPV oder tages" +
-                "bezogene teilstationäre DRG-Fallpauschale ab 2. Tag",
-            "72 Abschlag bei Verlegungen nach § 1 Abs. 1 Satz 3 FPV",
-            "73 Abschlag bei Nichterreichen der unteren GVD nach § 1 Abs. 3 Satz 1 FPV",
-            "74 Entgelt für Pflegeerlös/Tag [ab 1.1.2020] Nn",
-            "75 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
-            "76 Zusatzentgelt nach § 7 Abs. 1 Satz 1 Nr. 2, 3, 5 oder 6 KHEntgG",
-            "78 Teilstationäre Leistung nach § 6 Abs. 2 FPV",
-            "80 Entgelt für neue Untersuchungs- und Behandlungsmethoden nach § 6 Abs. 2 KHEntg" +
-                "G (fallbezogen)",
-            "81 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 6 Ab" +
-                "s. 2 KHEntgG",
-            "82 Abschlag bei Verlegung für fallbezogene Entgelte nach § 6 Abs. 2 KHEntgG",
-            "83 Abschlag bei Nichterreichen der unteren GVD für fallbezogene Entgelte nach § 6" +
-                " Abs. 2 KHEntgG",
-            "84 Pflegeanteil für tages- oder fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. " +
-                "5 KHEntgG [ab 1.1.2020]",
-            "85 Tagesbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
-            "86 Fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
-            "87 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 7 Ab" +
-                "s. 1 Satz 1 Nr. 5 KHEntgG ",
-            "88 Abschlag bei Verlegung für fallbezogene Entgelte nach § 7 Abs. 1 Satz 1 Nr. 5 " +
-                "KHEntgG"});
-            this.textEditEnt_Art.Size = new System.Drawing.Size(438, 20);
-            this.textEditEnt_Art.StyleController = this.layoutControl16;
-            this.textEditEnt_Art.TabIndex = 4;
-            // 
-            // textEditetl_Grund
-            // 
-            this.textEditetl_Grund.Location = new System.Drawing.Point(193, 66);
-            this.textEditetl_Grund.Name = "textEditetl_Grund";
-            this.textEditetl_Grund.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditetl_Grund.Properties.Items.AddRange(new object[] {
-            "01 Behandlung regulär beendet",
-            "02 Behandlung regulär beendet, nachstationäre Behandlung vorgesehen",
-            "03 Behandlung aus sonstigen Gründen beendet",
-            "04 Behandlung gegen ärztlichen Rat beendet",
-            "05 Zuständigkeitswechsel des Kostenträgers",
-            "06 Verlegung in ein anderes Krankenhaus",
-            "07 Tod",
-            "08 Verlegung in ein anderes Krankenhaus im Rahmen einer Zusammenarbeit (§ 14 Abs." +
-                " 5 Satz 2 BPflV in der am 31.12.2003 geltenden Fassung)",
-            "09 Entlassung in eine Rehabilitationseinrichtung",
-            "10 Entlassung in eine Pflegeeinrichtung",
-            "11 Entlassung in ein Hospiz",
-            "12 interne Verlegung",
-            "13 externe Verlegung zur psychiatrischen Behandlung",
-            "14 Behandlung aus sonstigen Gründen beendet, nachstationäre Behandlung vorgesehen" +
-                "",
-            "15 Behandlung gegen ärztlichen Rat beendet, nachstationäre Behandlung vorgesehen",
-            "16 externe Verlegung mit Rückverlegung oder Wechsel zwischen den Entgeltbereichen" +
-                " der DRG-Fallpauschalen,nach der BPflV oder für besondere Einrichtungen nach § 1" +
-                "7b Abs. 1 Satz 15 KHG mit Rückverlegung",
-            "17 interne Verlegung mit Wechsel zwischen den Entgeltbereichen der DRG-Fallpausch" +
-                "alen, nach der BPflV oder für besondere Einrichtungen nach § 17b Abs. 1 Satz 15 " +
-                "KHG ",
-            "18 Rückverlegung",
-            "19 Entlassung vor Wiederaufnahme mit Neueinstufung",
-            "20 Entlassung vor Wiederaufnahme mit Neueinstufung wegen Komplikation",
-            "21 Entlassung oder Verlegung mit nachfolgender Wiederaufnahme",
-            "22 Fallabschluss (interne Verlegung) bei Wechsel zwischen voll-, teilstationärer " +
-                "und stationsäquivalenter Behandlung ",
-            "23 Beginn eines externen Aufenthalts mit Abwesenheit über Mitternacht (BPflV-Bere" +
-                "ich – für verlegende Fachabteilung)",
-            "24 Beendigung eines externen Aufenthalts mit Abwesenheit über Mitternacht  (BPflV" +
-                "-Bereich – für Pseudo-Fachabteilung 0003)",
-            "25 Entlassung zum Jahresende bei Aufnahme im Vorjahr (für Zwecke der Abrechnung -" +
-                " § 4 PEPPV)",
-            "26 Beginn eines Zeitraumes ohne direkten Patientenkontakt (stationsäquivalente Be" +
-                "handlung)",
-            "27 Beendigung eines Zeitraumes ohne direkten Patientenkontakt (stationsäquivalent" +
-                "e Behandlung – für  Pseudo-Fachabteilung 0004)",
-            "28 Behandlung regulär beendet, beatmet entlassen",
-            "29 Behandlung regulär beendet, beatmet verlegt"});
-            this.textEditetl_Grund.Size = new System.Drawing.Size(364, 20);
-            this.textEditetl_Grund.StyleController = this.layoutControl9;
-            this.textEditetl_Grund.TabIndex = 5;
-            // 
-            // textEditetl_FAbt
-            // 
-            this.textEditetl_FAbt.Location = new System.Drawing.Point(193, 90);
-            this.textEditetl_FAbt.Name = "textEditetl_FAbt";
-            this.textEditetl_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditetl_FAbt.Properties.Items.AddRange(new object[] {
-            "0100 Innere Medizin",
-            "0200 Geriatrie",
-            "0300 Kardiologie",
-            "0400 Nephrologie",
-            "0500 Hämatologie und internistische Onkologie",
-            "0600 Endokrinologie",
-            "0700 Gastroenterologie",
-            "0800 Pneumologie",
-            "0900 Rheumatologie",
-            "1000 Pädiatrie",
-            "1100 Kinderkardiologie",
-            "1200 Neonatologie",
-            "1300 Kinderchirurgie",
-            "1400 Lungen- und Bronchialheilkunde",
-            "1500 Allgemeine Chirurgie",
-            "1600 Unfallchirurgie",
-            "1700 Neurochirurgie",
-            "1800 Gefäßchirurgie",
-            "1900 Plastische Chirurgie",
-            "2000 Thoraxchirurgie",
-            "2100 Herzchirurgie",
-            "2200 Urologie",
-            "2300 Orthopädie",
-            "2400 Frauenheilkunde und Geburtshilfe",
-            "2500 davon Geburtshilfe",
-            "2600 Hals-, Nasen-, Ohrenheilkunde",
-            "2700 Augenheilkunde",
-            "2800 Neurologie",
-            "2900 Allgemeine Psychiatrie",
-            "3000 Kinder- und Jugendpsychiatrie",
-            "3100 Psychosomatik/Psychotherapie",
-            "3200 Nuklearmedizin",
-            "3300 Strahlenheilkunde",
-            "3400 Dermatologie",
-            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
-            "3600 Intensivmedizin",
-            "2316 Orthopädie und Unfallchirurgie",
-            "2425 Frauenheilkunde",
-            "3700 Sonstige Fachabteilung"});
-            this.textEditetl_FAbt.Size = new System.Drawing.Size(364, 20);
-            this.textEditetl_FAbt.StyleController = this.layoutControl9;
-            this.textEditetl_FAbt.TabIndex = 12;
-            // 
-            // layoutControlItem140
-            // 
-            this.layoutControlItem140.Control = this.textEditetl_FAbt;
-            this.layoutControlItem140.CustomizationFormText = "layoutControlItem140";
-            this.layoutControlItem140.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem140.Name = "layoutControlItem140";
-            this.layoutControlItem140.Size = new System.Drawing.Size(537, 24);
-            this.layoutControlItem140.Text = "Fachabteilung";
-            this.layoutControlItem140.TextSize = new System.Drawing.Size(166, 13);
-            // 
-            // textEditFAB_für_Diag
-            // 
-            this.textEditFAB_für_Diag.Location = new System.Drawing.Point(265, 12);
-            this.textEditFAB_für_Diag.Name = "textEditFAB_für_Diag";
-            this.textEditFAB_für_Diag.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditFAB_für_Diag.Properties.Items.AddRange(new object[] {
-            "0100 Innere Medizin",
-            "0200 Geriatrie",
-            "0300 Kardiologie",
-            "0400 Nephrologie",
-            "0500 Hämatologie und internistische Onkologie",
-            "0600 Endokrinologie",
-            "0700 Gastroenterologie",
-            "0800 Pneumologie",
-            "0900 Rheumatologie",
-            "1000 Pädiatrie",
-            "1100 Kinderkardiologie",
-            "1200 Neonatologie",
-            "1300 Kinderchirurgie",
-            "1400 Lungen- und Bronchialheilkunde",
-            "1500 Allgemeine Chirurgie",
-            "1600 Unfallchirurgie",
-            "1700 Neurochirurgie",
-            "1800 Gefäßchirurgie",
-            "1900 Plastische Chirurgie",
-            "2000 Thoraxchirurgie",
-            "2100 Herzchirurgie",
-            "2200 Urologie",
-            "2300 Orthopädie",
-            "2400 Frauenheilkunde und Geburtshilfe",
-            "2500 davon Geburtshilfe",
-            "2600 Hals-, Nasen-, Ohrenheilkunde",
-            "2700 Augenheilkunde",
-            "2800 Neurologie",
-            "2900 Allgemeine Psychiatrie",
-            "3000 Kinder- und Jugendpsychiatrie",
-            "3100 Psychosomatik/Psychotherapie",
-            "3200 Nuklearmedizin",
-            "3300 Strahlenheilkunde",
-            "3400 Dermatologie",
-            "3500 Zahn- und Kieferheilkunde, Mund- und Kieferchirurgie",
-            "3600 Intensivmedizin",
-            "2316 Orthopädie und Unfallchirurgie",
-            "2425 Frauenheilkunde",
-            "3700 Sonstige Fachabteilung"});
-            this.textEditFAB_für_Diag.Size = new System.Drawing.Size(1006, 20);
-            this.textEditFAB_für_Diag.StyleController = this.layoutControl21;
-            this.textEditFAB_für_Diag.TabIndex = 4;
-            // 
-            // layoutControlItem141
-            // 
-            this.layoutControlItem141.Control = this.textEditFAB_für_Diag;
-            this.layoutControlItem141.CustomizationFormText = "Fachabteilung";
-            this.layoutControlItem141.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem141.Name = "layoutControlItem141";
-            this.layoutControlItem141.Size = new System.Drawing.Size(1263, 24);
-            this.layoutControlItem141.Text = "Fachabteilung";
-            this.layoutControlItem141.TextSize = new System.Drawing.Size(250, 13);
-            // 
-            // textEditAkt_KV_Bezirk
-            // 
-            this.textEditAkt_KV_Bezirk.Location = new System.Drawing.Point(265, 252);
-            this.textEditAkt_KV_Bezirk.Name = "textEditAkt_KV_Bezirk";
-            this.textEditAkt_KV_Bezirk.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditAkt_KV_Bezirk.Properties.Items.AddRange(new object[] {
-            "01 Schleswig-Holstein",
-            "02 Hamburg",
-            "03 Bremen",
-            "17 Niedersachsen",
-            "20 Westfalen-Lippe",
-            "38 Nordrhein",
-            "46 Hessen",
-            "51 Rheinland-Pfalz",
-            "52 Baden-Württemberg",
-            "71 Bayern",
-            "72 Berlin",
-            "73 Saarland",
-            "78 Mecklenburg-Vorpommern",
-            "83 Brandenburg",
-            "88 Sachsen-Anhalt",
-            "93 Thüringen",
-            "98 Sachsen"});
-            this.textEditAkt_KV_Bezirk.Size = new System.Drawing.Size(1006, 20);
-            this.textEditAkt_KV_Bezirk.StyleController = this.layoutControl21;
-            this.textEditAkt_KV_Bezirk.TabIndex = 14;
-            // 
-            // textEditentEBM
-            // 
-            this.textEditentEBM.Location = new System.Drawing.Point(227, 66);
-            this.textEditentEBM.Name = "textEditentEBM";
-            this.textEditentEBM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditentEBM.Properties.Items.AddRange(new object[] {
-            "001 Allgemeinärzte, Praktische Ärzte, Hausärztliche Internisten",
-            "002 Anästhesisten",
-            "003 Chirurgen",
-            "004 Frauenärzte",
-            "005 Hautärzte",
-            "006 HNO-Ärzte",
-            "007 Fachärzte für Kinder- und Jugendmedizin",
-            "008 Nervenärzte, Neurologen, Ärzte für Psychiatrie und Psychotherapie,Ärzte für K" +
-                "inder- und Jugendpsychiatrie und -psychotherapie",
-            "009 Notfallärzte",
-            "010 Orthopäden, Ärzte für Physikalische und Rehabilitative Medizin",
-            "011 Nuklearmediziner",
-            "012 Radiologen",
-            "013 Strahlentherapeuten",
-            "014 Urologen",
-            "015 Fachärztliche Internisten ohne Schwerpunkt (Teilgebiet)",
-            "016 - Angiologie",
-            "017 - Endokrinologie",
-            "018 - Gastroenterologie",
-            "019 - Hämatologie und Internistische Onkologie",
-            "020 - Kardiologie",
-            "021 - Nephrologie",
-            "022 - Pneumologie",
-            "023 - Rheumatologie",
-            "024 - Orthopäden mit Schwerpunkt Rheumatologie"});
-            this.textEditentEBM.Size = new System.Drawing.Size(406, 20);
-            this.textEditentEBM.StyleController = this.layoutControl24;
-            this.textEditentEBM.TabIndex = 7;
-            // 
-            // textEditentArt
-            // 
-            this.textEditentArt.Location = new System.Drawing.Point(227, 42);
-            this.textEditentArt.Name = "textEditentArt";
-            this.textEditentArt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditentArt.Properties.Items.AddRange(new object[] {
-            "0 Ambulantes Operieren nach § 115b SGB V, Ambulante Behandlung nach § 116b SGB V",
-            "1 -------------------------------------------",
-            "2 Hochschulambulanzen nach § 117 Abs. 1 und Abs. 2 SGB V",
-            "3 Psychiatrische Institutsambulanzen nach § 118 SGB V",
-            "4 Sozialpädiatrische Zentren nach § 119 SGB V",
-            "5 Integrierte Versorgung nach § 140a SGB V",
-            "6 Kinderspezialambulanzen (ergänzende fall- oder einrichtungsbezogene Pauschale) " +
-                "nach § 120 Abs. 1a SGB V",
-            "7 Ambulanzen an Ausbildungsstätten nach § 6 PsychThG - § 117 Abs. 3 SGB V",
-            "8 Medizinische Behandlungszentren (MBZ) nach § 119c SGB V [ab 1.4.2017]"});
-            this.textEditentArt.Size = new System.Drawing.Size(406, 20);
-            this.textEditentArt.StyleController = this.layoutControl24;
-            this.textEditentArt.TabIndex = 6;
-            // 
-            // textEditTeamEben
-            // 
-            this.textEditTeamEben.Location = new System.Drawing.Point(227, 306);
-            this.textEditTeamEben.Name = "textEditTeamEben";
-            this.textEditTeamEben.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTeamEben.Properties.Items.AddRange(new object[] {
-            "1 Teamleitung",
-            "2 Mitglied des Kernteams",
-            "3 Hinzugezogener Facharzt"});
-            this.textEditTeamEben.Size = new System.Drawing.Size(406, 20);
-            this.textEditTeamEben.StyleController = this.layoutControl24;
-            this.textEditTeamEben.TabIndex = 17;
-            // 
-            // textEditENZent_Text
-            // 
-            this.textEditENZent_Text.Location = new System.Drawing.Point(189, 90);
-            this.textEditENZent_Text.Name = "textEditENZent_Text";
-            this.textEditENZent_Text.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditENZent_Text.Properties.Items.AddRange(new object[] {
-            "01 Im Körper verbleibende Implantate in Summe",
-            "02 Röntgenkontrastmittel",
-            "03 Pauschalvergütung Qualitätssicherung",
-            "04 Pauschalvergütung Sachmittel (auch für §§ 116b, 117, 118, 119 SGB V)",
-            "05 honorarsummenrelevante Pauschalvergütung",
-            "06 teilweise honorarsummenrelevante Pauschalvergütung",
-            resources.GetString("textEditENZent_Text.Properties.Items"),
-            "08 Iris-Retraktoren, Kapselspannringe und Injektionshalterungen bei ophthalmochir" +
-                "urgischen Eingriffen",
-            "09 Ophthalmica (Viskoelastika, Perfluordecaline, Silikonöl, C3F8-Gas) bei ophthal" +
-                "mochirurgischen Leistungen",
-            "10 Narkosegase, Sauerstoff",
-            "12 Erstattung für Arzneimittel (75 v.H. des Apotheken-Einkaufspreises nach Lauert" +
-                "axe zuzüglich Mehrwertsteuer)",
-            resources.GetString("textEditENZent_Text.Properties.Items1"),
-            "14 Nahtmaterial",
-            "15 Diagnostische und interventionelle Katheter einschl. Führungsdraht im Zusammen" +
-                "hang mit gastroskopischen Leistungen (inkl. Leistungen an den Gallenwegen)  ",
-            "16 Trokare, Endoclips und Einmalapplikatoren für Clips im Zusammenhang mit laparo" +
-                "skopischen Leistungen",
-            "17 Diagnostische und interventionelle Katheter einschl. Führungsdraht im Zusammen" +
-                "hang mit Leistungen zur In-Vitro-Fertilisation abzüglich des Patienteneigenantei" +
-                "ls",
-            "18 Schienen, Kompressionsstrümpfe (nicht Anti-Thrombosestrümpfe) ",
-            "50 Pauschale für Sprechstundenbedarf (nur für §§ 116b, 117, 118, 119 SGB V)",
-            "51 Pauschale für Sprechstundenbedarf inklusive Kontrastmittel (nur für §§ 116b (a" +
-                "lt), 117, 118 und 119  SGB V)",
-            "52 Kontrastmittelpauschale (nur für §§ 116b, 117, 118 und 119 SGB V)"});
-            this.textEditENZent_Text.Size = new System.Drawing.Size(414, 20);
-            this.textEditENZent_Text.StyleController = this.layoutControl25;
-            this.textEditENZent_Text.TabIndex = 6;
-            // 
-            // textEditlei_Schluessel
-            // 
-            this.textEditlei_Schluessel.Location = new System.Drawing.Point(162, 66);
-            this.textEditlei_Schluessel.Name = "textEditlei_Schluessel";
-            this.textEditlei_Schluessel.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditlei_Schluessel.Properties.Items.AddRange(new object[] {
-            "22",
-            "23",
-            "28",
-            "28",
-            "29",
-            "9999"});
-            this.textEditlei_Schluessel.Size = new System.Drawing.Size(460, 20);
-            this.textEditlei_Schluessel.StyleController = this.layoutControl26;
-            this.textEditlei_Schluessel.TabIndex = 5;
-            // 
-            // textEditlei_Art
-            // 
-            this.textEditlei_Art.Location = new System.Drawing.Point(162, 42);
-            this.textEditlei_Art.Name = "textEditlei_Art";
-            this.textEditlei_Art.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditlei_Art.Properties.Items.AddRange(new object[] {
-            "A1 PIA Leistungsdokumentation gemäß Schüssel 23",
-            "A2 Leistungsbereich der Behandlung nach § 116b SGB V gemäß Schlüssel 22",
-            "A3 geplante ambulante Operation ist nicht zustande gekommen",
-            "A4 Dokumentation für Einrichtungen nach §§ 119, 119c SGB V (soweit vereinbart)",
-            "A6 Dokumentation schwerer Verlaufsformen nach § 116b SGB V gemäß Schlüssel 29",
-            "A7 Dokumentation für Einrichtungen nach § 117 SGB V (soweit individuell vereinbar" +
-                "t)"});
-            this.textEditlei_Art.Size = new System.Drawing.Size(460, 20);
-            this.textEditlei_Art.StyleController = this.layoutControl26;
-            this.textEditlei_Art.TabIndex = 4;
-            // 
-            // textEditrecArt
-            // 
-            this.textEditrecArt.Location = new System.Drawing.Point(235, 138);
-            this.textEditrecArt.Name = "textEditrecArt";
-            this.textEditrecArt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditrecArt.Properties.Items.AddRange(new object[] {
-            "0 Zahlungssatz wird nicht angefordert",
-            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
-            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
-            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
-            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
-            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "1 Zwischenrechnung",
-            "2 Schlussrechnung",
-            "3 Nachtragsrechnung",
-            "4 Gutschrift/Stornierung",
-            "6 Zahlungserinnerung",
-            "7 1. Mahnung",
-            "8 2. Mahnung",
-            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
-                "2003 geltenden Fassung"});
-            this.textEditrecArt.Size = new System.Drawing.Size(353, 20);
-            this.textEditrecArt.StyleController = this.layoutControl28;
-            this.textEditrecArt.TabIndex = 6;
-            // 
-            // layoutControlItem62
-            // 
-            this.layoutControlItem62.Control = this.textEditrecArt;
-            this.layoutControlItem62.CustomizationFormText = "Rechnungsart";
-            this.layoutControlItem62.Location = new System.Drawing.Point(0, 96);
-            this.layoutControlItem62.Name = "layoutControlItem62";
-            this.layoutControlItem62.Size = new System.Drawing.Size(568, 24);
-            this.layoutControlItem62.Text = "Rechnungsart";
-            this.layoutControlItem62.TextSize = new System.Drawing.Size(208, 13);
-            // 
-            // textEditInfo
-            // 
-            this.textEditInfo.Location = new System.Drawing.Point(137, 12);
-            this.textEditInfo.Name = "textEditInfo";
-            this.textEditInfo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditInfo.Properties.Items.AddRange(new object[] {
-            "PF000 primäre Fehlbelegung",
-            "SF000 sekundäre Fehlbelegung",
-            "KP000 Kodierprüfung",
-            "FV000 Fragen zur Voraussetzung bestimmter Maßnahmen",
-            "KL000 Freitext bei Nennung anderer/weiterer Prüfgegenstände",
-            "FDK01 Aufforderung zum Falldialog",
-            "FDK02 Annahme der Aufforderung zum Falldialog",
-            "FDK03 Ablehnung eines Falldialogs",
-            "FDK12 Annahme der Aufforderung zur Verlängerung des",
-            "FDK13 Ablehnung der Verlängerung des Falldialogs",
-            "FDK20 Erklärung über die Beendigung des Falldialogs",
-            "BEF00 Beendigung des Prüfverfahrens aufgrund Einigung im Falldialog - ohne Datenk" +
-                "orrektur (§ 5 Abs. 6",
-            "BEK00 Beendigung des Prüfverfahrens aufgrund Datenkorrektur - MDK nicht notwendig" +
-                "",
-            "MDK10 Keine oder nicht vollständige Unterlagen an MDK mit Folge der Aufrechnung",
-            "MDK01 Leistungsrechtliche Entscheidung hat keine Beanstandung der Abrechnung als " +
-                "Ergebnis",
-            "MDK02 Leistungsrechtliche Entscheidung hat Beanstandung der Abrechnung als Ergebn" +
-                "is",
-            "MDK03 Leistungsrechtliche Entscheidung hat aufgrund Datensatzkorrektur (§ 7 Abs. " +
-                "5 PrüfvV) im MDKVerfahren keine Beanstandung der Abrechnung als Ergebnis",
-            "MDK04 Festlegung des Aufschlages gemäß § 275c Abs. 3 SGB V durch die Krankenkasse" +
-                "",
-            "FDI01 Aufforderung zum Falldialog",
-            "FDI02 Annahme der Aufforderung zum Falldialog",
-            "FDI03 Ablehnung eines Falldialogs",
-            "FDI11 Aufforderung zur Verlängerung des Falldialogs",
-            "FDI12 Annahme der Aufforderung zur Verlängerung des Falldialogs",
-            "FDI13 Ablehnung der Verlängerung des Falldialogs",
-            "FDI20 Erklärung über die Beendigung des Falldialogs",
-            "NVI01 Vorschlag eines Nachverfahrens, begründete Stellungnahme"});
-            this.textEditInfo.Size = new System.Drawing.Size(1134, 20);
-            this.textEditInfo.StyleController = this.layoutControl42;
-            this.textEditInfo.TabIndex = 55;
-            // 
-            // textEditKOS_KUEM
-            // 
-            this.textEditKOS_KUEM.Location = new System.Drawing.Point(155, 36);
-            this.textEditKOS_KUEM.Name = "textEditKOS_KUEM";
-            this.textEditKOS_KUEM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditKOS_KUEM.Properties.DisplayFormat.FormatString = "d";
-            this.textEditKOS_KUEM.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEditKOS_KUEM.Properties.EditFormat.FormatString = "d";
-            this.textEditKOS_KUEM.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.textEditKOS_KUEM.Properties.Items.AddRange(new object[] {
-            "01 Kostenübernahme, kein Pflegegrad vorhanden",
-            "A1 Kostenübernahme, kein Pflegegrad vorhanden, Einstufung beantragt",
-            "B1 Kostenübernahme, bestehender Pflegegrad 1",
-            "C1 Kostenübernahme, bestehender Pflegegrad 1, Antrag auf Neueinstufung ",
-            "D1 Kostenübernahme, bestehender Pflegegrad 2 Nl",
-            "E1 Kostenübernahme, bestehender Pflegegrad 2, Antrag auf Neueinstufung",
-            "F1 Kostenübernahme, bestehender Pflegegrad 3",
-            "G1 Kostenübernahme, bestehender Pflegegrad 3, Antrag auf Neueinstufung",
-            "H1 Kostenübernahme, bestehender Pflegegrad 4 Nl",
-            "K1 Kostenübernahme, bestehender Pflegegrad 4, Antrag auf Neueinstufung",
-            "L1 Kostenübernahme, bestehender Pflegegrad 5",
-            "M1 Kostenübernahme, bestehender Pflegegrad 5, Antrag auf Neueinstufung",
-            "02 Änderung der Kostenübernahme",
-            "03 Ablehnung, kein Leistungsanspruch",
-            "04 Kostenübernahme, Rechnung zusätzlich in Papierform (Auslands-Versicherter/Auft" +
-                "ragsleistung)",
-            "05 Ablehnung, Unfallversicherungsträger zuständig",
-            "06 Ablehnung, Rentenversicherungsträger zuständig",
-            "07 Ablehnung, Krankenversicherungsträger nicht zuständig",
-            "08 Bestätigung des Versichertenverhältnisses, kein Pflegegrad vorhanden Nl",
-            "A8 Bestätigung des Versichertenverhältnisses, kein Pflegegrad vorhanden, Einstufu" +
-                "ng beantragt",
-            "B8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 1",
-            "C8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 1, Antrag au" +
-                "f Neueinstufung",
-            "D8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 2 Nl",
-            "E8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 2, Antrag au" +
-                "f Neueinstufung",
-            "F8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 3",
-            "G8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 3, Antrag au" +
-                "f Neueinstufung",
-            "H8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 4",
-            "K8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 4, Antrag au" +
-                "f Neueinstufung",
-            "L8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 5",
-            "M8 Bestätigung des Versichertenverhältnisses, bestehender Pflegegrad 5, Antrag au" +
-                "f Neueinstufung"});
-            this.textEditKOS_KUEM.Size = new System.Drawing.Size(1116, 20);
-            this.textEditKOS_KUEM.StyleController = this.layoutControl34;
-            this.textEditKOS_KUEM.TabIndex = 4;
-            // 
-            // textEditZPR_PV
-            // 
-            this.textEditZPR_PV.Location = new System.Drawing.Point(223, 36);
-            this.textEditZPR_PV.Name = "textEditZPR_PV";
-            this.textEditZPR_PV.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditZPR_PV.Properties.Items.AddRange(new object[] {
-            "01 Rechnungsbetrag wird angewiesen",
-            "02 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich)",
-            "03 Rechnung wurde bereits bezahlt",
-            "04 Krankenkasse ist nicht Kostenträger",
-            "05 Rechnungsbetrag wird teilweise angewiesen",
-            "06 Es handelt sich bei der Erkrankung um einen Arbeitsunfall bzw. eine Berufskran" +
-                "kheit. Berufsgenossenschaft schaft",
-            "07 Es handelt sich um einen BVG-Fall, einen Grenzgänger oder einen Auslandsversic" +
-                "herten oder einen",
-            "11 Rechnungsbetrag wird angewiesen",
-            "12 Rechnung wird zur Zeit geprüft",
-            "13 Rechnung wurde bereits bezahlt",
-            "15 Rechnungsbetrag wird teilweise angewiesen",
-            "21 Rechnungsbetrag wird angewiesen,Verfahrensunterlagen sind gesondert zur Verfüg" +
-                "ung zu stellen",
-            "22 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Verfah" +
-                "rensunterlagen sind gesondert zur Verfügung zu stellen",
-            "23 Rechnung wurde bereits bezahlt,Verfahrensunterlagen sind gesondert zur Verfügu" +
-                "ng zu stellen",
-            "25 Rechnungsbetrag wird teilweise angewiesen,Verfahrensunterlagen sind gesondert " +
-                "zur Verfügung zu stellen",
-            "31 Rechnungsbetrag wird angewiesen,Verfahrensunterlagen sind gesondert zur Verfüg" +
-                "ung zu stellen",
-            "32 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Verfah" +
-                "rensunterlagen sind gesondert zur Verfügung zu stellen",
-            "33 Rechnung wurde bereits bezahlt,Verfahrensunterlagen sind gesondert zur Verfügu" +
-                "ng zu stellen",
-            "35 Rechnungsbetrag wird teilweise angewiesen,Rechnungsbetrag wird teilweise angew" +
-                "iesen,",
-            "41 Rechnungsbetrag wird angewiesen,Belege über entstandene Kosten sind gesondert " +
-                "zur Verfügung zu stellen",
-            "42 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Belege" +
-                " über entstandene Kosten sind gesondert zur Verfügung zu stellen",
-            "43 Rechnung wurde bereits bezahlt,Belege über entstandene Kosten sind gesondert z" +
-                "ur Verfügung zu stellen",
-            "45 Rechnungsbetrag wird teilweise angewiesen,Belege über entstandene Kosten sind " +
-                "gesondert zur Verfügung zu stellen",
-            "51 Rechnungsbetrag wird angewiesen,Belege über entstandene Kosten und Verfahrensu" +
-                "nterlagen sind gesondert zur Verfügung zu stellen",
-            "52 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Belege" +
-                " über entstandene Kosten und Verfahrensunterlagen sind gesondert zur Verfügung z" +
-                "u stellen",
-            "53 Rechnung wurde bereits bezahlt,Belege über entstandene Kosten und Verfahrensun" +
-                "terlagen sind gesondert zur Verfügung zu stellen",
-            "55 Rechnungsbetrag wird teilweise angewiesen,Belege über entstandene Kosten und V" +
-                "erfahrensunterlagen sind gesondert zur Verfügung zu stellen",
-            "61 Rechnungsbetrag wird angewiesen,Beleg über Unzustellbarkeit ist gesondert zur " +
-                "Verfügung zu stellen",
-            "62 Rechnung wird zur Zeit geprüft (Zahlung/Abweisung erfolgt unverzüglich),Beleg " +
-                "über Unzustellbarkeit ist gesondert zur Verfügung zu stellen",
-            "65 Rechnungsbetrag wird teilweise angewiesen,Beleg über Unzustellbarkeit ist geso" +
-                "ndert zur Verfügung zu stellen"});
-            this.textEditZPR_PV.Size = new System.Drawing.Size(1048, 20);
-            this.textEditZPR_PV.StyleController = this.layoutControl32;
-            this.textEditZPR_PV.TabIndex = 5;
-            // 
-            // textEditRecartRel1
-            // 
-            this.textEditRecartRel1.Location = new System.Drawing.Point(240, 90);
-            this.textEditRecartRel1.Name = "textEditRecartRel1";
-            this.textEditRecartRel1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditRecartRel1.Properties.Items.AddRange(new object[] {
-            "0 Zahlungssatz wird nicht angefordert",
-            "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
-            "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
-            "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
-            "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
-            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "1 Zwischenrechnung",
-            "2 Schlussrechnung",
-            "3 Nachtragsrechnung",
-            "4 Gutschrift/Stornierung",
-            "6 Zahlungserinnerung",
-            "7 1. Mahnung",
-            "8 2. Mahnung",
-            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
-                "2003 geltenden Fassung"});
-            this.textEditRecartRel1.Size = new System.Drawing.Size(464, 20);
-            this.textEditRecartRel1.StyleController = this.layoutControl15;
-            this.textEditRecartRel1.TabIndex = 6;
-            // 
-            // layoutControlItem142
-            // 
-            this.layoutControlItem142.Control = this.textEditRecartRel1;
-            this.layoutControlItem142.CustomizationFormText = "Rechnungsart";
-            this.layoutControlItem142.Location = new System.Drawing.Point(0, 48);
-            this.layoutControlItem142.Name = "layoutControlItem142";
-            this.layoutControlItem142.Size = new System.Drawing.Size(684, 24);
-            this.layoutControlItem142.Text = "Rechnungsart";
-            this.layoutControlItem142.TextSize = new System.Drawing.Size(213, 13);
+            this.ComboBoxEditSEEinDiagnose.Properties.Items.AddRange(new object[] {
+            "R rechts",
+            "L links",
+            "B beidseitig"});
+            this.ComboBoxEditSEEinDiagnose.Size = new System.Drawing.Size(491, 20);
+            this.ComboBoxEditSEEinDiagnose.StyleController = this.layoutControl7;
+            this.ComboBoxEditSEEinDiagnose.TabIndex = 8;
             // 
             // FrmMessages
             // 
@@ -8421,6 +8638,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecBetragZ.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditrecBetrag.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecNr.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditRecartRel.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup35)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem53)).EndInit();
@@ -8428,6 +8646,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem133)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem134)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem135)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem142)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup52)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem136)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem137)).EndInit();
@@ -8436,6 +8655,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditRechnungsNR.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRechnungDatum.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditRechnungDatum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInfo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup44)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemRechnungsNR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemInfo)).EndInit();
@@ -8462,6 +8682,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_ZDG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_SekD.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditFABList.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup46)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemfab_OP)).EndInit();
@@ -8504,6 +8726,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_AB.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_Bis.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditKOS_Bis.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditKOS_KUEM.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemKOS_Bis)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemKOS_AB)).EndInit();
@@ -8530,6 +8753,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditPauschal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditHonorBE.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_Betrag.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_PV.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemZPR_Betrag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemZPR_PV)).EndInit();
@@ -8555,6 +8779,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTag.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_VorsDauer.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_VorsDauer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnFAB.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_AufnGrund1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnTag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnGrund)).EndInit();
@@ -8587,6 +8813,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ComboEditAkt_G.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_GDat.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_GDat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditInterLand.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Nachname)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Vorname)).EndInit();
@@ -8609,8 +8836,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditAktSignKK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_KKNr.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditFallnr.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnNr.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_KvNr.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comboBoxTmp_V_Status.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditDMP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_KvNr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_V_Status)).EndInit();
@@ -8627,6 +8855,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_IK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_VKZ.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditZiel_IKFKT.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_LfdNrGFall.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_IK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_VKZ)).EndInit();
@@ -8636,9 +8865,7 @@
             this.layoutControl7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CheckedCombiEditAufnahmediagnose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditAufnahmediagnose.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSEAufnahmediagnose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditEinDiagnose.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditSEEinDiagnose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup47)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemAufnahmediagnoseList)).EndInit();
@@ -8675,6 +8902,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditrefNRKK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditrecBetragZahl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditIKZahlungWeg.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditrecArt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup42)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemRech_Nr)).EndInit();
@@ -8684,6 +8912,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem50)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem51)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem55)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSamuElementList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem48)).EndInit();
@@ -8696,6 +8925,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EntlTag.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTagDAU.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnTagDAU.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_AufnTagDAU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_EntlTag)).EndInit();
@@ -8713,6 +8944,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_HDlok.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemNDGList)).EndInit();
@@ -8725,6 +8958,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_HDlok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_aufnIK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_SekDlok)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl10)).EndInit();
             this.layoutControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EBG.Properties.CalendarTimeProperties)).EndInit();
@@ -8749,6 +8983,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgNrREC.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgNrREC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgDatumREC)).EndInit();
@@ -8763,6 +8998,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl14)).EndInit();
             this.layoutControl14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlbetrag.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlbetrag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlkennzeichen)).EndInit();
@@ -8777,6 +9013,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditEnt_von.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Betrag.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditTmp_ENTList.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Art.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup36)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemEnt_Art)).EndInit();
@@ -8810,6 +9047,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Arztnr.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditAkt_EBM_Verion.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditAkt_EBM_Verion.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditFAB_für_Diag.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditAkt_KV_Bezirk.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem63)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem64)).EndInit();
@@ -8822,6 +9061,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem123)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem124)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem125)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem141)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl23)).EndInit();
             this.layoutControl23.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditPRZList.Properties)).EndInit();
@@ -8846,6 +9086,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Anzahl.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Erläuterung.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Betrag.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Text.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup39)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup41)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem81)).EndInit();
@@ -8872,6 +9113,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditHonor.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditRecGrund.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditENAList.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditentEBM.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditentArt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditTeamEben.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup55)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem90)).EndInit();
@@ -8916,6 +9160,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditTmp_LEIList.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditlei_Tag.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditlei_Tag.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Schluessel.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Art.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup40)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem27)).EndInit();
@@ -8930,6 +9176,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup72)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutREC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFKT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutINV_PNV)).EndInit();
@@ -8946,6 +9194,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutPVT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCUX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDAU)).EndInit();
@@ -8956,8 +9206,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFAB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutREC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutZLG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutENT)).EndInit();
@@ -9013,40 +9261,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemReferenz_Nr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFileName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSyntax_Nr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_LfdNrGFall.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_V_Status.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditDMP.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditInterLand.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnFAB.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_AufnGrund.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_NF_ab.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditEnt_Art.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditFAB_für_Diag.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem141)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditAkt_KV_Bezirk.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditentEBM.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditentArt.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTeamEben.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditENZent_Text.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Schluessel.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditlei_Art.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditrecArt.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem62)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditInfo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditKOS_KUEM.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditZPR_PV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditRecartRel1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem142)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnNr.Properties.CalendarTimeProperties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_AufnNr.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxTmp_AufnGrund2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem127)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEAufnahmediagnose.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEEinDiagnose.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -9188,7 +9408,6 @@
         private DevExpress.XtraEditors.TextEdit textEditAktSignKK;
         private DevExpress.XtraEditors.TextEdit textEditTmp_KKNr;
         private DevExpress.XtraEditors.TextEdit textEditFallnr;
-        private DevExpress.XtraEditors.TextEdit textEditTmp_AufnNr;
         private DevExpress.XtraEditors.TextEdit textEditTmp_KvNr;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemTmp_KvNr;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItemTmp_V_Status;
@@ -9433,9 +9652,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem71;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup15;
         private DevExpress.XtraEditors.TextEdit textEditAufnahmediagnose;
-        private DevExpress.XtraEditors.TextEdit textEditSEAufnahmediagnose;
         private DevExpress.XtraEditors.TextEdit textEditEinDiagnose;
-        private DevExpress.XtraEditors.TextEdit textEditSEEinDiagnose;
         private DevExpress.XtraEditors.SimpleButton simpleButtonADDdiagnose;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup47;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup49;
@@ -9634,10 +9851,10 @@
         private DevExpress.XtraEditors.ComboBoxEdit textEditfab_FAbt;
         private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_LfdNrGFall;
         private DevExpress.XtraEditors.ComboBoxEdit textEditInterLand;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_V_Status;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditDMP;
+        private DevExpress.XtraEditors.ComboBoxEdit comboBoxTmp_V_Status;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditDMP;
         private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_AufnFAB;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_AufnGrund;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxTmp_AufnGrund1;
         private DevExpress.XtraEditors.DateEdit textEditTmp_NF_ab;
         private DevExpress.XtraEditors.TextEdit textEditfab_DG;
         private DevExpress.XtraEditors.ComboBoxEdit textEditetl_Grund;
@@ -9659,8 +9876,13 @@
         private DevExpress.XtraEditors.ComboBoxEdit textEditlei_Schluessel;
         private DevExpress.XtraEditors.ComboBoxEdit textEditlei_Art;
         private DevExpress.XtraEditors.ComboBoxEdit textEditKOS_KUEM;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditRecartRel1;
+        private DevExpress.XtraEditors.ComboBoxEdit textEditRecartRel;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem142;
         private DevExpress.XtraEditors.ComboBoxEdit textEditZPR_PV;
+        private DevExpress.XtraEditors.DateEdit dateEditTmp_AufnNr;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxTmp_AufnGrund2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem127;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditSEAufnahmediagnose;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditSEEinDiagnose;
     }
 }

@@ -364,6 +364,7 @@ namespace Creator301Messages
             ComboBoxTmp_VKZ.SelectedIndex = 6;
             textEditInterLand.SelectedIndex = 27;
             ComboEditAkt_G.SelectedIndex = 3;
+            ComboBoxEditDMP.SelectedIndex = 0;
             textEditFileName.Text = "Nachricht" + DateTime.Now.ToString("yyyy-MM-dd");
             REDList = new List<RedElement>();
             FABList = new List<FabElement>();
@@ -385,10 +386,17 @@ namespace Creator301Messages
         {
             ChangeCheckOutTab();
         }
+        private string Sub(string message,int index)
+        {
+            message = message.PadLeft(index).Substring(0, index).Trim();
+            return message;
+        }
         #endregion
         #region Create Message Content
         private string TrimEndMessage(string Messages)
         {
+            Messages = Messages.Replace(" ",string.Empty);
+            string a = Messages.Substring(Messages.Length - 2);
             while (Messages.Substring(Messages.Length - 2) == "+'")
             {
                 Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 1);
@@ -432,15 +440,7 @@ namespace Creator301Messages
         private string CreateFKTelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditZiel_IKFKT.EditValue, textEditTmp_IK.EditValue));
-            return Messages;
-        }
-        #endregion
-        #region FKT backway Segment
-        private string CreateFKTWBelement()
-        {
-            string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", ComboBoxTmp_VKZ.EditValue, textEditTmp_LfdNrGFall.EditValue, textEditTmp_IK.EditValue, textEditZiel_IKFKT.EditValue));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}'", "FKT", Sub(ComboBoxTmp_VKZ.EditValue.ToString(),2),Sub( textEditTmp_LfdNrGFall.EditValue.ToString(),2), textEditTmp_IK.EditValue, textEditZiel_IKFKT.EditValue));
             return Messages;
         }
         #endregion
@@ -449,7 +449,7 @@ namespace Creator301Messages
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "INV",
-                    textEditTmp_KvNr.EditValue, textEditTmp_V_Status.EditValue, comboBoxEditSpecialPerson.EditValue.ToString().Substring(0,2), textEditDMP.EditValue, textEditTmp_AufnNr.EditValue, textEditTmp_KKNr.EditValue,
+                    textEditTmp_KvNr.EditValue,Sub( comboBoxTmp_V_Status.EditValue.ToString(),1),Sub( comboBoxEditSpecialPerson.EditValue.ToString(),2),Sub( ComboBoxEditDMP.EditValue.ToString(),2), dateEditTmp_AufnNr.DateTime.ToString("yyMM"), textEditTmp_KKNr.EditValue,
                     textEditFallnr.EditValue, textEditAktSignKK.EditValue, dateEditTmp_Zuzahltage.EditValue, textEditAktSignKK.EditValue));
             
 
@@ -461,9 +461,9 @@ namespace Creator301Messages
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}+{12}'", "NAD", textEditTmp_Nachname.EditValue, textEditTmp_Vorname.EditValue,
-                    ComboEditAkt_G.EditValue, dateEditTmp_GDat.DateTime.ToString("yyyyMMdd"), textEditTmpStrasse.EditValue,
+                   Sub( ComboEditAkt_G.EditValue.ToString(),1), dateEditTmp_GDat.DateTime.ToString("yyyyMMdd"), textEditTmpStrasse.EditValue,
                     textEditTmpPLZ.EditValue, textEditTmpOrt.EditValue, textEditTmp_VSt.EditValue,
-                    textEditInterLand.EditValue, textEditAkt_Namenszusatz.EditValue, textEditAkt_Vorsatzwort.EditValue, textEditAkt_Anschriftenzusatz.EditValue));
+                   Sub( textEditInterLand.EditValue.ToString(),3), textEditAkt_Namenszusatz.EditValue, textEditAkt_Vorsatzwort.EditValue, textEditAkt_Anschriftenzusatz.EditValue));
             return Messages;
         }
         #endregion
@@ -480,7 +480,7 @@ namespace Creator301Messages
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}+{11}'", "AUF", dateEditTmp_AufnTag.DateTime.ToString("yyyyMMdd"),
-                dateEditTmp_AufnTag.DateTime.ToString("HHmm"), textEditTmp_AufnGrund.EditValue, textEditTmp_AufnFAB.EditValue, dateEditTmp_VorsDauer.DateTime.ToString("yyyyMMdd"),
+                dateEditTmp_AufnTag.DateTime.ToString("HHmm"),Sub( ComboBoxTmp_AufnGrund1.EditValue.ToString(),2) +Sub( ComboBoxTmp_AufnGrund2.EditValue.ToString(),2),Sub( textEditTmp_AufnFAB.EditValue.ToString(),4), dateEditTmp_VorsDauer.DateTime.ToString("yyyyMMdd"),
                 textEditTmp_EinwArzt.EditValue, textEditTmp_EinwArztBSNr.EditValue, textEditTmp_EinwIK.EditValue, textEditTmp_EinwStelle.EditValue,
                 textEditTmp_EinwZArzt.EditValue, textEditTmp_AufnGewicht.EditValue));
             return Messages;
@@ -538,7 +538,7 @@ namespace Creator301Messages
         private string CreateCUXelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX", comboBoxEditTMP_Currency.EditValue.ToString().Substring(0, 3)));
+            Messages = TrimEndMessage(String.Format("{0}+{1}'", "CUX",Sub( comboBoxEditTMP_Currency.EditValue.ToString(),3)));
             return Messages;
         }
         #endregion
@@ -701,7 +701,7 @@ namespace Creator301Messages
                 {
                     i = i + 1;
                     BDG = (BdgElement)item.Value;
-                    Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}'", "BDG", BDG.BDiagnose, BDG.SEKD, BDG.DiagArt, BDG.TeamFiktion,
+                    Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "BDG", BDG.BDiagnose, BDG.SEKD, BDG.DiagArt, BDG.TeamFiktion,
                                 BDG.StandNR, BDG.FabHSA, BDG.FirstDay));
                     count = count + 1;
                 }
@@ -891,7 +891,7 @@ namespace Creator301Messages
 
             int i = 0;
             int Count = 0;
-            string Messages;
+            string Messages="";
             Messages = CreateUNB_UNAelement();
             #region AufN Nachricht
             if (checkButtonAUF.Checked)
@@ -1043,7 +1043,7 @@ namespace Creator301Messages
                 Count = 0;
                 Messages += CreateUNHelement("ANFM", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //INV
                 Messages += CreateINVelement();
                 //NAD
@@ -1118,7 +1118,7 @@ namespace Creator301Messages
                 Count = 0;
                 Messages += CreateUNHelement("KOUB", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //INV
                 Messages += CreateINVelement();
                 //NAD
@@ -1138,7 +1138,7 @@ namespace Creator301Messages
                 Count = 0;
                 Messages += CreateUNHelement("KAIN", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //INV
                 Messages += CreateINVelement();
                 //NAD
@@ -1156,7 +1156,7 @@ namespace Creator301Messages
                 Count = 0;
                 Messages += CreateUNHelement("ZAOO", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //INV
                 Messages += CreateINVelement();
                 //NAD
@@ -1184,7 +1184,7 @@ namespace Creator301Messages
                 i = i + 1;
                 Messages += CreateUNHelement("ZAHL", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //INV
                 Messages += CreateINVelement();
                 //NAD
@@ -1210,7 +1210,7 @@ namespace Creator301Messages
                 Count = 0;
                 Messages += CreateUNHelement("SAMU", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
                 //CUX
                 Messages += CreateCUXelement();
                 //RED
@@ -1230,7 +1230,7 @@ namespace Creator301Messages
                 i = i + 1;
                 Messages += CreateUNHelement("FEHL", i);
                 //FKT Way Back
-                Messages += CreateFKTWBelement();
+                Messages += CreateFKTelement();
 ///muss ändern
                 //UNT
                 Messages += CreateUNTelement(i, 5);
@@ -1244,6 +1244,7 @@ namespace Creator301Messages
         #region Save Message in File
         private void simpleButtonCreateMessage_Click(object sender, EventArgs e)
         {
+
             CreateFileMessages(CreateInhaltMessage(), textEditFileName.Text + ".txt");
         }
         private string MessagesFileName(string fileName)
@@ -1293,9 +1294,9 @@ namespace Creator301Messages
         {
             EAD = new EadElement();
             EAD.Aufnahmediagnose = textEditAufnahmediagnose.EditValue.ToString();
-            EAD.SEAufnahmediagnose = textEditSEAufnahmediagnose.EditValue.ToString();
+            EAD.SEAufnahmediagnose =Sub( ComboBoxEditSEAufnahmediagnose.EditValue.ToString(),1);
             EAD.EinDiagnose = textEditEinDiagnose.EditValue.ToString();
-            EAD.SEEinDiagnose = textEditSEEinDiagnose.EditValue.ToString();
+            EAD.SEEinDiagnose =Sub( ComboBoxEditSEEinDiagnose.EditValue.ToString(),1);
             CheckedCombiEditAufnahmediagnose.Properties.Items.Add(EAD);
             EADList.Add(EAD);
             CheckedCombiEditAufnahmediagnose.Properties.Items[CheckedCombiEditAufnahmediagnose.Properties.Items.Count - 1].Description = "Aufnahmediagnose : " + EAD.Aufnahmediagnose;
@@ -1476,5 +1477,29 @@ namespace Creator301Messages
         }
         #endregion
 
+        private void textEditInterLand_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEditSpecialPerson_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEditTmp_RgBetragREC_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEditAkt_KV_Bezirk_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
