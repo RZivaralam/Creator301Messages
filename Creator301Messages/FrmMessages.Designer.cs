@@ -78,7 +78,7 @@
             this.simpleButtonADDFAB = new DevExpress.XtraEditors.SimpleButton();
             this.textEditfab_SekD = new DevExpress.XtraEditors.TextEdit();
             this.checkedComboBoxEditFABList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
-            this.textEditfab_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditfab_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEditfab_DG = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup9 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup46 = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -367,7 +367,7 @@
             this.dateEditTmp_AufnTagREC = new DevExpress.XtraEditors.DateEdit();
             this.dateEditTmp_RgDatumREC = new DevExpress.XtraEditors.DateEdit();
             this.textEditTmp_RgNrREC = new DevExpress.XtraEditors.TextEdit();
-            this.textEditTmp_RgArtREC = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditTmp_RgArtREC1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup33 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_RgNrREC = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_RgDatumREC = new DevExpress.XtraLayout.LayoutControlItem();
@@ -381,7 +381,7 @@
             this.layoutControlItemPau = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl14 = new DevExpress.XtraLayout.LayoutControl();
             this.textEditTmp_Zuzahlbetrag = new DevExpress.XtraEditors.TextEdit();
-            this.textEditTmp_Zuzahlkennzeichen = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditTmp_Zuzahlkennzeichen = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup34 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemTmp_Zuzahlbetrag = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_Zuzahlkennzeichen = new DevExpress.XtraLayout.LayoutControlItem();
@@ -640,6 +640,8 @@
             this.layoutControlItem127 = new DevExpress.XtraLayout.LayoutControlItem();
             this.ComboBoxEditSEAufnahmediagnose = new DevExpress.XtraEditors.ComboBoxEdit();
             this.ComboBoxEditSEEinDiagnose = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.ComboBoxEditTmp_RgArtREC2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.layoutControlItem143 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl15)).BeginInit();
@@ -694,7 +696,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_ZDG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_SekD.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditFABList.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditfab_FAbt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup46)).BeginInit();
@@ -995,7 +997,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgNrREC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_RgArtREC1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgNrREC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgDatumREC)).BeginInit();
@@ -1010,7 +1012,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl14)).BeginInit();
             this.layoutControl14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlbetrag.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_Zuzahlkennzeichen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup34)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlbetrag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlkennzeichen)).BeginInit();
@@ -1279,6 +1281,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem127)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEAufnahmediagnose.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEEinDiagnose.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_RgArtREC2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem143)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -1824,7 +1828,7 @@
             this.layoutControl11.Controls.Add(this.simpleButtonADDFAB);
             this.layoutControl11.Controls.Add(this.textEditfab_SekD);
             this.layoutControl11.Controls.Add(this.checkedComboBoxEditFABList);
-            this.layoutControl11.Controls.Add(this.textEditfab_FAbt);
+            this.layoutControl11.Controls.Add(this.ComboBoxEditfab_FAbt);
             this.layoutControl11.Controls.Add(this.textEditfab_DG);
             this.layoutControl11.Location = new System.Drawing.Point(27, 381);
             this.layoutControl11.Name = "layoutControl11";
@@ -1904,14 +1908,14 @@
             this.checkedComboBoxEditFABList.StyleController = this.layoutControl11;
             this.checkedComboBoxEditFABList.TabIndex = 4;
             // 
-            // textEditfab_FAbt
+            // ComboBoxEditfab_FAbt
             // 
-            this.textEditfab_FAbt.EditValue = " ";
-            this.textEditfab_FAbt.Location = new System.Drawing.Point(197, 42);
-            this.textEditfab_FAbt.Name = "textEditfab_FAbt";
-            this.textEditfab_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ComboBoxEditfab_FAbt.EditValue = " ";
+            this.ComboBoxEditfab_FAbt.Location = new System.Drawing.Point(197, 42);
+            this.ComboBoxEditfab_FAbt.Name = "ComboBoxEditfab_FAbt";
+            this.ComboBoxEditfab_FAbt.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditfab_FAbt.Properties.Items.AddRange(new object[] {
+            this.ComboBoxEditfab_FAbt.Properties.Items.AddRange(new object[] {
             "0100 Innere Medizin",
             "0200 Geriatrie",
             "0300 Kardiologie",
@@ -1951,9 +1955,9 @@
             "2316 Orthopädie und Unfallchirurgie",
             "2425 Frauenheilkunde",
             "3700 Sonstige Fachabteilung"});
-            this.textEditfab_FAbt.Size = new System.Drawing.Size(449, 20);
-            this.textEditfab_FAbt.StyleController = this.layoutControl11;
-            this.textEditfab_FAbt.TabIndex = 4;
+            this.ComboBoxEditfab_FAbt.Size = new System.Drawing.Size(449, 20);
+            this.ComboBoxEditfab_FAbt.StyleController = this.layoutControl11;
+            this.ComboBoxEditfab_FAbt.TabIndex = 4;
             // 
             // textEditfab_DG
             // 
@@ -2047,7 +2051,7 @@
             // 
             // layoutControlItemfab_FAbt
             // 
-            this.layoutControlItemfab_FAbt.Control = this.textEditfab_FAbt;
+            this.layoutControlItemfab_FAbt.Control = this.ComboBoxEditfab_FAbt;
             this.layoutControlItemfab_FAbt.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemfab_FAbt.Name = "layoutControlItemfab_FAbt";
             this.layoutControlItemfab_FAbt.Size = new System.Drawing.Size(626, 24);
@@ -2158,6 +2162,7 @@
             // 
             // checkedComboBoxEditPrfTextList
             // 
+            this.checkedComboBoxEditPrfTextList.EditValue = " ";
             this.checkedComboBoxEditPrfTextList.Location = new System.Drawing.Point(805, 42);
             this.checkedComboBoxEditPrfTextList.Name = "checkedComboBoxEditPrfTextList";
             this.checkedComboBoxEditPrfTextList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -5510,6 +5515,7 @@
             // 
             // layoutControl13
             // 
+            this.layoutControl13.Controls.Add(this.ComboBoxEditTmp_RgArtREC2);
             this.layoutControl13.Controls.Add(this.textEditPau);
             this.layoutControl13.Controls.Add(this.textEditHonorSu);
             this.layoutControl13.Controls.Add(this.textEditTmp_IKZahlwegREC);
@@ -5519,7 +5525,7 @@
             this.layoutControl13.Controls.Add(this.dateEditTmp_AufnTagREC);
             this.layoutControl13.Controls.Add(this.dateEditTmp_RgDatumREC);
             this.layoutControl13.Controls.Add(this.textEditTmp_RgNrREC);
-            this.layoutControl13.Controls.Add(this.textEditTmp_RgArtREC);
+            this.layoutControl13.Controls.Add(this.ComboBoxEditTmp_RgArtREC1);
             this.layoutControl13.Location = new System.Drawing.Point(27, 381);
             this.layoutControl13.Name = "layoutControl13";
             this.layoutControl13.Root = this.layoutControlGroup33;
@@ -5616,33 +5622,23 @@
             this.textEditTmp_RgNrREC.StyleController = this.layoutControl13;
             this.textEditTmp_RgNrREC.TabIndex = 4;
             // 
-            // textEditTmp_RgArtREC
+            // ComboBoxEditTmp_RgArtREC1
             // 
-            this.textEditTmp_RgArtREC.EditValue = " ";
-            this.textEditTmp_RgArtREC.Location = new System.Drawing.Point(209, 60);
-            this.textEditTmp_RgArtREC.Name = "textEditTmp_RgArtREC";
-            this.textEditTmp_RgArtREC.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ComboBoxEditTmp_RgArtREC1.EditValue = " ";
+            this.ComboBoxEditTmp_RgArtREC1.Location = new System.Drawing.Point(209, 60);
+            this.ComboBoxEditTmp_RgArtREC1.Name = "ComboBoxEditTmp_RgArtREC1";
+            this.ComboBoxEditTmp_RgArtREC1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_RgArtREC.Properties.Items.AddRange(new object[] {
+            this.ComboBoxEditTmp_RgArtREC1.Properties.Items.AddRange(new object[] {
             "0 Zahlungssatz wird nicht angefordert",
             "1 Fortsetzungspauschale PrüfvV (2. Stelle = „4“)",
             "2 Vergütung nach vorstationärer Höhe (Ersatzabrechnung, 2. Stelle: „2“)",
             "5 Zahlungssatz wird angefordert (nicht bei 2. Stelle „4“ bis „8“)",
             "8 Zuzahlungsgutschrift (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung",
-            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
-            "1 Zwischenrechnung",
-            "2 Schlussrechnung",
-            "3 Nachtragsrechnung",
-            "4 Gutschrift/Stornierung",
-            "6 Zahlungserinnerung",
-            "7 1. Mahnung",
-            "8 2. Mahnung",
-            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
-                "2003 geltenden Fassung"});
-            this.textEditTmp_RgArtREC.Size = new System.Drawing.Size(1062, 20);
-            this.textEditTmp_RgArtREC.StyleController = this.layoutControl13;
-            this.textEditTmp_RgArtREC.TabIndex = 6;
+            "9 Rückforderung von Zuzahlungen (nur für Zuzahlungsgutschrift/-rückforderung"});
+            this.ComboBoxEditTmp_RgArtREC1.Size = new System.Drawing.Size(430, 20);
+            this.ComboBoxEditTmp_RgArtREC1.StyleController = this.layoutControl13;
+            this.ComboBoxEditTmp_RgArtREC1.TabIndex = 6;
             // 
             // layoutControlGroup33
             // 
@@ -5658,7 +5654,8 @@
             this.layoutControlItemTmp_RefNrREC,
             this.layoutControlItemTmp_IKZahlwegREC,
             this.layoutControlItemHonorSu,
-            this.layoutControlItemPau});
+            this.layoutControlItemPau,
+            this.layoutControlItem143});
             this.layoutControlGroup33.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup33.Name = "Root";
             this.layoutControlGroup33.Size = new System.Drawing.Size(1283, 398);
@@ -5684,11 +5681,11 @@
             // 
             // layoutControlItemTmp_RgArtREC
             // 
-            this.layoutControlItemTmp_RgArtREC.Control = this.textEditTmp_RgArtREC;
+            this.layoutControlItemTmp_RgArtREC.Control = this.ComboBoxEditTmp_RgArtREC1;
             this.layoutControlItemTmp_RgArtREC.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemTmp_RgArtREC.Name = "layoutControlItemTmp_RgArtREC";
-            this.layoutControlItemTmp_RgArtREC.Size = new System.Drawing.Size(1263, 24);
-            this.layoutControlItemTmp_RgArtREC.Text = "Rechnungsart";
+            this.layoutControlItemTmp_RgArtREC.Size = new System.Drawing.Size(631, 24);
+            this.layoutControlItemTmp_RgArtREC.Text = "Rechnungsart (1. Stelle)";
             this.layoutControlItemTmp_RgArtREC.TextSize = new System.Drawing.Size(194, 13);
             // 
             // layoutControlItemTmp_AufnTagREC
@@ -5757,7 +5754,7 @@
             // layoutControl14
             // 
             this.layoutControl14.Controls.Add(this.textEditTmp_Zuzahlbetrag);
-            this.layoutControl14.Controls.Add(this.textEditTmp_Zuzahlkennzeichen);
+            this.layoutControl14.Controls.Add(this.ComboBoxEditTmp_Zuzahlkennzeichen);
             this.layoutControl14.Location = new System.Drawing.Point(27, 381);
             this.layoutControl14.Name = "layoutControl14";
             this.layoutControl14.Root = this.layoutControlGroup34;
@@ -5774,14 +5771,14 @@
             this.textEditTmp_Zuzahlbetrag.StyleController = this.layoutControl14;
             this.textEditTmp_Zuzahlbetrag.TabIndex = 4;
             // 
-            // textEditTmp_Zuzahlkennzeichen
+            // ComboBoxEditTmp_Zuzahlkennzeichen
             // 
-            this.textEditTmp_Zuzahlkennzeichen.EditValue = " ";
-            this.textEditTmp_Zuzahlkennzeichen.Location = new System.Drawing.Point(128, 36);
-            this.textEditTmp_Zuzahlkennzeichen.Name = "textEditTmp_Zuzahlkennzeichen";
-            this.textEditTmp_Zuzahlkennzeichen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.EditValue = " ";
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.Location = new System.Drawing.Point(128, 36);
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.Name = "ComboBoxEditTmp_Zuzahlkennzeichen";
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditTmp_Zuzahlkennzeichen.Properties.Items.AddRange(new object[] {
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.Properties.Items.AddRange(new object[] {
             "1 keine Zuzahlungspflicht",
             "2 Zuzahlung verrechnet und vom Versicherten vollständig geleistet",
             "4 keine Zuzahlungspflicht auf Grund gültiger Bescheinigung nach § 62 SGB V",
@@ -5791,9 +5788,9 @@
             "7 geringere Zuzahlung auf Grund gültiger Quittung nach § 61 SGB V verrechnet und " +
                 "vom Versicherten nicht oder nur teilweise geleistet ",
             "8 Zuzahlung verrechnet und vom Versicherten nicht oder nur teilweise geleistet"});
-            this.textEditTmp_Zuzahlkennzeichen.Size = new System.Drawing.Size(1143, 20);
-            this.textEditTmp_Zuzahlkennzeichen.StyleController = this.layoutControl14;
-            this.textEditTmp_Zuzahlkennzeichen.TabIndex = 5;
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.Size = new System.Drawing.Size(1143, 20);
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.StyleController = this.layoutControl14;
+            this.ComboBoxEditTmp_Zuzahlkennzeichen.TabIndex = 5;
             // 
             // layoutControlGroup34
             // 
@@ -5818,7 +5815,7 @@
             // 
             // layoutControlItemTmp_Zuzahlkennzeichen
             // 
-            this.layoutControlItemTmp_Zuzahlkennzeichen.Control = this.textEditTmp_Zuzahlkennzeichen;
+            this.layoutControlItemTmp_Zuzahlkennzeichen.Control = this.ComboBoxEditTmp_Zuzahlkennzeichen;
             this.layoutControlItemTmp_Zuzahlkennzeichen.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemTmp_Zuzahlkennzeichen.Name = "layoutControlItemTmp_Zuzahlkennzeichen";
             this.layoutControlItemTmp_Zuzahlkennzeichen.Size = new System.Drawing.Size(1263, 354);
@@ -5848,7 +5845,7 @@
             this.textEditEnt_TagWundh.EditValue = " ";
             this.textEditEnt_TagWundh.Location = new System.Drawing.Point(198, 186);
             this.textEditEnt_TagWundh.Name = "textEditEnt_TagWundh";
-            this.textEditEnt_TagWundh.Size = new System.Drawing.Size(438, 20);
+            this.textEditEnt_TagWundh.Size = new System.Drawing.Size(543, 20);
             this.textEditEnt_TagWundh.StyleController = this.layoutControl16;
             this.textEditEnt_TagWundh.TabIndex = 11;
             // 
@@ -5857,7 +5854,7 @@
             this.textEditEnt_TgOhne.EditValue = " ";
             this.textEditEnt_TgOhne.Location = new System.Drawing.Point(198, 162);
             this.textEditEnt_TgOhne.Name = "textEditEnt_TgOhne";
-            this.textEditEnt_TgOhne.Size = new System.Drawing.Size(438, 20);
+            this.textEditEnt_TgOhne.Size = new System.Drawing.Size(543, 20);
             this.textEditEnt_TgOhne.StyleController = this.layoutControl16;
             this.textEditEnt_TgOhne.TabIndex = 10;
             // 
@@ -5866,7 +5863,7 @@
             this.textEditEnt_Anz.EditValue = " ";
             this.textEditEnt_Anz.Location = new System.Drawing.Point(198, 138);
             this.textEditEnt_Anz.Name = "textEditEnt_Anz";
-            this.textEditEnt_Anz.Size = new System.Drawing.Size(438, 20);
+            this.textEditEnt_Anz.Size = new System.Drawing.Size(543, 20);
             this.textEditEnt_Anz.StyleController = this.layoutControl16;
             this.textEditEnt_Anz.TabIndex = 8;
             // 
@@ -5879,7 +5876,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEditEnt_bis.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditEnt_bis.Size = new System.Drawing.Size(438, 20);
+            this.dateEditEnt_bis.Size = new System.Drawing.Size(543, 20);
             this.dateEditEnt_bis.StyleController = this.layoutControl16;
             this.dateEditEnt_bis.TabIndex = 7;
             // 
@@ -5892,7 +5889,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEditEnt_von.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEditEnt_von.Size = new System.Drawing.Size(438, 20);
+            this.dateEditEnt_von.Size = new System.Drawing.Size(543, 20);
             this.dateEditEnt_von.StyleController = this.layoutControl16;
             this.dateEditEnt_von.TabIndex = 6;
             // 
@@ -5901,26 +5898,26 @@
             this.textEditEnt_Betrag.EditValue = " ";
             this.textEditEnt_Betrag.Location = new System.Drawing.Point(198, 66);
             this.textEditEnt_Betrag.Name = "textEditEnt_Betrag";
-            this.textEditEnt_Betrag.Size = new System.Drawing.Size(438, 20);
+            this.textEditEnt_Betrag.Size = new System.Drawing.Size(543, 20);
             this.textEditEnt_Betrag.StyleController = this.layoutControl16;
             this.textEditEnt_Betrag.TabIndex = 5;
             // 
             // checkedComboBoxEditTmp_ENTList
             // 
             this.checkedComboBoxEditTmp_ENTList.EditValue = " ";
-            this.checkedComboBoxEditTmp_ENTList.Location = new System.Drawing.Point(838, 42);
+            this.checkedComboBoxEditTmp_ENTList.Location = new System.Drawing.Point(943, 42);
             this.checkedComboBoxEditTmp_ENTList.Name = "checkedComboBoxEditTmp_ENTList";
             this.checkedComboBoxEditTmp_ENTList.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.checkedComboBoxEditTmp_ENTList.Size = new System.Drawing.Size(421, 20);
+            this.checkedComboBoxEditTmp_ENTList.Size = new System.Drawing.Size(316, 20);
             this.checkedComboBoxEditTmp_ENTList.StyleController = this.layoutControl16;
             this.checkedComboBoxEditTmp_ENTList.TabIndex = 4;
             // 
             // simpleButtonTmp_ENTList
             // 
-            this.simpleButtonTmp_ENTList.Location = new System.Drawing.Point(664, 66);
+            this.simpleButtonTmp_ENTList.Location = new System.Drawing.Point(769, 66);
             this.simpleButtonTmp_ENTList.Name = "simpleButtonTmp_ENTList";
-            this.simpleButtonTmp_ENTList.Size = new System.Drawing.Size(595, 22);
+            this.simpleButtonTmp_ENTList.Size = new System.Drawing.Size(490, 22);
             this.simpleButtonTmp_ENTList.StyleController = this.layoutControl16;
             this.simpleButtonTmp_ENTList.TabIndex = 5;
             this.simpleButtonTmp_ENTList.Text = "ADD";
@@ -5934,50 +5931,102 @@
             this.textEditEnt_Art.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.textEditEnt_Art.Properties.Items.AddRange(new object[] {
-            "01 Tagesgleicher Pflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychia" +
-                "trie und Psychosomatik/Psychotherapie",
+            "01  Tagesgleicher Pflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychi" +
+                "atrie und Psychosomatik/Psychotherapie",
             resources.GetString("textEditEnt_Art.Properties.Items"),
-            "41 Entgelt für vorstationäre Behandlung",
-            "42 Entgelt für nachstationäre Behandlung",
-            "43 Pflegesatz bei Beurlaubung",
-            "44 Modellvorhaben nach § 24 BPflV bzw. 26 BPflV (Altvorhaben)",
-            "45 Wahlleistung Unterkunft (nur für Knappschaft)",
-            "46 Zuschlag für Qualitätssicherung nach § 7 Abs. 1 Satz 1 Nr. 7 KHEntgG oder § 7 " +
-                "Satz 1 Nr. 3 BPflV",
-            "47 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 un" +
-                "d Satz 2  und sonstiger Zu- und Abschlag",
-            "48 DRG-Systemzuschlag",
-            "49 Abrechnungsergänzungen",
-            "60 Sonderfall",
-            "61 Entgelt für integrierte Versorgung nach § 140c SGB V",
-            "62 Abschlag bei Entgelten für integrierte Versorgung nach § 140c SGB V",
-            "63 Entgelt für Modellvorhaben nach § 63 SGB V",
-            "65 Zusatzentgelt für DMP",
-            "70 DRG-Fallpauschale nach § 7 Abs. 1 Satz 1 Nr. 1 KHEntgG ",
+            "41  Entgelt für vorstationäre Behandlung",
+            "42  Entgelt für nachstationäre Behandlung",
+            "43  Pflegesatz bei Beurlaubung",
+            "44  Modellvorhaben nach § 24 BPflV bzw. 26 BPflV (Altvorhaben)",
+            "45  Wahlleistung Unterkunft (nur für Knappschaft)",
+            "46  Zuschlag für Qualitätssicherung nach § 7 Abs. 1 Satz 1 Nr. 7 KHEntgG oder § 7" +
+                " Satz 1 Nr. 3 BPflV",
+            "47  Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 u" +
+                "nd Satz 2  und sonstiger Zu- und Abschlag",
+            "48  DRG-Systemzuschlag",
+            "49  Abrechnungsergänzungen",
+            "60  Sonderfall",
+            "61  Entgelt für integrierte Versorgung nach § 140c SGB V",
+            "62  Abschlag bei Entgelten für integrierte Versorgung nach § 140c SGB V",
+            "63  Entgelt für Modellvorhaben nach § 63 SGB V",
+            "65  Zusatzentgelt für DMP",
+            "70  DRG-Fallpauschale nach § 7 Abs. 1 Satz 1 Nr. 1 KHEntgG ",
+            "71  Entgelt bei Überschreiten der oberen GVD nach § 1 Abs. 2 Satz 1 FPV oder tage" +
+                "sbezogene teilstationäre DRG-Fallpauschale ab 2. Tag",
+            "72  Abschlag bei Verlegungen nach § 1 Abs. 1 Satz 3 FPV",
+            "73  Abschlag bei Nichterreichen der unteren GVD nach § 1 Abs. 3 Satz 1 FPV",
+            "74  Entgelt für Pflegeerlös/Tag [ab 1.1.2020] Nn",
+            "75  Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
+            "76  Zusatzentgelt nach § 7 Abs. 1 Satz 1 Nr. 2, 3, 5 oder 6 KHEntgG",
+            "78  Teilstationäre Leistung nach § 6 Abs. 2 FPV",
+            "80  Entgelt für neue Untersuchungs- und Behandlungsmethoden nach § 6 Abs. 2 KHEnt" +
+                "gG (fallbezogen)",
+            "81  Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 6 A" +
+                "bs. 2 KHEntgG",
+            "82  Abschlag bei Verlegung für fallbezogene Entgelte nach § 6 Abs. 2 KHEntgG",
+            "83  Abschlag bei Nichterreichen der unteren GVD für fallbezogene Entgelte nach § " +
+                "6 Abs. 2 KHEntgG",
+            "84  Pflegeanteil für tages- oder fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr." +
+                " 5 KHEntgG [ab 1.1.2020]",
+            "85  Tagesbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
+            "86  Fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
+            "87  Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 7 A" +
+                "bs. 1 Satz 1 Nr. 5 KHEntgG ",
+            "88  Abschlag bei Verlegung für fallbezogene Entgelte nach § 7 Abs. 1 Satz 1 Nr. 5" +
+                " KHEntgG",
+            "010 Tagesgleicher Pflegesatz für Allgemeine Psychiatrie, Kinder- und Jugendpsychi" +
+                "atrie und Psychosomatik/Psychotherapie",
+            "020 Ermäßigter Abteilungspflegesatz für Allgemeine Psychiatrie, Kinder- und Jugen" +
+                "dpsychiatrie und Psychosomatik/Psychotherapie ",
+            "410 Entgelt für vorstationäre Behandlung",
+            "420 Entgelt für nachstationäre Behandlung",
+            "430 Pflegesatz bei Beurlaubung",
+            "440 Modellvorhaben nach § 24 BPflV bzw. § 26 BPflV (Altvorhaben)",
+            "450 Wahlleistung Unterkunft (gilt nur für Knappschaft)",
+            "460 Zuschlag für Qualitätssicherung nach § 7 Abs. 1 Satz 1 Nr. 7 KHEntgG/§ 7 Satz" +
+                " 1 Nr. 3 BPflV",
+            "471 Zuschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 und Satz " +
+                "2 BPflV",
+            "472 Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 und Satz " +
+                "2 BPflV und sonstiger Abschlag",
+            "47x Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG bzw. § 7 Satz 1 Nr. 3 u" +
+                "nd Satz 2 BPflV und sonstiger Zu- und Abschlag",
+            "480 DRG-Systemzuschlag",
+            "49  Abrechnungsergänzungen",
+            "600 Sonderfall",
+            "61  Entgelt für integrierte Versorgung nach § 140c SGB V",
+            "62  Abschlag bei Entgelten für integrierte Versorgung nach § 140c SGB V",
+            "63  Entgelt für Modellvorhaben nach § 63 SGB V",
+            "65  Zusatzentgelt für DMP",
+            "70 DRG-Fallpauschale nach § 7 Abs. 1 Satz 1 Nr. 1 KHEntgG",
             "71 Entgelt bei Überschreiten der oberen GVD nach § 1 Abs. 2 Satz 1 FPV oder tages" +
                 "bezogene teilstationäre DRG-Fallpauschale ab 2. Tag",
             "72 Abschlag bei Verlegungen nach § 1 Abs. 1 Satz 3 FPV",
             "73 Abschlag bei Nichterreichen der unteren GVD nach § 1 Abs. 3 Satz 1 FPV",
-            "74 Entgelt für Pflegeerlös/Tag [ab 1.1.2020] Nn",
-            "75 Zu- und Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
+            "74 Entgelt für Pflegeerlös/Tag [ab 1.1.2020]",
+            "751 Zuschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
+            "752 Abschlag nach § 7 Abs. 1 Satz 1 Nr. 4 KHEntgG",
             "76 Zusatzentgelt nach § 7 Abs. 1 Satz 1 Nr. 2, 3, 5 oder 6 KHEntgG",
             "78 Teilstationäre Leistung nach § 6 Abs. 2 FPV",
             "80 Entgelt für neue Untersuchungs- und Behandlungsmethoden nach § 6 Abs. 2 KHEntg" +
                 "G (fallbezogen)",
-            "81 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 6 Ab" +
+            "81 Entgelt bei Überschreiten der oberen GVD für fallbezogenes Entgelt nach § 6 Ab" +
                 "s. 2 KHEntgG",
-            "82 Abschlag bei Verlegung für fallbezogene Entgelte nach § 6 Abs. 2 KHEntgG",
-            "83 Abschlag bei Nichterreichen der unteren GVD für fallbezogene Entgelte nach § 6" +
+            "82 Abschlag bei Verlegung für fallbezogenes Entgelt nach § 6 Abs. 2 KHEntgG",
+            "83 Abschlag bei Nichterreichen der unteren GVD für fallbezogenes Entgelt nach § 6" +
                 " Abs. 2 KHEntgG",
             "84 Pflegeanteil für tages- oder fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. " +
-                "5 KHEntgG [ab 1.1.2020]",
+                "5 KHEntgG [ab 1.1.2020]Nn, No",
             "85 Tagesbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
             "86 Fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 KHEntgG",
-            "87 Entgelt bei Überschreiten der oberen GVD für fallbezogene Entgelte nach § 7 Ab" +
-                "s. 1 Satz 1 Nr. 5 KHEntgG ",
-            "88 Abschlag bei Verlegung für fallbezogene Entgelte nach § 7 Abs. 1 Satz 1 Nr. 5 " +
-                "KHEntgG"});
-            this.textEditEnt_Art.Size = new System.Drawing.Size(438, 20);
+            "87 Entgelt bei Überschreiten der oberen GVD für fallbezogenes Entgelt nach § 7 Ab" +
+                "s. 1 Satz 1 Nr. 5 KHEntgG",
+            "88 Abschlag bei Verlegung für fallbezogenes Entgelt nach § 7 Abs. 1 Satz 1 Nr. 5 " +
+                "KHEntgG",
+            "89 Abschlag bei Nichterreichen der unteren GVD für fallbezogenes Entgelt nach § 7" +
+                " Abs. 1 Satz 1 Nr. 5 KHEntgG",
+            "90 Qualitätsverträge nach § 110a SGB V"});
+            this.textEditEnt_Art.Size = new System.Drawing.Size(543, 20);
             this.textEditEnt_Art.StyleController = this.layoutControl16;
             this.textEditEnt_Art.TabIndex = 4;
             // 
@@ -6005,7 +6054,7 @@
             this.layoutControlItemEnt_TagWundh});
             this.layoutControlGroup14.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup14.Name = "layoutControlGroup14";
-            this.layoutControlGroup14.Size = new System.Drawing.Size(640, 378);
+            this.layoutControlGroup14.Size = new System.Drawing.Size(745, 378);
             this.layoutControlGroup14.Text = " ";
             // 
             // layoutControlItemEnt_Art
@@ -6013,7 +6062,7 @@
             this.layoutControlItemEnt_Art.Control = this.textEditEnt_Art;
             this.layoutControlItemEnt_Art.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemEnt_Art.Name = "layoutControlItemEnt_Art";
-            this.layoutControlItemEnt_Art.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_Art.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_Art.Text = "Entgeltart";
             this.layoutControlItemEnt_Art.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6022,7 +6071,7 @@
             this.layoutControlItemEnt_Betrag.Control = this.textEditEnt_Betrag;
             this.layoutControlItemEnt_Betrag.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItemEnt_Betrag.Name = "layoutControlItemEnt_Betrag";
-            this.layoutControlItemEnt_Betrag.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_Betrag.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_Betrag.Text = "Entgeltbetrag";
             this.layoutControlItemEnt_Betrag.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6031,7 +6080,7 @@
             this.layoutControlItemEnt_von.Control = this.dateEditEnt_von;
             this.layoutControlItemEnt_von.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItemEnt_von.Name = "layoutControlItemEnt_von";
-            this.layoutControlItemEnt_von.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_von.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_von.Text = "Abrechnung von:";
             this.layoutControlItemEnt_von.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6040,7 +6089,7 @@
             this.layoutControlItemEnt_bis.Control = this.dateEditEnt_bis;
             this.layoutControlItemEnt_bis.Location = new System.Drawing.Point(0, 72);
             this.layoutControlItemEnt_bis.Name = "layoutControlItemEnt_bis";
-            this.layoutControlItemEnt_bis.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_bis.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_bis.Text = "Abrechnung bis:";
             this.layoutControlItemEnt_bis.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6049,7 +6098,7 @@
             this.layoutControlItemEnt_Anz.Control = this.textEditEnt_Anz;
             this.layoutControlItemEnt_Anz.Location = new System.Drawing.Point(0, 96);
             this.layoutControlItemEnt_Anz.Name = "layoutControlItemEnt_Anz";
-            this.layoutControlItemEnt_Anz.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_Anz.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_Anz.Text = "Entgeltanzahl";
             this.layoutControlItemEnt_Anz.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6058,7 +6107,7 @@
             this.layoutControlItemEnt_TgOhne.Control = this.textEditEnt_TgOhne;
             this.layoutControlItemEnt_TgOhne.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItemEnt_TgOhne.Name = "layoutControlItemEnt_TgOhne";
-            this.layoutControlItemEnt_TgOhne.Size = new System.Drawing.Size(616, 24);
+            this.layoutControlItemEnt_TgOhne.Size = new System.Drawing.Size(721, 24);
             this.layoutControlItemEnt_TgOhne.Text = "Tage ohne Berechnung/Behandlung";
             this.layoutControlItemEnt_TgOhne.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6067,7 +6116,7 @@
             this.layoutControlItemEnt_TagWundh.Control = this.textEditEnt_TagWundh;
             this.layoutControlItemEnt_TagWundh.Location = new System.Drawing.Point(0, 144);
             this.layoutControlItemEnt_TagWundh.Name = "layoutControlItemEnt_TagWundh";
-            this.layoutControlItemEnt_TagWundh.Size = new System.Drawing.Size(616, 192);
+            this.layoutControlItemEnt_TagWundh.Size = new System.Drawing.Size(721, 192);
             this.layoutControlItemEnt_TagWundh.Text = "Tag der Wundheilung";
             this.layoutControlItemEnt_TagWundh.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6077,9 +6126,9 @@
             this.layoutControlGroup53.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItemTmp_ENTList,
             this.layoutControlItem61});
-            this.layoutControlGroup53.Location = new System.Drawing.Point(640, 0);
+            this.layoutControlGroup53.Location = new System.Drawing.Point(745, 0);
             this.layoutControlGroup53.Name = "layoutControlGroup53";
-            this.layoutControlGroup53.Size = new System.Drawing.Size(623, 378);
+            this.layoutControlGroup53.Size = new System.Drawing.Size(518, 378);
             this.layoutControlGroup53.Text = " ";
             // 
             // layoutControlItemTmp_ENTList
@@ -6088,7 +6137,7 @@
             this.layoutControlItemTmp_ENTList.CustomizationFormText = "Tmp_ENT List";
             this.layoutControlItemTmp_ENTList.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItemTmp_ENTList.Name = "layoutControlItemTmp_ENTList";
-            this.layoutControlItemTmp_ENTList.Size = new System.Drawing.Size(599, 24);
+            this.layoutControlItemTmp_ENTList.Size = new System.Drawing.Size(494, 24);
             this.layoutControlItemTmp_ENTList.Text = "Entgelt List";
             this.layoutControlItemTmp_ENTList.TextSize = new System.Drawing.Size(171, 13);
             // 
@@ -6098,7 +6147,7 @@
             this.layoutControlItem61.CustomizationFormText = "layoutControlItem61";
             this.layoutControlItem61.Location = new System.Drawing.Point(0, 24);
             this.layoutControlItem61.Name = "layoutControlItem61";
-            this.layoutControlItem61.Size = new System.Drawing.Size(599, 312);
+            this.layoutControlItem61.Size = new System.Drawing.Size(494, 312);
             this.layoutControlItem61.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem61.TextVisible = false;
             // 
@@ -7731,8 +7780,8 @@
             this.tabbedControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.tabbedControlGroup1.Name = "tabbedControlGroup1";
             this.tabbedControlGroup1.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.tabbedControlGroup1.SelectedTabPage = this.layoutREL;
-            this.tabbedControlGroup1.SelectedTabPageIndex = 30;
+            this.tabbedControlGroup1.SelectedTabPage = this.layoutSTA;
+            this.tabbedControlGroup1.SelectedTabPageIndex = 8;
             this.tabbedControlGroup1.Size = new System.Drawing.Size(1293, 430);
             this.tabbedControlGroup1.TabPages.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutFKT,
@@ -8619,6 +8668,36 @@
             this.ComboBoxEditSEEinDiagnose.StyleController = this.layoutControl7;
             this.ComboBoxEditSEEinDiagnose.TabIndex = 8;
             // 
+            // ComboBoxEditTmp_RgArtREC2
+            // 
+            this.ComboBoxEditTmp_RgArtREC2.Location = new System.Drawing.Point(840, 60);
+            this.ComboBoxEditTmp_RgArtREC2.Name = "ComboBoxEditTmp_RgArtREC2";
+            this.ComboBoxEditTmp_RgArtREC2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.ComboBoxEditTmp_RgArtREC2.Properties.Items.AddRange(new object[] {
+            "0 (nur für Zuzahlungsgutschrift/-rückforderung)",
+            "1 Zwischenrechnung",
+            "2 Schlussrechnung",
+            "3 Nachtragsrechnung",
+            "4 Gutschrift/Stornierung",
+            "6 Zahlungserinnerung",
+            "7 1. Mahnung",
+            "8 2. Mahnung",
+            "9 Vorausberechnung nach § 14 Abs. 4 BPflV bzw. § 14 Abs. 9 BPflV in der am 31.12." +
+                "2003 geltenden Fassung"});
+            this.ComboBoxEditTmp_RgArtREC2.Size = new System.Drawing.Size(431, 20);
+            this.ComboBoxEditTmp_RgArtREC2.StyleController = this.layoutControl13;
+            this.ComboBoxEditTmp_RgArtREC2.TabIndex = 14;
+            // 
+            // layoutControlItem143
+            // 
+            this.layoutControlItem143.Control = this.ComboBoxEditTmp_RgArtREC2;
+            this.layoutControlItem143.Location = new System.Drawing.Point(631, 48);
+            this.layoutControlItem143.Name = "layoutControlItem143";
+            this.layoutControlItem143.Size = new System.Drawing.Size(632, 24);
+            this.layoutControlItem143.Text = "Rechnungsart (2. Stelle)";
+            this.layoutControlItem143.TextSize = new System.Drawing.Size(194, 13);
+            // 
             // FrmMessages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -8682,7 +8761,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_ZDG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_SekD.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEditFABList.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditfab_FAbt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditfab_FAbt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditfab_DG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup46)).EndInit();
@@ -8983,7 +9062,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_RgDatumREC.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgNrREC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_RgArtREC.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_RgArtREC1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgNrREC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_RgDatumREC)).EndInit();
@@ -8998,7 +9077,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl14)).EndInit();
             this.layoutControl14.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlbetrag.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditTmp_Zuzahlkennzeichen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_Zuzahlkennzeichen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup34)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlbetrag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_Zuzahlkennzeichen)).EndInit();
@@ -9267,6 +9346,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem127)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEAufnahmediagnose.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditSEEinDiagnose.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ComboBoxEditTmp_RgArtREC2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem143)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -9848,7 +9929,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem139;
         private DevExpress.XtraLayout.LayoutControlGroup layoutSTA;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem72;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditfab_FAbt;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditfab_FAbt;
         private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_LfdNrGFall;
         private DevExpress.XtraEditors.ComboBoxEdit textEditInterLand;
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxTmp_V_Status;
@@ -9860,8 +9941,8 @@
         private DevExpress.XtraEditors.ComboBoxEdit textEditetl_Grund;
         private DevExpress.XtraEditors.ComboBoxEdit textEditetl_FAbt;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem140;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_RgArtREC;
-        private DevExpress.XtraEditors.ComboBoxEdit textEditTmp_Zuzahlkennzeichen;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditTmp_RgArtREC1;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditTmp_Zuzahlkennzeichen;
         private DevExpress.XtraEditors.ComboBoxEdit textEditEnt_Art;
         private DevExpress.XtraEditors.ComboBoxEdit textEditFAB_für_Diag;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem141;
@@ -9884,5 +9965,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem127;
         private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditSEAufnahmediagnose;
         private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditSEEinDiagnose;
+        private DevExpress.XtraEditors.ComboBoxEdit ComboBoxEditTmp_RgArtREC2;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem143;
     }
 }

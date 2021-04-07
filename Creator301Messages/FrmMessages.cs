@@ -395,11 +395,11 @@ namespace Creator301Messages
         #region Create Message Content
         private string TrimEndMessage(string Messages)
         {
-            Messages = Messages.Replace(" ",string.Empty);
-            string a = Messages.Substring(Messages.Length - 2);
-            while (Messages.Substring(Messages.Length - 2) == "+'")
+            //Messages = Messages.Replace(" ",string.Empty);
+            string a = Messages.Substring(Messages.Length - 3);
+            while (Messages.Substring(Messages.Length - 3) == "+ '")
             {
-                Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 1);
+                Messages = Messages.Remove(Messages.ToString().LastIndexOf('+'), 2);
             }
             return Messages;
         }
@@ -510,7 +510,7 @@ namespace Creator301Messages
         private string CreatePVVelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PVV",textEditInfo.EditValue , textEditRechnungsNR.EditValue, dateEditRechnungDatum.DateTime.ToString("yyyyMMdd")));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "PVV",Sub(textEditInfo.EditValue.ToString(),5) , textEditRechnungsNR.EditValue, dateEditRechnungDatum.DateTime.ToString("yyyyMMdd")));
             return Messages;
         }
         #endregion
@@ -605,7 +605,7 @@ namespace Creator301Messages
                 {
                     i = i + 1;
                     FAB = (FabElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB", FAB.fab_FAbt, FAB.fab_DGLok, FAB.fab_SekDLok, FAB.fab_ZDG,
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "FAB",Sub( FAB.fab_FAbt,4), FAB.fab_DGLok, FAB.fab_SekDLok, FAB.fab_ZDG,
                         FAB.fab_ZSekD, FAB.fab_OPT, FAB.fab_OP));
                     count = count + 1;
                 }
@@ -625,7 +625,7 @@ namespace Creator301Messages
                 {
                     i = i + 1;
                     STA = (StaElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}'", "STA", STA.StandNr, STA.StandardDatum));
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}'", "STA", STA.StandNr, STA.StandardDatum,STA.StandardDatumhour));
                     count = count + 1;
                 }
             }
@@ -637,7 +637,7 @@ namespace Creator301Messages
         {
             string Messages;
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}+{8}+{9}+{10}'", "REC", textEditTmp_RgNrREC.EditValue, dateEditTmp_RgDatumREC.DateTime.ToString("yyyyMMdd"),
-                textEditTmp_RgArtREC.EditValue, dateEditTmp_AufnTagREC.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetragREC.EditValue,
+               Sub( ComboBoxEditTmp_RgArtREC1.EditValue.ToString(),1)+ Sub(ComboBoxEditTmp_RgArtREC2.EditValue.ToString(), 1), dateEditTmp_AufnTagREC.DateTime.ToString("yyyyMMdd"), textEditTmp_RgBetragREC.EditValue,
                 textEditTmp_DebNrREC.EditValue, textEditTmp_RefNrREC.EditValue, textEditTmp_IKZahlwegREC.EditValue, textEditHonorSu.EditValue, textEditPau.EditValue));
             return Messages;
         }
@@ -646,7 +646,7 @@ namespace Creator301Messages
         private string CreateZLGelement()
         {
             string Messages;
-            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZLG", textEditTmp_Zuzahlbetrag.EditValue, textEditTmp_Zuzahlkennzeichen.EditValue));
+            Messages = TrimEndMessage(String.Format("{0}+{1}+{2}'", "ZLG", textEditTmp_Zuzahlbetrag.EditValue,Sub( ComboBoxEditTmp_Zuzahlkennzeichen.EditValue.ToString(),1)));
             return Messages;
         }
         #endregion
@@ -662,7 +662,7 @@ namespace Creator301Messages
                 {
                     i = i + 1;
                     ENT = (EntElement)item.Value;
-                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ENT", ENT.Ent_Art, ENT.Ent_Betrag, ENT.Ent_von, ENT.Ent_bis,
+                    Messages += TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ENT",Sub( ENT.Ent_Art,8), ENT.Ent_Betrag, ENT.Ent_von, ENT.Ent_bis,
                         ENT.Ent_Anz, ENT.Ent_TgOhne, ENT.Ent_TagWundh));
                     count = count + 1;
                 }
@@ -1307,7 +1307,7 @@ namespace Creator301Messages
         private void simpleButtonADDFAB_Click(object sender, EventArgs e)
         {
             FAB = new FabElement();
-            FAB.fab_FAbt = textEditfab_FAbt.EditValue.ToString();
+            FAB.fab_FAbt = ComboBoxEditfab_FAbt.EditValue.ToString();
             FAB.fab_DGLok = textEditfab_DG.EditValue.ToString();
             FAB.fab_SekDLok = textEditfab_SekD.EditValue.ToString();
             FAB.fab_ZDG = textEditfab_ZDG.EditValue.ToString();
@@ -1470,6 +1470,7 @@ namespace Creator301Messages
             STA = new StaElement();
             STA.StandNr = textEditStandNr.EditValue.ToString();
             STA.StandardDatum = dateEditStandardDatum.DateTime.ToString("yyyyMMdd");
+            STA.StandardDatumhour = dateEditStandardDatum.DateTime.ToString("HHmm");
             checkedComboBoxEditStandortList.Properties.Items.Add(STA);
             STAList.Add(STA);
             checkedComboBoxEditStandortList.Properties.Items[checkedComboBoxEditStandortList.Properties.Items.Count - 1].Description = "Standortnummer  : " + STA.StandNr;

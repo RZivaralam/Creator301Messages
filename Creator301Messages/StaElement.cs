@@ -9,5 +9,6 @@ namespace Creator301Messages
     {
         public string StandNr;
         public string StandardDatum;
+        public string StandardDatumhour;
     }
 }
