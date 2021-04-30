@@ -555,8 +555,8 @@ namespace Creator301Messages
         {
             string Messages = "";
             Messages = TrimEndMessage(String.Format("{0}+{1}+{2}+{3}+{4}+{5}+{6}+{7}'", "ETL", dateEditetl_Datum.DateTime.ToString("yyyyMMdd"),
-                dateEditetl_Datum.DateTime.ToString("HHmm"),Sub( textEditetl_Grund1.EditValue.ToString(),2)+ Sub(textEditetl_Grund2.EditValue.ToString(), 1), textEditetl_FAbt.EditValue,
-                textEditetl_HDlok, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
+                dateEditetl_Datum.DateTime.ToString("HHmm"),Sub( textEditetl_Grund1.EditValue.ToString(),2)+ Sub(textEditetl_Grund2.EditValue.ToString(), 1),Sub( textEditetl_FAbt.EditValue.ToString(),4),
+                textEditetl_HDlok.EditValue, textEditetl_SekDlok.EditValue, textEditetl_aufnIK.EditValue));
             count = count + 1;
             int i = 1;
             foreach (CheckedListBoxItem item in checkedComboBoxEditNDGList.Properties.Items)

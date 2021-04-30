@@ -329,6 +329,8 @@
             this.layoutControlItemTmp_NF_ab = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemTmp_BeatmStd = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl9 = new DevExpress.XtraLayout.LayoutControl();
+            this.textEditetl_Grund2 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditndg_NDLok = new DevExpress.XtraEditors.ComboBoxEdit();
             this.simpleButtonADDNDG = new DevExpress.XtraEditors.SimpleButton();
             this.textEditetl_aufnIK = new DevExpress.XtraEditors.TextEdit();
             this.textEditdg_SekDLok = new DevExpress.XtraEditors.TextEdit();
@@ -338,12 +340,14 @@
             this.dateEditetl_Datum = new DevExpress.XtraEditors.DateEdit();
             this.textEditetl_Grund1 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEditetl_FAbt = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.textEditetl_SekDlok = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup29 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlGroup12 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemNDGList = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemndg_NDLok = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemndg_SekDLok = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem66 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem144 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup11 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItemetl_Datum = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemetl_Grund = new DevExpress.XtraLayout.LayoutControlItem();
@@ -351,6 +355,7 @@
             this.layoutControlItemetl_aufnIK = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemetl_SekDlok = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem140 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem145 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControl10 = new DevExpress.XtraLayout.LayoutControl();
             this.dateEditTmp_EBG = new DevExpress.XtraEditors.DateEdit();
             this.checkedComboBoxEditTmp_EBGList = new DevExpress.XtraEditors.CheckedComboBoxEdit();
@@ -556,8 +561,8 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup72 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
-            this.layoutSTA = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem72 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutETL_NDG = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutFKT = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutINV_PNV = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -574,12 +579,12 @@
             this.layoutControlItem75 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutPVT = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem59 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutSTA = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem72 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutCUX = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutDAU = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutETL_NDG = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutEBG = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutFAB = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -641,11 +646,6 @@
             this.layoutControlItemReferenz_Nr = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemFileName = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItemSyntax_Nr = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditndg_NDLok = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem144 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditetl_Grund2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.layoutControlItem145 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.textEditetl_SekDlok = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl15)).BeginInit();
@@ -960,6 +960,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_BeatmStd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl9)).BeginInit();
             this.layoutControl9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDLok.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_aufnIK.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditdg_SekDLok.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDCode.Properties)).BeginInit();
@@ -969,12 +971,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_SekDlok.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemNDGList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemndg_NDLok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemndg_SekDLok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem66)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem144)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_Datum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_Grund)).BeginInit();
@@ -982,6 +986,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_aufnIK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_SekDlok)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem145)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl10)).BeginInit();
             this.layoutControl10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EBG.Properties.CalendarTimeProperties)).BeginInit();
@@ -1201,8 +1206,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup72)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutETL_NDG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFKT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutINV_PNV)).BeginInit();
@@ -1219,12 +1224,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutPVT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem59)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCUX)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDAU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutETL_NDG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutEBG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFAB)).BeginInit();
@@ -1286,11 +1291,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemReferenz_Nr)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFileName)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSyntax_Nr)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDLok.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem144)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem145)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_SekDlok.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -5176,6 +5176,35 @@
             this.layoutControl9.TabIndex = 12;
             this.layoutControl9.Text = "layoutControl9";
             // 
+            // textEditetl_Grund2
+            // 
+            this.textEditetl_Grund2.Location = new System.Drawing.Point(506, 66);
+            this.textEditetl_Grund2.Name = "textEditetl_Grund2";
+            this.textEditetl_Grund2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditetl_Grund2.Properties.Items.AddRange(new object[] {
+            "1 arbeitsfähig entlassen",
+            "2 arbeitsunfähig entlassen",
+            "9 keine Angabe"});
+            this.textEditetl_Grund2.Size = new System.Drawing.Size(93, 20);
+            this.textEditetl_Grund2.StyleController = this.layoutControl9;
+            this.textEditetl_Grund2.TabIndex = 16;
+            // 
+            // textEditndg_NDLok
+            // 
+            this.textEditndg_NDLok.EditValue = " ";
+            this.textEditndg_NDLok.Location = new System.Drawing.Point(1177, 66);
+            this.textEditndg_NDLok.Name = "textEditndg_NDLok";
+            this.textEditndg_NDLok.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditndg_NDLok.Properties.Items.AddRange(new object[] {
+            "R Rechts",
+            "L Links",
+            "B Beides"});
+            this.textEditndg_NDLok.Size = new System.Drawing.Size(82, 20);
+            this.textEditndg_NDLok.StyleController = this.layoutControl9;
+            this.textEditndg_NDLok.TabIndex = 15;
+            // 
             // simpleButtonADDNDG
             // 
             this.simpleButtonADDNDG.Location = new System.Drawing.Point(984, 114);
@@ -5351,6 +5380,21 @@
             this.textEditetl_FAbt.StyleController = this.layoutControl9;
             this.textEditetl_FAbt.TabIndex = 12;
             // 
+            // textEditetl_SekDlok
+            // 
+            this.textEditetl_SekDlok.EditValue = " ";
+            this.textEditetl_SekDlok.Location = new System.Drawing.Point(217, 138);
+            this.textEditetl_SekDlok.Name = "textEditetl_SekDlok";
+            this.textEditetl_SekDlok.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.textEditetl_SekDlok.Properties.Items.AddRange(new object[] {
+            "R Rechts",
+            "L Links",
+            "B Beide"});
+            this.textEditetl_SekDlok.Size = new System.Drawing.Size(382, 20);
+            this.textEditetl_SekDlok.StyleController = this.layoutControl9;
+            this.textEditetl_SekDlok.TabIndex = 8;
+            // 
             // layoutControlGroup29
             // 
             this.layoutControlGroup29.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -5411,6 +5455,15 @@
             this.layoutControlItem66.Size = new System.Drawing.Size(279, 264);
             this.layoutControlItem66.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem66.TextVisible = false;
+            // 
+            // layoutControlItem144
+            // 
+            this.layoutControlItem144.Control = this.textEditndg_NDLok;
+            this.layoutControlItem144.Location = new System.Drawing.Point(357, 24);
+            this.layoutControlItem144.Name = "layoutControlItem144";
+            this.layoutControlItem144.Size = new System.Drawing.Size(279, 24);
+            this.layoutControlItem144.Text = "Lokalisation";
+            this.layoutControlItem144.TextSize = new System.Drawing.Size(190, 13);
             // 
             // layoutControlGroup11
             // 
@@ -5481,6 +5534,15 @@
             this.layoutControlItem140.Size = new System.Drawing.Size(579, 24);
             this.layoutControlItem140.Text = "Fachabteilung";
             this.layoutControlItem140.TextSize = new System.Drawing.Size(190, 13);
+            // 
+            // layoutControlItem145
+            // 
+            this.layoutControlItem145.Control = this.textEditetl_Grund2;
+            this.layoutControlItem145.Location = new System.Drawing.Point(289, 24);
+            this.layoutControlItem145.Name = "layoutControlItem145";
+            this.layoutControlItem145.Size = new System.Drawing.Size(290, 24);
+            this.layoutControlItem145.Text = "Entlassungs-/Verlegungsgrund stelle3";
+            this.layoutControlItem145.TextSize = new System.Drawing.Size(190, 13);
             // 
             // layoutControl10
             // 
@@ -7928,23 +7990,24 @@
             this.layoutKOS,
             this.layoutREL});
             // 
-            // layoutSTA
+            // layoutETL_NDG
             // 
-            this.layoutSTA.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem72});
-            this.layoutSTA.Location = new System.Drawing.Point(0, 0);
-            this.layoutSTA.Name = "layoutSTA";
-            this.layoutSTA.Size = new System.Drawing.Size(1287, 402);
-            this.layoutSTA.Text = "Standort (STA)";
+            this.layoutETL_NDG.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem9});
+            this.layoutETL_NDG.Location = new System.Drawing.Point(0, 0);
+            this.layoutETL_NDG.Name = "layoutETL_NDG";
+            this.layoutETL_NDG.Size = new System.Drawing.Size(1287, 402);
+            this.layoutETL_NDG.Text = "Entlassung/Verlegung (ETL /  NDG)";
+            this.layoutETL_NDG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
-            // layoutControlItem72
+            // layoutControlItem9
             // 
-            this.layoutControlItem72.Control = this.layoutControl41;
-            this.layoutControlItem72.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem72.Name = "layoutControlItem72";
-            this.layoutControlItem72.Size = new System.Drawing.Size(1287, 402);
-            this.layoutControlItem72.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem72.TextVisible = false;
+            this.layoutControlItem9.Control = this.layoutControl9;
+            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem9.Name = "layoutControlItem9";
+            this.layoutControlItem9.Size = new System.Drawing.Size(1287, 402);
+            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem9.TextVisible = false;
             // 
             // layoutFKT
             // 
@@ -8090,6 +8153,24 @@
             this.layoutControlItem59.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem59.TextVisible = false;
             // 
+            // layoutSTA
+            // 
+            this.layoutSTA.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem72});
+            this.layoutSTA.Location = new System.Drawing.Point(0, 0);
+            this.layoutSTA.Name = "layoutSTA";
+            this.layoutSTA.Size = new System.Drawing.Size(1287, 402);
+            this.layoutSTA.Text = "Standort (STA)";
+            // 
+            // layoutControlItem72
+            // 
+            this.layoutControlItem72.Control = this.layoutControl41;
+            this.layoutControlItem72.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem72.Name = "layoutControlItem72";
+            this.layoutControlItem72.Size = new System.Drawing.Size(1287, 402);
+            this.layoutControlItem72.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem72.TextVisible = false;
+            // 
             // layoutCUX
             // 
             this.layoutCUX.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
@@ -8126,25 +8207,6 @@
             this.layoutControlItem8.Size = new System.Drawing.Size(1287, 402);
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
-            // 
-            // layoutETL_NDG
-            // 
-            this.layoutETL_NDG.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem9});
-            this.layoutETL_NDG.Location = new System.Drawing.Point(0, 0);
-            this.layoutETL_NDG.Name = "layoutETL_NDG";
-            this.layoutETL_NDG.Size = new System.Drawing.Size(1287, 402);
-            this.layoutETL_NDG.Text = "Entlassung/Verlegung (ETL /  NDG)";
-            this.layoutETL_NDG.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
-            // 
-            // layoutControlItem9
-            // 
-            this.layoutControlItem9.Control = this.layoutControl9;
-            this.layoutControlItem9.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem9.Name = "layoutControlItem9";
-            this.layoutControlItem9.Size = new System.Drawing.Size(1287, 402);
-            this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem9.TextVisible = false;
             // 
             // layoutEBG
             // 
@@ -8704,68 +8766,6 @@
             this.layoutControlItemSyntax_Nr.Text = "Syntax_Nr";
             this.layoutControlItemSyntax_Nr.TextSize = new System.Drawing.Size(61, 13);
             // 
-            // textEditndg_NDLok
-            // 
-            this.textEditndg_NDLok.EditValue = " ";
-            this.textEditndg_NDLok.Location = new System.Drawing.Point(1177, 66);
-            this.textEditndg_NDLok.Name = "textEditndg_NDLok";
-            this.textEditndg_NDLok.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditndg_NDLok.Properties.Items.AddRange(new object[] {
-            "R Rechts",
-            "L Links",
-            "B Beides"});
-            this.textEditndg_NDLok.Size = new System.Drawing.Size(82, 20);
-            this.textEditndg_NDLok.StyleController = this.layoutControl9;
-            this.textEditndg_NDLok.TabIndex = 15;
-            // 
-            // layoutControlItem144
-            // 
-            this.layoutControlItem144.Control = this.textEditndg_NDLok;
-            this.layoutControlItem144.Location = new System.Drawing.Point(357, 24);
-            this.layoutControlItem144.Name = "layoutControlItem144";
-            this.layoutControlItem144.Size = new System.Drawing.Size(279, 24);
-            this.layoutControlItem144.Text = "Lokalisation";
-            this.layoutControlItem144.TextSize = new System.Drawing.Size(190, 13);
-            // 
-            // textEditetl_Grund2
-            // 
-            this.textEditetl_Grund2.Location = new System.Drawing.Point(506, 66);
-            this.textEditetl_Grund2.Name = "textEditetl_Grund2";
-            this.textEditetl_Grund2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditetl_Grund2.Properties.Items.AddRange(new object[] {
-            "1 arbeitsfähig entlassen",
-            "2 arbeitsunfähig entlassen",
-            "9 keine Angabe"});
-            this.textEditetl_Grund2.Size = new System.Drawing.Size(93, 20);
-            this.textEditetl_Grund2.StyleController = this.layoutControl9;
-            this.textEditetl_Grund2.TabIndex = 16;
-            // 
-            // layoutControlItem145
-            // 
-            this.layoutControlItem145.Control = this.textEditetl_Grund2;
-            this.layoutControlItem145.Location = new System.Drawing.Point(289, 24);
-            this.layoutControlItem145.Name = "layoutControlItem145";
-            this.layoutControlItem145.Size = new System.Drawing.Size(290, 24);
-            this.layoutControlItem145.Text = "Entlassungs-/Verlegungsgrund stelle3";
-            this.layoutControlItem145.TextSize = new System.Drawing.Size(190, 13);
-            // 
-            // textEditetl_SekDlok
-            // 
-            this.textEditetl_SekDlok.EditValue = " ";
-            this.textEditetl_SekDlok.Location = new System.Drawing.Point(217, 138);
-            this.textEditetl_SekDlok.Name = "textEditetl_SekDlok";
-            this.textEditetl_SekDlok.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.textEditetl_SekDlok.Properties.Items.AddRange(new object[] {
-            "R Rechts",
-            "L Links",
-            "B Beide"});
-            this.textEditetl_SekDlok.Size = new System.Drawing.Size(382, 20);
-            this.textEditetl_SekDlok.StyleController = this.layoutControl9;
-            this.textEditetl_SekDlok.TabIndex = 8;
-            // 
             // FrmMessages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -9089,6 +9089,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemTmp_BeatmStd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl9)).EndInit();
             this.layoutControl9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDLok.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_aufnIK.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditdg_SekDLok.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDCode.Properties)).EndInit();
@@ -9098,12 +9100,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEditetl_Datum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEditetl_FAbt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_SekDlok.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemNDGList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemndg_NDLok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemndg_SekDLok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem66)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem144)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_Datum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_Grund)).EndInit();
@@ -9111,6 +9115,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_aufnIK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemetl_SekDlok)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem140)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem145)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl10)).EndInit();
             this.layoutControl10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dateEditTmp_EBG.Properties.CalendarTimeProperties)).EndInit();
@@ -9330,8 +9335,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup72)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutETL_NDG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFKT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutINV_PNV)).EndInit();
@@ -9348,12 +9353,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem75)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutPVT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem59)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutSTA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem72)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutCUX)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutDAU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutETL_NDG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutEBG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutFAB)).EndInit();
@@ -9415,11 +9420,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemReferenz_Nr)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemFileName)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItemSyntax_Nr)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditndg_NDLok.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem144)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_Grund2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem145)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEditetl_SekDlok.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
